@@ -1,3 +1,50 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
+
+\bibitem{denning1989computing}
+P.~J. Denning, D.~E. Comer, D.~Gries, M.~C. Mulder, A.~Tucker, A.~J. Turner, and P.~R. Young.
+\newblock Computing as a discipline.
+\newblock {\em Computer}, 22(2):63--70, 1989.
+
+\bibitem{dresch2015design}
+A.~Dresch, D.~P. Lacerda, J.~A.~V. Antunes~Jr, A.~Dresch, D.~P. Lacerda, and J.~A.~V. Antunes.
+\newblock {\em Design science research}.
+\newblock Springer, 2015.
+
+\bibitem{eisner2008comics}
+W.~Eisner.
+\newblock {\em Comics and sequential art: Principles and practices from the legendary cartoonist}.
+\newblock WW Norton \& Company, 2008.
+
+\bibitem{Gallotta2024LLM}
+R.~Gallotta, G.~Todd, M.~Zammit, S.~Earle, A.~Liapis, J.~Togelius, and G.~N. Yannakakis.
+\newblock Large language models and games: A survey and roadmap.
+\newblock {\em IEEE Transactions on Games}, pages 1--18, 2024.
+
+\bibitem{AdventureZone2018}
+C.~McElroy, G.~McElroy, J.~McElroy, T.~McElroy, and C.~Pietsch.
+\newblock {\em The Adventure Zone: Here There Be Gerblins}.
+\newblock First Second, 2018.
+
+\bibitem{CRFOX}
+e.~p. Prynoski, Chris.
+\newblock The legend of vox machina, 2022.
+
+\bibitem{rombach2021highresolution}
+R.~Rombach, A.~Blattmann, D.~Lorenz, P.~Esser, and B.~Ommer.
+\newblock High-resolution image synthesis with latent diffusion models, 2021.
+
+\bibitem{StableDiffusionGit}
+S.~A. stabilityai.
+\newblock stable-diffusion-xl-base-1.0.
+\newblock \url{https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0}, 2023.
+
+\bibitem{touvron2023llamaopenefficientfoundation}
+H.~Touvron, T.~Lavril, G.~Izacard, X.~Martinet, M.-A. Lachaux, T.~Lacroix, B.~Rozière, N.~Goyal, E.~Hambro, F.~Azhar, A.~Rodriguez, A.~Joulin, E.~Grave, and G.~Lample.
+\newblock Llama: Open and efficient foundation language models, 2023.
+
+\bibitem{DnD5e}
+{Wizards of the Coast}.
+\newblock {\em Dungeons \& Dragons: 5th Edition}.
+\newblock Wizards of the Coast, 2014.
 
 \end{thebibliography}
