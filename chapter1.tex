@@ -1,33 +1,36 @@
 \section{Motivation and Objectives}
 
-%For word wrap ctrl+shift+p -> Word Wrap
-
-
 %Theatrical introduction
 Storytelling has a rich history of development starting back as far as humanity can go back. From Neandertals 40.000 years ago making cave drawings in an attempt to share experience and knowledge and 5000 years ago the ancient Egyptians made Hieroglyphics to tell stories and record history. To now YouTubers sharing their experience and people on TikTok are recording and sharing everything they can think of. The medium of storytelling has been innovated time and time again, cave drawings, Hieroglyphics, oral, written texts, printing press, photo, film, and everything now in the digital age. But where are we going next? In a world that is ever-changing, super time hungry and where people are looking for more and more ways to consume and share stories. What is the next form of storytelling? What are new forms of storytelling we can use with new technology? As we are at the advent of a great generative artificial intelligence revolution we should look into the possibilities of AI. How can we use generative AI to create the next form of storytelling?
 
 %Goal of the thesis
-This thesis aims to look into the possible applicability of generative artificial intelligence and (locally inferred) large language models in combination with game retelling. It will do this by recording Table Top Roleplaying Game (TTRPG) play sessions and using generative artificial intelligence to generate a comic book based on the recording of the players. Giving the players a new way of sharing their experience, a new way of retelling.
+This thesis aims to look into the possible applicability of generative artificial intelligence and locally inferred large language models in combination with game retelling. It will do this by audio recording Table Top Roleplaying Game (TTRPG) play sessions and using generative artificial intelligence to generate a comic book based on the audio recording of the players. Giving the players a new way of sharing their experience, a new way of retelling.
 
 %New field of research with a lot of potential and demand
 Retelling games in combination with artificial intelligence is a new field of research with a small research demand \cite{Gallotta2024LLM}. However with all the newest, easy to work with and well performing opensource generative models like Stable Diffusion \cite{rombach2021highresolution} and Llama \cite{touvron2023llamaopenefficientfoundation} there is a lot of potential for artificial intelligence as a reteller of games. As we can now generate images and text based on prompts and other input (like a voice recording) we can start to use artificial intelligence as a new form of storytelling. The printing press of the AI era.
 
-
-
 %Why this paper
 This thesis started because of a small research demand for this topic in the academic world \cite{Gallotta2024LLM} and a direct request from my supervisor. For my motivation, I see a lot of potential in the usage of AI as a reteller of games. Primarily for video games, because you can track everything the player does and use that for generating. Besides video games, storytelling games like Dungeons and Dragons \cite{DnD5e} and other TTRPG systems can also make great use of such a system. By recording a session and converting it with AI there is potential. TTRPGs are already a big part of the retelling on the internet through digital media like Twitch, YouTube and every podcasting platform out there. One of my favourite Dungeons and Dragons podcasts, The Adventure Zone, have converted their adventure into a comic book \cite{AdventureZone2018} and Critical Role even converted their story into a TV show \cite{CRFOX}. Clearly there is a want for retelling TTRPG adventures. It is also a medium that leverages the usage of AI properly as there are infinite possibilities while playing TTRPG games and every group makes their own story. Thus the requirement for generative artificial intelligence goes up as there is no possible way of making a system that can incorporate everything people can do in a TTRPG game without generative AI.
 
-%Something else
-
 %Research question
-The main research question of this thesis is: \textit{What are the key design and implementation challenges of a multimodal generative AI tool for converting play sessions into multimodal retellings?} This 
 
-%Conclusion <Not sure if this is needed>
-In conclusion, this thesis aims to explore the possibilities of generative artificial intelligence in the field of retelling games.
+The central research question that guides this thesis is:
+
+\begin{quote}
+\textit{What are the key design and implementation challenges of a multimodal generative AI tool for converting play sessions into multimodal retellings?}
+\end{quote}
+This question will be explored by developing a prototype system, evaluating its performance, and reflecting on the design process and user experience. Ultimately, the goal is to contribute to the emerging intersection of generative AI, storytelling, and games, while exploring how artificial intelligence might help reimagine one of our oldest cultural practices.
 
 \section{Structure} 
 
-The basic outline of the research approach of this master thesis is to create an artefact which converts audio-recorded TTRPG play sessions into a comic book. The methodology that will be used is the Design Science Research methodology \cite{dresch2015design}. This methodology fits nicely with the research goal as it focuses on creating solutions through iterative development with a focus on testing the artefact. It also gives clear steps for both the design process and for a structured literature review which have been used as the skeleton of the thesis.
+The basic outline of the research approach of this master thesis is to create an artefact which converts audio-recorded TTRPG play sessions into a comic book. The methodology that will be used is the Design Science Research methodology \cite{dresch2015design}. This methodology fits nicely with the research goal as it focuses on creating solutions through iterative development with a focus on testing the artefact. It also gives clear steps for both the design process and for a structured literature review which have been used as the skeleton of the thesis. The structure of the thesis is as follows:
 
-%This is made by AI get rid of it
-The first step is to identify the problem and the requirements of the system. This is done through a literature review and interviews with experts in the field. The second step is to design the artefact, which in this case is a tool that converts audio-recorded TTRPG play sessions into a comic book. The third step is to implement the artefact, which will be done using Python and various libraries for audio processing and comic book generation. The fourth step is to evaluate the artefact, which will be done through user testing and feedback from experts in the field. Finally, the fifth step is to communicate the results of the research, which will be done through this thesis and a presentation at a conference.
+\begin{itemize}
+    \item Chapter 2 discusses the theoretical background and related work, including literature on game retelling, AI-based storytelling, and comic generation.
+    \item Chapter 3 outlines the research methodology and design science framework used to develop and evaluate the artefact.
+    \item Chapter 4 describes the development of the artefact: a pipeline that converts recorded TTRPG sessions into comic books using Whisper, LLMs, and image generation models.
+    \item Chapter 5 presents the evaluation of the system, based on qualitative and/or quantitative testing.
+    \item Chapter 6 offers conclusions, discusses the broader implications of the project, and suggests directions for future research.
+\end{itemize}
+
+Together, these chapters aim to provide a comprehensive exploration of the potential for generative AI to support and expand the ways we retell game experiences.
