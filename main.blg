@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: titlepage.aux
@@ -9,47 +9,45 @@ A level-1 auxiliary file: abstract_DE.aux
 A level-1 auxiliary file: acknowledgement.aux
 A level-1 auxiliary file: acronyms.aux
 The style file: abbrv.bst
-I found no \citation commands---while reading file main.aux
 Database file #1: bibfile.bib
-You've used 0 entries,
+You've used 21 entries,
             2118 wiz_defined-function locations,
-            504 strings with 3797 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            619 strings with 8209 characters,
+and the built_in function-call counts, 7868 in all, are:
+= -- 680
+> -- 607
+< -- 3
++ -- 246
+- -- 220
+* -- 573
+:= -- 1379
+add.period$ -- 60
+call.type$ -- 21
+change.case$ -- 163
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 21
+duplicate$ -- 260
+empty$ -- 475
+format.name$ -- 220
+if$ -- 1569
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 21
+missing$ -- 23
+newline$ -- 105
+num.names$ -- 42
+pop$ -- 214
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 148
 quote$ -- 0
-skip$ -- 1
+skip$ -- 204
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 192
+swap$ -- 62
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 72
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 error message)
+while$ -- 49
+width$ -- 23
+write$ -- 212
