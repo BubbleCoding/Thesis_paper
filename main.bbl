@@ -65,6 +65,11 @@ A.~R. Hevner, S.~T. March, J.~Park, and S.~Ram.
 \newblock Design science in information systems research.
 \newblock {\em MIS quarterly}, pages 75--105, 2004.
 
+\bibitem{ji2023survey}
+Z.~Ji, N.~Lee, R.~Frieske, T.~Yu, D.~Su, Y.~Xu, E.~Ishii, Y.~J. Bang, A.~Madotto, and P.~Fung.
+\newblock Survey of hallucination in natural language generation.
+\newblock {\em ACM computing surveys}, 55(12):1--38, 2023.
+
 \bibitem{GigaTown}
 F.~Kouno.
 \newblock {\em GigaTown: A Guide to MANGA Iconography}.
@@ -74,6 +79,11 @@ F.~Kouno.
 S.~Kurniawan.
 \newblock Interaction design: Beyond human--computer interaction by preece, sharp and rogers (2001), isbn 0471492787.
 \newblock {\em Universal Access in the Information Society}, 3:289--289, 2004.
+
+\bibitem{luccioni2023stable}
+A.~S. Luccioni, C.~Akiki, M.~Mitchell, and Y.~Jernite.
+\newblock Stable bias: Analyzing societal representations in diffusion models.
+\newblock {\em arXiv preprint arXiv:2303.11408}, 2023.
 
 \bibitem{mccloud1993understanding}
 S.~McCloud and M.~Martin.
