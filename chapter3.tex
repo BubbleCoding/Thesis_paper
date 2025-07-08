@@ -1,86 +1,99 @@
 \label{sec:Methods}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.
 
-\section{Programs and Frameworks}
+\section{Computing as a discipline}
+This thesis adopts the framework of \textit{Computing as a Discipline} \cite{denning1989computing} as its primary research approach \footnote{As per advice of my supervisor this chapter has been heavily based on the works of Mia Mohač \cite{ExploringVRUI}}. This framework enables a systematic and scientific investigation centered on the development of digital artefacts. Within this framework, the design paradigm is used, which consists of four iterative steps:
 
-\subsection{Program 1}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.
+\begin{enumerate}
+  \item \textbf{State requirements} - Identify the goals, constraints, and desired outcomes of the system.
+  \item \textbf{State specifications} - Translate the requirements into measurable and testable criteria.
+  \item \textbf{Design and implement the system} - Develop the architecture and build the working prototype or tool.
+  \item \textbf{Test the system} - Evaluate the system against the specifications through testing or case studies.
+\end{enumerate}
 
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=\textwidth]{images/netlogo.JPG}
-	\caption[NetLogo sample program]{NetLogo sample program}
-	\label{fig:netlogo}
-\end{figure}
+In Step 1, \textit{State requirements}, this thesis addresses the need to define design requirements for a system that uses artificial intelligence to retell gaming sessions. TTRPGs are chosen as the basis due to their rich narrative structure and the absence of a complex digital system. This choice reduces the system's scope and complexity, focusing on story-based retellings instead of interactive gameplay or video capture.
+
+In Step 2, \textit{State specifications}, the system’s requirements are translated into a set of functional and non-functional specifications that guide the design and implementation.
+
+The functional specifications are as follows:
+\begin{itemize}
+  \item The system must transcribe audio from a single-microphone recording of a TTRPG session.
+  \item It must generate a narrative script based on the transcribed text.
+  \item It must generate visual comic panels that align with the script's events and dialogue.
+  \item It must compile the script and images into a comic book format suitable for reading.
+\end{itemize}
+
+The non-functional specifications include:
+\begin{itemize}
+  \item The output must be understandable without prior knowledge of the session.
+  \item The system must run fully automatically, with no manual artistic or editorial intervention.
+  \item The comic must reflect key narrative moments, character presence, and setting changes.
+\end{itemize}
+
+The system is scoped to retell sessions from tabletop role-playing games and does not attempt to represent mechanics, dice rolls, or real-time interactions. Its focus lies in retelling emergent stories visually, using artificial intelligence as a generative tool.
+
+In Step 3, \textit{Design and implement the system}, the artefact is developed using an iterative design process aligned with the Design Science Research (DSR) methodology. Before conducting any evaluation, the full AI-driven pipeline must be constructed. This pipeline includes modules for transcription, script generation, and image generation. The specifics of this development process are detailed in the next section.
+
+In Step 4, \textit{Test the system}, the complete pipeline is evaluated in a case study by converting multiple TTRPG session recordings into comic books. No manual corrections or tweaks are made to the output, as the goal is not to fine-tune a specific model but to assess the pipeline holistically. The aim is to uncover design requirements that inform future development of AI-based game retelling tools.
+
+To ensure consistency during testing, a single Game Master runs the same TTRPG session multiple times with different groups of players. This creates a controlled environment while still allowing for natural variation. The results are cross-referenced to observe how the system handles minor differences between groups, pacing, and content across recordings.
+
+Participants provide both qualitative and quantitative feedback via a semi-structured interviews after reviewing the generated comic. Additional expert feedback is collected from multiple GMs who evaluate the system's output and usability. This multi-perspective evaluation helps identify strengths, weaknesses, and areas for improvement in the artefact.
+
+\section{Design Science Research as a Methodology}
+The design science research (DSR) methodology is a way to create an artefact while adhering to scientific research methodology\cite{dresch2015design}. It is a systematic approach that emphasizes the creation and evaluation of innovative artefacts to solve real-world problems, primarily used within the engineering disciplines. As this thesis aims to create a novel artefact and as I am deeply familiar with the DSR methodology it will be the primary methodology used in this thesis. There are different version/interpretations of DSR, but the one used in this thesis is structured around 7 different guidelines\cite{hevner2004design} which can be seen in table \ref{tab:DSRGuidelines}. 
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{|l|p{7.2cm}|}
+\hline
+\textbf{Guideline} & \textbf{Description} \\
+\hline
+Guideline 1: Design as an Artifact & Design-science research must produce a viable artifact in the form of a construct, a model, a method, or an instantiation. \\
+\hline
+Guideline 2: Problem Relevance & The objective of design-science research is to develop technology-based solutions to important and relevant business problems. \\
+\hline
+Guideline 3: Design Evaluation & The utility, quality, and efficacy of a design artifact must be rigorously demonstrated via well-executed evaluation methods. \\
+\hline
+Guideline 4: Research Contributions & Effective design-science research must provide clear and verifiable contributions in the areas of the design artifact, design foundations, and/or design methodologies. \\
+\hline
+Guideline 5: Research Rigor & Design-science research relies upon the application of rigorous methods in both the construction and evaluation of the design artifact. \\
+\hline
+Guideline 6: Design as a Search Process & The search for an effective artifact requires utilizing available means to reach desired ends while satisfying laws in the problem environment. \\
+\hline
+Guideline 7: Communication of Research & Design-science research must be presented effectively both to technology-oriented as well as management-oriented audiences. \\
+\hline
+\end{tabular}
+\captionof{table}{Design-Science Research Guidelines (Copied from \cite{hevner2004design} page 83)} \label{tab:DSRGuidelines}
+\end{table}
+
+\subsection*{Guideline 1: Design as an Artifact}
+The central contribution of this thesis is a working artefact: a multimodal AI pipeline that transforms TTRPG session audio recordings into comic books. This includes transcription, transcript-to-script conversion, image generation, and layout formatting components.
+
+\subsection*{Guideline 2: Problem Relevance}
+The problem addressed is the lack of AI-based tools for automatically retelling gaming experiences, particularly those rooted in narrative-heavy analogue formats like TTRPGs. This project explores how artificial intelligence can support the automated retelling and archiving of such experiences. The resulting insights aim to inform the design of future game retelling systems and contribute to the broader field of AI-assisted narrative generation.
+
+\subsection*{Guideline 3: Design Evaluation}
+The system is evaluated through case studies in which the same TTRPG session is run multiple times by the same Game Master but played by different groups. This setup ensures narrative consistency, enabling direct cross-referencing of the resulting comics. The outputs are reviewed by session participants and expert Game Masters, combining qualitative user feedback with functional evaluation to assess the system's effectiveness.
+
+\subsection*{Guideline 4: Research Contributions}
+This thesis contributes a novel tool for AI-assisted narrative retelling, along with insights into the design requirements for such systems. It offers a practical demonstration of integrating generative models into a creative pipeline and contributes to ongoing discussions about how games can be represented and retold after play.
+
+\subsection*{Guideline 5: Research Rigor}
+A rigorous approach is applied to both the design and evaluation of the artefact. The development process follows established software engineering practices, including iterative prototyping, testing, and refinement. The selection and use of AI models are grounded in documented performance and methodological consistency.
+
+\subsection*{Guideline 6: Design as a Search Process}
+The artefact could be constructed in countless ways by varying models, prompts, and parameters. Rather than attempting exhaustive optimization, this thesis seeks to develop a satisfactory and functional solution from which useful design requirements can be derived. This allows the project to contribute broadly applicable insights without being constrained to a single ideal configuration.
+
+\subsection*{Guideline 7: Communication of Research}
+This thesis is written to be accessible to both technical and non-technical audiences. It includes detailed descriptions of the design process, system architecture, and evaluation methodology. In addition, visual examples of the generated comics are included to concretely demonstrate the system's capabilities and outcomes.
+
+By following these 7 guidelines, this thesis aims to produce a meaningful contribution to the field of AI-assisted narrative generation, while also adhering to the principles of design science research.
+
+\section{Usability Evaluation}
 
 
-\subsection{Program 2}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+\section{Data Collection Methods}
 
 
-\section{Models and Algorithms}
-
-\subsection{Model A}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-\begin{equation}
-\overrightarrow{X (t + 1)}=\begin{cases} \overrightarrow{X_{b}(t)}+\overrightarrow{vb}\cdot \Big(\overrightarrow{W} \cdot \overrightarrow{X_{A}(t)}-\overrightarrow{X_{B}(t)})\Big), r<p \\ \overrightarrow{vc} \cdot  \overrightarrow{X(t)}, r\geq p
-\end{cases}
-\label{eqn:approach}
-\end{equation}
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-
-\begin{equation}
-p=\tanh|S(i)-DF|
-\end{equation}
-
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-
-\begin{equation}
-\overrightarrow{vb}=[-a,a] 
-\end{equation}
-\begin{equation}
-a = arctanh(- \left(\frac{t}{maxt}\right)+1)
-\end{equation}
-
-\noindent
-Formula of $\overrightarrow{W}$:
-
-\begin{equation}
-    \overrightarrow{W(SmellIndex(i))}= \begin{cases} 1 + r \cdot log \left(\frac{bF-S(i)}{bF-wF}+1 \right), condition \\
-     1- r \cdot log \left(\frac{bF-S(i)}{bF-wF}+1 \right), others
-    \end{cases}
-\end{equation}
-
-\begin{equation}
-    SmellIndex = sort(S)
-\end{equation}
-
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-
-
-\subsection{Sample Algorithm}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-
-\begin{equation}
-    f(s)=g(s)+h(s)
-\end{equation}
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et.
-
-
-\begin{figure}[H]
-\begin{minipage}{0.5\textwidth}
-\includegraphics[width=7.1cm,height=7.1cm]{images/a_star_start.jpg}
-\captionsetup{justification=centering}
-\caption{NetLogo - A* Simulation - Search}\label{fig:a_star_search}
-\end{minipage}
-\hfill
-\begin{minipage}{0.5\linewidth}
-\includegraphics[width=7.1cm,height=7.1cm]{images/a_star_end.jpg}
-\captionsetup{justification=centering}
-\caption{NetLogo - A* Simulation - Shortest Path}
-\label{fig:a_star_shortest_path}
-\end{minipage}
-\end{figure}
+\section{Ethical Considerations}

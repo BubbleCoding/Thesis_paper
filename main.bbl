@@ -60,6 +60,11 @@ M.~U. Hadi, R.~Qureshi, A.~Shah, M.~Irfan, A.~Zafar, M.~B. Shaikh, N.~Akhtar, J.
 \newblock A survey on large language models: Applications, challenges, limitations, and practical usage.
 \newblock {\em Authorea Preprints}, 2023.
 
+\bibitem{hevner2004design}
+A.~R. Hevner, S.~T. March, J.~Park, and S.~Ram.
+\newblock Design science in information systems research.
+\newblock {\em MIS quarterly}, pages 75--105, 2004.
+
 \bibitem{GigaTown}
 F.~Kouno.
 \newblock {\em GigaTown: A Guide to MANGA Iconography}.
@@ -79,6 +84,10 @@ C.~McElroy, G.~McElroy, J.~McElroy, T.~McElroy, and C.~Pietsch.
 F.~Miller.
 \newblock {\em Sin City: The Hard Goodbye}.
 \newblock Dark Horse Comics, 1991.
+
+\bibitem{ExploringVRUI}
+M.~Mohač.
+\newblock Exploring betterment of user interfaces in video games through virtual reality : to aid visibility and attention issues for players with visual impairments, 2024.
 
 \bibitem{Plaquet23}
 A.~Plaquet and H.~Bredin.

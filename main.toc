@@ -17,12 +17,11 @@
 \contentsline {section}{\numberline {2.6}Three primary forms of player interaction}{11}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Design Science Research as a Methodology}{11}{section.2.7}%
 \contentsline {chapter}{\numberline {3}Research Methodology}{12}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Programs and Frameworks}{12}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Program 1}{12}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Program 2}{12}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Models and Algorithms}{14}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Model A}{14}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Sample Algorithm}{15}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.1}Computing as a discipline}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Design Science Research as a Methodology}{14}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Usability Evaluation}{16}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Data Collection Methods}{16}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Ethical Considerations}{16}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Artefact Development}{17}{chapter.4}%
 \contentsline {section}{\numberline {4.1}My Topic}{17}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Coding with Python}{17}{section.4.2}%
@@ -33,32 +32,32 @@
 \contentsline {chapter}{\numberline {5}Evaluation}{18}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Experiments and Simulations}{18}{section.5.1}%
 \contentsline {section}{\numberline {5.2}The minimal viable product}{18}{section.5.2}%
-\contentsline {subsubsection}{MVP pipeline}{18}{section*.14}%
+\contentsline {subsubsection}{MVP pipeline}{18}{section*.20}%
 \contentsline {subsection}{\numberline {5.2.1}Lessons learned}{20}{subsection.5.2.1}%
-\contentsline {subsubsection}{Art}{21}{section*.15}%
-\contentsline {subsubsection}{Text}{21}{section*.16}%
-\contentsline {subsubsection}{Composition}{21}{section*.17}%
+\contentsline {subsubsection}{Art}{21}{section*.21}%
+\contentsline {subsubsection}{Text}{21}{section*.22}%
+\contentsline {subsubsection}{Composition}{21}{section*.23}%
 \contentsline {subsection}{\numberline {5.2.2}Solutions}{21}{subsection.5.2.2}%
-\contentsline {subsubsection}{Art}{21}{section*.18}%
-\contentsline {subsubsection}{Character consistency}{22}{section*.19}%
-\contentsline {subsubsection}{Scene consistency}{23}{section*.20}%
-\contentsline {subsubsection}{Text}{23}{section*.21}%
+\contentsline {subsubsection}{Art}{21}{section*.24}%
+\contentsline {subsubsection}{Character consistency}{22}{section*.25}%
+\contentsline {subsubsection}{Scene consistency}{23}{section*.26}%
+\contentsline {subsubsection}{Text}{23}{section*.27}%
 \contentsline {subsection}{\numberline {5.2.3}The minimal viable product}{25}{subsection.5.2.3}%
 \contentsline {section}{\numberline {5.3}Small experiments}{25}{section.5.3}%
 \contentsline {subsection}{\numberline {5.3.1}The language of TTRPGs}{25}{subsection.5.3.1}%
 \contentsline {section}{\numberline {5.4}Generating the comic book script}{25}{section.5.4}%
-\contentsline {subsubsection}{MVP}{26}{section*.24}%
-\contentsline {subsubsection}{Cleaning up the transcript}{26}{section*.25}%
-\contentsline {subsubsection}{Scene detection}{27}{section*.26}%
-\contentsline {subsubsection}{Line based chunking}{27}{section*.27}%
-\contentsline {subsubsection}{LLM based chunking}{27}{section*.28}%
-\contentsline {subsubsection}{LLM based filtering}{27}{section*.29}%
-\contentsline {subsubsection}{Context aware LLM based chunking}{27}{section*.30}%
-\contentsline {subsubsection}{Adaptive panel generating}{27}{section*.31}%
+\contentsline {subsubsection}{MVP}{26}{section*.30}%
+\contentsline {subsubsection}{Cleaning up the transcript}{26}{section*.31}%
+\contentsline {subsubsection}{Scene detection}{27}{section*.32}%
+\contentsline {subsubsection}{Line based chunking}{27}{section*.33}%
+\contentsline {subsubsection}{LLM based chunking}{27}{section*.34}%
+\contentsline {subsubsection}{LLM based filtering}{27}{section*.35}%
+\contentsline {subsubsection}{Context aware LLM based chunking}{27}{section*.36}%
+\contentsline {subsubsection}{Adaptive panel generating}{27}{section*.37}%
 \contentsline {section}{\numberline {5.5}Experimental setup}{27}{section.5.5}%
-\contentsline {subsubsection}{Experimental sessions}{27}{section*.32}%
-\contentsline {subsubsection}{}{28}{section*.33}%
-\contentsline {subsubsection}{Participent feedback}{28}{section*.34}%
+\contentsline {subsubsection}{Experimental sessions}{27}{section*.38}%
+\contentsline {subsubsection}{}{28}{section*.39}%
+\contentsline {subsubsection}{Participent feedback}{28}{section*.40}%
 \contentsline {subsection}{\numberline {5.5.1}Analyzing the generated comic books}{28}{subsection.5.5.1}%
 \contentsline {chapter}{\numberline {6}Conclusion}{29}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Summary}{29}{section.6.1}%
@@ -72,7 +71,7 @@
 \contentsline {subsection}{\numberline {7.2.1}Difference between retelling and storytelling}{32}{subsection.7.2.1}%
 \contentsline {subsection}{\numberline {7.2.2}State of the art of retelling}{32}{subsection.7.2.2}%
 \contentsline {chapter}{Bibliography}{33}{subsection.7.2.2}%
-\contentsline {chapter}{APPENDICES}{35}{chapter*.35}%
+\contentsline {chapter}{APPENDICES}{35}{chapter*.41}%
 \contentsline {chapter}{\numberline {A}NetLogo Code}{35}{appendix.A}%
 \contentsline {section}{\numberline {A.1}NetLogo Main}{35}{section.A.1}%
 \contentsline {section}{\numberline {A.2}SISMO NetLogo Main Function}{35}{section.A.2}%
