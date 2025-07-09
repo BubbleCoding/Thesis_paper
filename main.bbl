@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{aarseth1995cybertext}
+E.~Aarseth.
+\newblock {\em Cybertext: perspectives on ergodic literature}.
+\newblock University of Bergen, 1995.
+
 \bibitem{2024arXiv240201687A}
 V.~{Agarwal}, M.~{Krishan Garg}, S.~{Dharmavaram}, and D.~{Kumar}.
 \newblock {``Which LLM should I use?'': Evaluating LLMs for tasks performed by Undergraduate Computer Science Students}.
@@ -40,6 +45,11 @@ W.~Eisner.
 \newblock {\em Comics and sequential art: Principles and practices from the legendary cartoonist}.
 \newblock WW Norton \& Company, 2008.
 
+\bibitem{eladhari2018re}
+M.~P. Eladhari.
+\newblock Re-tellings: the fourth layer of narrative as an instrument for critique.
+\newblock In {\em Interactive Storytelling: 11th International Conference on Interactive Digital Storytelling, ICIDS 2018, Dublin, Ireland, December 5--8, 2018, Proceedings 11}, pages 65--78. Springer, 2018.
+
 \bibitem{finch2024portfolio}
 D.~Finch.
 \newblock David finch art portfolio, 2024.
@@ -49,6 +59,11 @@ D.~Finch.
 R.~Gallotta, G.~Todd, M.~Zammit, S.~Earle, A.~Liapis, J.~Togelius, and G.~N. Yannakakis.
 \newblock Large language models and games: A survey and roadmap.
 \newblock {\em IEEE Transactions on Games}, pages 1--18, 2024.
+
+\bibitem{gray2010show}
+J.~Gray.
+\newblock {\em Show sold separately: Promos, spoilers, and other media paratexts}.
+\newblock New York University Press, 2010.
 
 \bibitem{guhrEtAl}
 O.~Guhr, A.-K. Schumann, F.~Bahrmann, and H.~J. Böhme.
@@ -65,10 +80,19 @@ A.~R. Hevner, S.~T. March, J.~Park, and S.~Ram.
 \newblock Design science in information systems research.
 \newblock {\em MIS quarterly}, pages 75--105, 2004.
 
+\bibitem{jenkins2008convergence}
+H.~Jenkins and M.~Deuze.
+\newblock Convergence culture, 2008.
+
 \bibitem{ji2023survey}
 Z.~Ji, N.~Lee, R.~Frieske, T.~Yu, D.~Su, Y.~Xu, E.~Ishii, Y.~J. Bang, A.~Madotto, and P.~Fung.
 \newblock Survey of hallucination in natural language generation.
 \newblock {\em ACM computing surveys}, 55(12):1--38, 2023.
+
+\bibitem{juul2011half}
+J.~Juul.
+\newblock {\em Half-real: Video games between real rules and fictional worlds}.
+\newblock MIT press, 2011.
 
 \bibitem{GigaTown}
 F.~Kouno.
@@ -117,10 +141,25 @@ e.~p. Prynoski, Chris.
 R.~Rombach, A.~Blattmann, D.~Lorenz, P.~Esser, and B.~Ommer.
 \newblock High-resolution image synthesis with latent diffusion models, 2021.
 
+\bibitem{ryan2015narrative}
+M.-L. Ryan.
+\newblock {\em Narrative as virtual reality 2: Revisiting immersion and interactivity in literature and electronic media}.
+\newblock JHU press, 2015.
+
 \bibitem{StableDiffusionGit}
 S.~A. stabilityai.
 \newblock stable-diffusion-xl-base-1.0.
 \newblock \url{https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0}, 2023.
+
+\bibitem{storr2019science}
+W.~Storr.
+\newblock {\em The Science of Storytelling}.
+\newblock William Collins, 2019.
+
+\bibitem{sych2020fourth}
+S.~Sych.
+\newblock When the fourth layer meets the fourth wall: the case for critical game retellings.
+\newblock In {\em Interactive Storytelling: 13th International Conference on Interactive Digital Storytelling, ICIDS 2020, Bournemouth, UK, November 3--6, 2020, Proceedings 13}, pages 203--211. Springer, 2020.
 
 \bibitem{touvron2023llamaopenefficientfoundation}
 H.~Touvron, T.~Lavril, G.~Izacard, X.~Martinet, M.-A. Lachaux, T.~Lacroix, B.~Rozière, N.~Goyal, E.~Hambro, F.~Azhar, A.~Rodriguez, A.~Joulin, E.~Grave, and G.~Lample.

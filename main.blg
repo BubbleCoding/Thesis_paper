@@ -11,44 +11,44 @@ A level-1 auxiliary file: AIUsage.aux
 A level-1 auxiliary file: acronyms.aux
 The style file: abbrv.bst
 Database file #1: bibfile.bib
-You've used 28 entries,
+You've used 36 entries,
             2118 wiz_defined-function locations,
-            656 strings with 9433 characters,
-and the built_in function-call counts, 10091 in all, are:
-= -- 889
-> -- 734
-< -- 4
-+ -- 297
-- -- 264
-* -- 720
-:= -- 1760
-add.period$ -- 80
-call.type$ -- 28
-change.case$ -- 205
+            698 strings with 10659 characters,
+and the built_in function-call counts, 12221 in all, are:
+= -- 1097
+> -- 796
+< -- 6
++ -- 324
+- -- 282
+* -- 810
+:= -- 2101
+add.period$ -- 105
+call.type$ -- 36
+change.case$ -- 233
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 336
-empty$ -- 638
-format.name$ -- 264
-if$ -- 2022
+cite$ -- 36
+duplicate$ -- 447
+empty$ -- 849
+format.name$ -- 282
+if$ -- 2500
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 29
-newline$ -- 139
-num.names$ -- 56
-pop$ -- 267
+int.to.str$ -- 36
+missing$ -- 41
+newline$ -- 178
+num.names$ -- 72
+pop$ -- 331
 preamble$ -- 1
-purify$ -- 184
+purify$ -- 209
 quote$ -- 0
-skip$ -- 262
+skip$ -- 334
 stack$ -- 0
-substring$ -- 295
-swap$ -- 76
-text.length$ -- 4
+substring$ -- 392
+swap$ -- 102
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 98
+type$ -- 120
 warning$ -- 0
-while$ -- 70
-width$ -- 30
-write$ -- 283
+while$ -- 92
+width$ -- 38
+write$ -- 365
