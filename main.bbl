@@ -10,25 +10,55 @@ V.~{Agarwal}, M.~{Krishan Garg}, S.~{Dharmavaram}, and D.~{Kumar}.
 \newblock {``Which LLM should I use?'': Evaluating LLMs for tasks performed by Undergraduate Computer Science Students}.
 \newblock {\em arXiv e-prints}, page arXiv:2402.01687, Jan. 2024.
 
+\bibitem{SDPrompting}
+Andrew.
+\newblock Stable diffusion prompt: a definitive guide, 2024.
+\newblock Available at: \url{https://stable-diffusion-art.com/prompt-guide/} [Accessed 1 September 2025].
+
+\bibitem{SDModels}
+Andrew.
+\newblock Stable diffusion models: a beginner's guide, 2025.
+\newblock Available at: \url{https://stable-diffusion-art.com/models/#CLIP_Skip} [Accessed 1 September 2025].
+
 \bibitem{bie2024renaissance}
 F.~Bie, Y.~Yang, Z.~Zhou, A.~Ghanem, M.~Zhang, Z.~Yao, X.~Wu, C.~Holmes, P.~Golnari, D.~A. Clifton, et~al.
 \newblock Renaissance: A survey into ai text-to-image generation in the era of large model.
 \newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence}, 2024.
+
+\bibitem{bowman2010social}
+S.~L. Bowman.
+\newblock The functions of role-playing games: How participants create community, solve problems and explore identity, 2010.
+\newblock Bowman's categorization of player communication styles.
 
 \bibitem{Bredin23}
 H.~Bredin.
 \newblock {pyannote.audio 2.1 speaker diarization pipeline: principle, benchmark, and recipe}.
 \newblock In {\em Proc. INTERSPEECH 2023}, 2023.
 
+\bibitem{criticalrole_liveplay}
+C.~R. cast.
+\newblock Critical role.
+\newblock Web-streamed actual-play Dungeons \& Dragons series, 2015.
+
+\bibitem{criticalrole_mighty_nein_origins}
+C.~R. cast.
+\newblock Critical role: The mighty nein origins.
+\newblock Graphic novel series by Dark Horse Comics, 2021.
+
+\bibitem{criticalrole_legends_vox_machina}
+C.~R. cast.
+\newblock Critical role: The legends of vox machina.
+\newblock Animated series based on the Critical Role web series, 2022.
+
 \bibitem{chang2024survey}
 Y.~Chang, X.~Wang, J.~Wang, Y.~Wu, L.~Yang, K.~Zhu, H.~Chen, X.~Yi, C.~Wang, Y.~Wang, et~al.
 \newblock A survey on evaluation of large language models.
 \newblock {\em ACM transactions on intelligent systems and technology}, 15(3):1--45, 2024.
 
-\bibitem{dang2022prompt}
-H.~Dang, L.~Mecke, F.~Lehmann, S.~Goller, and D.~Buschek.
-\newblock How to prompt? opportunities and challenges of zero-and few-shot learning for human-ai interaction in creative applications of generative models.
-\newblock {\em arXiv preprint arXiv:2209.01390}, 2022.
+\bibitem{criticalrole_vox_machina_origins}
+M.~Colville and J.~Houser.
+\newblock Critical role: Vox machina origins.
+\newblock Comic book series published by Dark Horse Comics, 2017.
 
 \bibitem{denning1989computing}
 P.~J. Denning, D.~E. Comer, D.~Gries, M.~C. Mulder, A.~Tucker, A.~J. Turner, and P.~R. Young.
@@ -40,20 +70,46 @@ A.~Dresch, D.~P. Lacerda, J.~A.~V. Antunes~Jr, A.~Dresch, D.~P. Lacerda, and J.~
 \newblock {\em Design science research}.
 \newblock Springer, 2015.
 
+\bibitem{edwards2001gns}
+R.~Edwards.
+\newblock {\em GNS and Other Matters of Role-Playing Theory}.
+\newblock The Forge, 2001.
+\newblock Online essay, available at: \url{http://www.indie-rpgs.com/articles/1/}.
+
 \bibitem{eisner2008comics}
 W.~Eisner.
 \newblock {\em Comics and sequential art: Principles and practices from the legendary cartoonist}.
 \newblock WW Norton \& Company, 2008.
+
+\bibitem{ekin2023prompt}
+S.~Ekin.
+\newblock Prompt engineering for chatgpt: a quick guide to techniques, tips, and best practices.
+\newblock {\em Authorea Preprints}, 2023.
 
 \bibitem{eladhari2018re}
 M.~P. Eladhari.
 \newblock Re-tellings: the fourth layer of narrative as an instrument for critique.
 \newblock In {\em Interactive Storytelling: 11th International Conference on Interactive Digital Storytelling, ICIDS 2018, Dublin, Ireland, December 5--8, 2018, Proceedings 11}, pages 65--78. Springer, 2018.
 
+\bibitem{europeancommission2019ethics}
+{European Commission High-Level Expert Group on AI}.
+\newblock Ethics guidelines for trustworthy ai.
+\newblock {\em European Commission Publications}, 2019.
+
 \bibitem{finch2024portfolio}
 D.~Finch.
 \newblock David finch art portfolio, 2024.
 \newblock Available at: \url{https://www.davidfinchart.com/} [Accessed 30 June 2025].
+
+\bibitem{fine1983shared}
+G.~A. Fine.
+\newblock {\em Shared Fantasy: Role-Playing Games as Social Worlds}.
+\newblock University of Chicago Press, Chicago, 1983.
+
+\bibitem{floridi2018ai4people}
+L.~Floridi, J.~Cowls, M.~Beltrametti, R.~Chatila, P.~Chazerand, V.~Dignum, C.~Luetge, R.~Madelin, U.~Pagallo, F.~Rossi, et~al.
+\newblock Ai4people—an ethical framework for a good ai society: Opportunities, risks, principles, and recommendations.
+\newblock {\em Minds and machines}, 28(4):689--707, 2018.
 
 \bibitem{Gallotta2024LLM}
 R.~Gallotta, G.~Todd, M.~Zammit, S.~Earle, A.~Liapis, J.~Togelius, and G.~N. Yannakakis.
@@ -89,6 +145,11 @@ Z.~Ji, N.~Lee, R.~Frieske, T.~Yu, D.~Su, Y.~Xu, E.~Ishii, Y.~J. Bang, A.~Madotto
 \newblock Survey of hallucination in natural language generation.
 \newblock {\em ACM computing surveys}, 55(12):1--38, 2023.
 
+\bibitem{juul2005half}
+J.~Juul.
+\newblock {\em Half-Real: Video Games between Real Rules and Fictional Worlds}.
+\newblock MIT Press, Cambridge, MA, 2005.
+
 \bibitem{juul2011half}
 J.~Juul.
 \newblock {\em Half-real: Video games between real rules and fictional worlds}.
@@ -114,10 +175,20 @@ S.~McCloud and M.~Martin.
 \newblock {\em Understanding comics: The invisible art}, volume 106.
 \newblock Kitchen sink press Northampton, MA, 1993.
 
+\bibitem{adventurezone_podcast}
+C.~McElroy, G.~McElroy, J.~McElroy, T.~McElroy, and C.~Pietsch.
+\newblock The adventure zone (podcast).
+\newblock Maximum Fun network, biweekly actual-play TTRPG podcast, 2014.
+
 \bibitem{AdventureZone2018}
 C.~McElroy, G.~McElroy, J.~McElroy, T.~McElroy, and C.~Pietsch.
 \newblock {\em The Adventure Zone: Here There Be Gerblins}.
 \newblock First Second, 2018.
+
+\bibitem{MetaPrompting}
+Meta.
+\newblock Prompting, Unknown.
+\newblock Available at: \url{https://www.llama.com/docs/how-to-guides/prompting/#chain-of-thought-technique} [Accessed 1 September 2025].
 
 \bibitem{miller1991sincity}
 F.~Miller.
@@ -127,6 +198,11 @@ F.~Miller.
 \bibitem{ExploringVRUI}
 M.~Mohač.
 \newblock Exploring betterment of user interfaces in video games through virtual reality : to aid visibility and attention issues for players with visual impairments, 2024.
+
+\bibitem{OpenAIBestPractices}
+OpenAI.
+\newblock Best practices for prompt engineering with the openai api, 2025.
+\newblock Available at: \url{https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api} [Accessed 1 September 2025].
 
 \bibitem{Plaquet23}
 A.~Plaquet and H.~Bredin.
@@ -140,6 +216,11 @@ e.~p. Prynoski, Chris.
 \bibitem{rombach2021highresolution}
 R.~Rombach, A.~Blattmann, D.~Lorenz, P.~Esser, and B.~Ommer.
 \newblock High-resolution image synthesis with latent diffusion models, 2021.
+
+\bibitem{ryan2001narrative}
+M.-L. Ryan.
+\newblock {\em Narrative as Virtual Reality: Immersion and Interactivity in Literature and Electronic Media}.
+\newblock Johns Hopkins University Press, Baltimore, 2001.
 
 \bibitem{ryan2015narrative}
 M.-L. Ryan.

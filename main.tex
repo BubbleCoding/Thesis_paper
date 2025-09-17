@@ -1,6 +1,12 @@
 \documentclass[12pt]{report}
+
+% -------------------------------
+% Core packages (pdfLaTeX setup)
+% -------------------------------
 \usepackage[a4paper]{geometry}
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % UTF-8 input for pdfLaTeX
+
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{fancyhdr}
@@ -13,8 +19,52 @@
 \usepackage{multirow}
 \usepackage{url}
 \usepackage{subfig}
-\usepackage{listings}
 \usepackage{siunitx}
+\usepackage[acronym]{glossaries}
+\usepackage{afterpage}
+
+% -------------------------------
+% Listings (single, UTF-8 safe)
+% -------------------------------
+\usepackage{listings}
+\usepackage{listingsutf8} % allow UTF-8 inside listings
+
+% Global defaults for all code blocks
+\lstset{
+  inputencoding=utf8,
+  upquote=true,
+  showstringspaces=false,
+  breaklines=true,
+  breakatwhitespace=false,
+  columns=fullflexible,
+  basicstyle=\ttfamily\small,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=5pt,
+  frame=single,
+  % Map tricky Unicode so pdfLaTeX won't choke inside code
+  literate=
+    {▁}{{\_}}1
+    {–}{{-}}1
+    {—}{{-}}1
+    {…}{{...}}3
+    {🧠}{{[brain]}}1
+    {✅}{{[check]}}1
+    {⚠️}{{[warn]}}1
+    {❌}{{[x]}}1
+}
+
+% Fallbacks for any stray Unicode outside listings or missed cases
+\DeclareUnicodeCharacter{2581}{\_}       % ▁ (SentencePiece underscore)
+\DeclareUnicodeCharacter{2705}{[check]}  % ✅
+\DeclareUnicodeCharacter{26A0}{[warn]}   % ⚠
+\DeclareUnicodeCharacter{274C}{[x]}      % ❌
+\DeclareUnicodeCharacter{1F9E0}{[brain]} % 🧠
+\DeclareUnicodeCharacter{FE0F}{}         % emoji variation selector (strip)
+
+% -------------------------------
+% Your custom listings languages/styles
+% -------------------------------
 \lstdefinelanguage{NetLogo}{
     basicstyle=\small,
     breaklines=true,
@@ -35,6 +85,7 @@
     morekeywords=[5]{1, 2, 3, 4, 5, 6, 7, 8, 9, 0, true, false},
     keywordstyle=[5]{\color{orange}},
 }
+
 \lstdefinestyle{jsonstyle}{
   basicstyle=\ttfamily\small,
   breaklines=true,
@@ -43,6 +94,7 @@
   frame=single,
   language={}
 }
+
 \lstdefinestyle{pythonstyle}{
     language=Python,
     basicstyle=\ttfamily\small,
@@ -57,12 +109,14 @@
     frame=single
 }
 
-\usepackage[acronym]{glossaries}
-\usepackage{afterpage} \newcommand\blankpage{%
+% -------------------------------
+% Misc settings
+% -------------------------------
+\newcommand\blankpage{%
 \null \thispagestyle{empty}%
   \addtocounter{page}{-1}%
     \newpage}
-\usepackage{listings} \lstset{numbers=left, numberstyle=\tiny, numbersep=5pt} \lstset{language=Matlab}
+
 \sloppy
 \graphicspath{{images/}}
 
@@ -73,14 +127,12 @@
 \evensidemargin 0.5 cm
 \topmargin      -1.0 cm
 
-\usepackage{url}
 \urlstyle{tt}
 \urldef{\test}{\url{http://de.wikipedia.org/wiki/Hilfe:TeX}}
 
-%\newcommand{\tanh}{\operatorname{tanh}}
-
 \widowpenalty=10000
 \clubpenalty=10000
+
 \begin{document}
 
 \include{titlepage}
@@ -88,7 +140,10 @@
 \pagenumbering{roman}
 \rfoot{\thepage}
 \cfoot{}
+
+% NOTE: If you don't have stmt.tex, comment the next line.
 \include{stmt}
+
 \include{erklaerung}
 \include{abstract}
 \include{abstract_DE}
@@ -100,7 +155,6 @@
 \listoffigures
 \listoftables
 \clearpage
-
 
 \pagestyle{plain}
 
@@ -129,10 +183,6 @@
 \label{sec:conclusion}
 \input{chapter6}
 
-\chapter{workplace}
-\label{sec:workplace}
-\input{workplace}
-
 \newpage
 
 \bibliographystyle{abbrv}
@@ -147,10 +197,4 @@
 \label{sec:appendix-netlogo}
 \input{appendix_a}
 
-%%
-%% Setup Guide
-%%
-%% This file should be edited by user
-%%
-
-\end{document} 
+\end{document}

@@ -4,79 +4,71 @@
 \contentsline {chapter}{\numberline {2}Theoretical Research and Related Work}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Retelling games}{4}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Examples of TTRPG retellings}{7}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Artificial Intelligence as a Reteller/storyteller}{7}{subsection.2.1.2}%
 \contentsline {section}{\numberline {2.2}Comics as a Medium for Retelling}{7}{section.2.2}%
-\contentsline {subsubsection}{Defining Comics}{7}{section*.7}%
-\contentsline {subsubsection}{Comic Book Formats and Reading Conventions}{7}{section*.9}%
-\contentsline {subsubsection}{Visual Language and Narrative Techniques}{9}{section*.10}%
-\contentsline {section}{\numberline {2.3}Generative AI Models for Multimodal Output}{9}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Large Language Models}{10}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Image generation models}{11}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}AI Ethics in Creative Applications}{11}{section.2.4}%
-\contentsline {section}{\numberline {2.5}The art of AI prompting}{11}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Three primary forms of player interaction}{12}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Design Science Research as a Methodology}{12}{section.2.7}%
-\contentsline {chapter}{\numberline {3}Research Methodology}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Computing as a discipline}{13}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Design Science Research as a Methodology}{15}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Data Collection Methods}{17}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Data Analysis Methods}{19}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Ethical Considerations}{21}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Limitations}{21}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Artefact Development}{24}{chapter.4}%
-\contentsline {section}{\numberline {4.1}My Topic}{24}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Coding with Python}{24}{section.4.2}%
-\contentsline {section}{\numberline {4.3}AI models}{24}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Whisper}{24}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Llama}{24}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Image generating models: Stable Diffusion}{24}{subsection.4.3.3}%
-\contentsline {chapter}{\numberline {5}Evaluation}{25}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Experiments and Simulations}{25}{section.5.1}%
-\contentsline {section}{\numberline {5.2}The minimal viable product}{25}{section.5.2}%
-\contentsline {subsubsection}{MVP pipeline}{25}{section*.34}%
-\contentsline {subsection}{\numberline {5.2.1}Lessons learned}{27}{subsection.5.2.1}%
-\contentsline {subsubsection}{Art}{28}{section*.35}%
-\contentsline {subsubsection}{Text}{28}{section*.36}%
-\contentsline {subsubsection}{Composition}{28}{section*.37}%
-\contentsline {subsection}{\numberline {5.2.2}Solutions}{28}{subsection.5.2.2}%
-\contentsline {subsubsection}{Art}{28}{section*.38}%
-\contentsline {subsubsection}{Character consistency}{29}{section*.39}%
-\contentsline {subsubsection}{Scene consistency}{30}{section*.40}%
-\contentsline {subsubsection}{Text}{30}{section*.41}%
-\contentsline {subsection}{\numberline {5.2.3}The minimal viable product}{32}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Small experiments}{32}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}The language of TTRPGs}{32}{subsection.5.3.1}%
-\contentsline {section}{\numberline {5.4}Generating the comic book script}{32}{section.5.4}%
-\contentsline {subsubsection}{MVP}{33}{section*.44}%
-\contentsline {subsubsection}{Cleaning up the transcript}{33}{section*.45}%
-\contentsline {subsubsection}{Scene detection}{34}{section*.46}%
-\contentsline {subsubsection}{Line based chunking}{34}{section*.47}%
-\contentsline {subsubsection}{LLM based chunking}{34}{section*.48}%
-\contentsline {subsubsection}{LLM based filtering}{34}{section*.49}%
-\contentsline {subsubsection}{Context aware LLM based chunking}{34}{section*.50}%
-\contentsline {subsubsection}{Adaptive panel generating}{34}{section*.51}%
-\contentsline {section}{\numberline {5.5}Experimental setup}{34}{section.5.5}%
-\contentsline {subsubsection}{Experimental sessions}{34}{section*.52}%
-\contentsline {subsubsection}{}{35}{section*.53}%
-\contentsline {subsubsection}{Participent feedback}{35}{section*.54}%
-\contentsline {subsection}{\numberline {5.5.1}Analyzing the generated comic books}{35}{subsection.5.5.1}%
-\contentsline {chapter}{\numberline {6}Conclusion}{36}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Summary}{36}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Further Work}{36}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Idea 1}{36}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Idea 2}{37}{subsection.6.2.2}%
-\contentsline {chapter}{\numberline {7}workplace}{38}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Design Science Research}{38}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Diverting from the DSR methodology}{38}{subsection.7.1.1}%
-\contentsline {section}{\numberline {7.2}Retelling games}{38}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Difference between retelling and storytelling}{39}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}State of the art of retelling}{39}{subsection.7.2.2}%
-\contentsline {chapter}{Bibliography}{40}{subsection.7.2.2}%
-\contentsline {chapter}{APPENDICES}{43}{chapter*.55}%
-\contentsline {chapter}{\numberline {A}NetLogo Code}{43}{appendix.A}%
-\contentsline {section}{\numberline {A.1}NetLogo Main}{43}{section.A.1}%
-\contentsline {section}{\numberline {A.2}SISMO NetLogo Main Function}{43}{section.A.2}%
-\contentsline {section}{\numberline {A.3}SISMO NetLogo Setup}{47}{section.A.3}%
-\contentsline {section}{\numberline {A.4}SISMO NetLogo Network Creation}{49}{section.A.4}%
-\contentsline {section}{\numberline {A.5}SISMO NetLogo Math Functions}{55}{section.A.5}%
-\contentsline {section}{\numberline {A.6}SISMO NetLogo A* Algorithm}{56}{section.A.6}%
+\contentsline {section}{\numberline {2.3}Generative AI Models for Multimodal Output}{13}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Large Language Models}{13}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Image generation models}{14}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}AI Ethics in Creative Applications}{15}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}4 Ethical Principles - Introduction}{15}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Realizing Trustworthy AI 7 requirements}{17}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Best practices for prompt engineering}{19}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}What is prompt engineering?}{19}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Large language model prompting}{19}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Image generation model prompting}{22}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Three primary forms of player interaction}{23}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Research Methodology}{25}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Computing as a Discipline}{25}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Design Science Research as a Methodology}{27}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Data Collection Methods}{29}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Data Analysis Methods}{31}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Ethical Considerations}{32}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Limitations}{33}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Artefact Development}{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}System requirements}{35}{section.4.1}%
+\contentsline {subsubsection}{MVP pipeline}{36}{section*.66}%
+\contentsline {subsection}{\numberline {4.1.1}Lessons learned}{37}{subsection.4.1.1}%
+\contentsline {subsubsection}{Art}{37}{section*.67}%
+\contentsline {subsubsection}{Text}{37}{section*.68}%
+\contentsline {subsubsection}{Composition}{38}{section*.69}%
+\contentsline {subsection}{\numberline {4.1.2}Solutions}{38}{subsection.4.1.2}%
+\contentsline {subsubsection}{Art}{38}{section*.70}%
+\contentsline {subsubsection}{Character consistency}{38}{section*.71}%
+\contentsline {subsubsection}{Scene consistency}{39}{section*.72}%
+\contentsline {subsubsection}{Text}{39}{section*.73}%
+\contentsline {section}{\numberline {4.2}The Artefact}{41}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}The final pipeline}{41}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Whisper}{45}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Llama}{45}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Image generating models: Stable Diffusion}{45}{subsection.4.2.4}%
+\contentsline {chapter}{\numberline {5}Evaluation}{46}{chapter.5}%
+\contentsline {section}{\numberline {5.1}User Case Study}{46}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Results}{48}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Self observation}{48}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Data analysis}{49}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Expert review}{56}{section.5.4}%
+\contentsline {section}{\numberline {5.5}The minimal viable product}{56}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}The minimal viable product}{58}{subsection.5.5.1}%
+\contentsline {section}{\numberline {5.6}Small experiments}{58}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}The language of TTRPGs}{58}{subsection.5.6.1}%
+\contentsline {section}{\numberline {5.7}Generating the comic book script}{60}{section.5.7}%
+\contentsline {subsubsection}{MVP}{60}{section*.102}%
+\contentsline {subsubsection}{Cleaning up the transcript}{60}{section*.103}%
+\contentsline {subsubsection}{Scene detection}{61}{section*.104}%
+\contentsline {subsubsection}{Line based chunking}{61}{section*.105}%
+\contentsline {subsubsection}{LLM based chunking}{61}{section*.106}%
+\contentsline {subsubsection}{LLM based filtering}{61}{section*.107}%
+\contentsline {subsubsection}{Context aware LLM based chunking}{61}{section*.108}%
+\contentsline {subsubsection}{Adaptive panel generating}{61}{section*.109}%
+\contentsline {section}{\numberline {5.8}Experimental setup}{61}{section.5.8}%
+\contentsline {subsubsection}{Experimental sessions}{62}{section*.110}%
+\contentsline {subsubsection}{}{62}{section*.111}%
+\contentsline {subsubsection}{Participent feedback}{62}{section*.112}%
+\contentsline {subsection}{\numberline {5.8.1}Analyzing the generated comic books}{62}{subsection.5.8.1}%
+\contentsline {chapter}{\numberline {6}Conclusion}{63}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Summary}{63}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Further Work}{63}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Idea 1}{63}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Idea 2}{64}{subsection.6.2.2}%
+\contentsline {chapter}{Bibliography}{65}{subsection.6.2.2}%
+\contentsline {chapter}{APPENDICES}{69}{chapter*.113}%
+\contentsline {chapter}{\numberline {A}NetLogo Code}{69}{appendix.A}%

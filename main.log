@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.30)  9 JUL 2025 12:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.30)  17 SEP 2025 16:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -48,6 +48,10 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@dimlist=\toks18
 ) (c:/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+) (c:/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
 ) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/06/16 v2.17y AMS math features
 \@mathmargin=\skip51
@@ -57,7 +61,7 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2024/11/17 v2.01 AMS text
  (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks19
+\@emptytoks=\toks21
 \ex@=\dimen157
 )) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -95,21 +99,21 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \dotsspace@=\muskip17
 \c@parentequation=\count294
 \dspbrk@lvl=\count295
-\tag@help=\toks20
+\tag@help=\toks22
 \row@=\count296
 \column@=\count297
 \maxfields@=\count298
-\andhelp@=\toks21
+\andhelp@=\toks23
 \eqnshift@=\dimen160
 \alignsep@=\dimen161
 \tagshift@=\dimen162
 \tagwidth@=\dimen163
 \totwidth@=\dimen164
 \lineht@=\dimen165
-\@envbody=\toks22
+\@envbody=\toks24
 \multlinegap=\skip52
 \multlinetaggap=\skip53
-\mathdisplay@stack=\toks23
+\mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2949.
 LaTeX Info: Redefining \] on input line 2950.
 ) (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
@@ -137,13 +141,13 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthL=\skip65
 \f@nch@widthC=\skip66
 \f@nch@widthR=\skip67
-\@temptokenb=\toks24
+\@temptokenb=\toks26
 ) (c:/texlive/2025/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count299
-\float@exts=\toks25
+\float@exts=\toks27
 \float@box=\box55
-\@float@everytoks=\toks26
+\@float@everytoks=\toks28
 \@floatcapt=\box56
 ) (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
@@ -183,12 +187,12 @@ Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \col@sep=\dimen168
 \ar@mcellbox=\box57
 \extrarowheight=\dimen169
-\NC@list=\toks27
+\NC@list=\toks29
 \extratabsurround=\skip68
 \backup@length=\skip69
 \ar@cellbox=\box58
 )
-\everycr=\toks28
+\everycr=\toks30
 \minrowclearance=\skip70
 \rownum=\count300
 ) (c:/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -304,7 +308,7 @@ Package: suffix 2006/07/15 1.5a Variant command support
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
-\AC@clearlist=\toks29
+\AC@clearlist=\toks31
 ) (c:/texlive/2025/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip72
@@ -345,62 +349,38 @@ Package caption Info: hyperref package is loaded.
 \c@lotdepth=\count327
 \sf@top=\skip77
 \sf@bottom=\skip78
-) (c:/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count328
-\lst@gtempboxa=\box59
-\lst@token=\toks30
-\lst@length=\count329
-\lst@currlwidth=\dimen184
-\lst@column=\count330
-\lst@pos=\count331
-\lst@lostspace=\dimen185
-\lst@width=\dimen186
-\lst@newlines=\count332
-\lst@lineno=\count333
-\lst@maxwidth=\dimen187
- (c:/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
-) (c:/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count334
-\lst@skipnumbers=\count335
-\lst@framebox=\box60
-) (c:/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2024/09/23 1.10c listings configuration
-))
-Package: listings 2024/09/23 1.10c (Carsten Heinz)
- (c:/texlive/2025/texmf-dist/tex/latex/siunitx/siunitx.sty
+) (c:/texlive/2025/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2025-05-22 v3.4.12 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count336
-\l__siunitx_number_exponent_fixed_int=\count337
-\l__siunitx_number_min_decimal_int=\count338
-\l__siunitx_number_min_integer_int=\count339
-\l__siunitx_number_round_precision_int=\count340
-\l__siunitx_number_lower_threshold_int=\count341
-\l__siunitx_number_upper_threshold_int=\count342
-\l__siunitx_number_group_first_int=\count343
-\l__siunitx_number_group_size_int=\count344
-\l__siunitx_number_group_minimum_int=\count345
-\l__siunitx_angle_tmp_dim=\dimen188
-\l__siunitx_angle_marker_box=\box61
-\l__siunitx_angle_unit_box=\box62
-\l__siunitx_compound_count_int=\count346
+\l__siunitx_number_uncert_offset_int=\count328
+\l__siunitx_number_exponent_fixed_int=\count329
+\l__siunitx_number_min_decimal_int=\count330
+\l__siunitx_number_min_integer_int=\count331
+\l__siunitx_number_round_precision_int=\count332
+\l__siunitx_number_lower_threshold_int=\count333
+\l__siunitx_number_upper_threshold_int=\count334
+\l__siunitx_number_group_first_int=\count335
+\l__siunitx_number_group_size_int=\count336
+\l__siunitx_number_group_minimum_int=\count337
+\l__siunitx_angle_tmp_dim=\dimen184
+\l__siunitx_angle_marker_box=\box59
+\l__siunitx_angle_unit_box=\box60
+\l__siunitx_compound_count_int=\count338
  (c:/texlive/2025/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
 )
-\l__siunitx_table_tmp_box=\box63
-\l__siunitx_table_tmp_dim=\dimen189
-\l__siunitx_table_column_width_dim=\dimen190
-\l__siunitx_table_integer_box=\box64
-\l__siunitx_table_decimal_box=\box65
-\l__siunitx_table_uncert_box=\box66
-\l__siunitx_table_before_box=\box67
-\l__siunitx_table_after_box=\box68
-\l__siunitx_table_before_dim=\dimen191
-\l__siunitx_table_carry_dim=\dimen192
-\l__siunitx_unit_tmp_int=\count347
-\l__siunitx_unit_position_int=\count348
-\l__siunitx_unit_total_int=\count349
+\l__siunitx_table_tmp_box=\box61
+\l__siunitx_table_tmp_dim=\dimen185
+\l__siunitx_table_column_width_dim=\dimen186
+\l__siunitx_table_integer_box=\box62
+\l__siunitx_table_decimal_box=\box63
+\l__siunitx_table_uncert_box=\box64
+\l__siunitx_table_before_box=\box65
+\l__siunitx_table_after_box=\box66
+\l__siunitx_table_before_dim=\dimen187
+\l__siunitx_table_carry_dim=\dimen188
+\l__siunitx_unit_tmp_int=\count339
+\l__siunitx_unit_position_int=\count340
+\l__siunitx_unit_total_int=\count341
 ) (c:/texlive/2025/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2025/05/14 v4.7 (NLCT)
  (c:/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
@@ -408,15 +388,15 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 ) (c:/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
  (c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks31
-\XKV@tempa@toks=\toks32
+\XKV@toks=\toks32
+\XKV@tempa@toks=\toks33
 )
-\XKV@depth=\count350
+\XKV@depth=\count342
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (c:/texlive/2025/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2025/04/03 v2.09 (NLCT)
-\@glsmfirst=\toks33
-\@glsmrest=\toks34
+\@glsmfirst=\toks34
+\@glsmrest=\toks35
 ) (c:/texlive/2025/texmf-dist/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
 ) (c:/texlive/2025/texmf-dist/tex/latex/datatool/datatool-base.sty
@@ -426,49 +406,49 @@ Package: tracklang 2025/03/11 v1.6.6 (NLCT) Track Languages
  (c:/texlive/2025/texmf-dist/tex/generic/tracklang/tracklang.tex)) (c:/texlive/2025/texmf-dist/tex/latex/datatool/datatool-l3fp.def
 File: datatool-l3fp.def 2025/04/25 v3.4.1 (NLCT)
 )
-\@dtl@toks=\toks35
-\@dtl@tmpcount=\count351
+\@dtl@toks=\toks36
+\@dtl@tmpcount=\count343
 \dtl@tmplength=\skip79
-\l__datatool_measure_box=\box69
-\dtl@sortresult=\count352
+\l__datatool_measure_box=\box67
+\dtl@sortresult=\count344
  (c:/texlive/2025/texmf-dist/tex/latex/datatool/datatool-utf8.ldf
 File: datatool-utf8.ldf 2025/04/25 v3.4.1 (NLCT)
 )
-\@dtl@datatype=\count353
-\l__datatool_tmpa_int=\count354
-\l__datatool_tmpb_int=\count355
-\l__datatool_tmpc_int=\count356
-\l__datatool_tmpd_int=\count357
-\l__datatool_count_int=\count358
-\l__datatool_tmp_datatype_int=\count359
-\l__datatool_tmpa_dim=\dimen193
-\l__datatool_tmpb_dim=\dimen194
-\c_datatool_unknown_int=\count360
-\l__datatool_year_int=\count361
-\l__datatool_month_int=\count362
-\l__datatool_day_int=\count363
-\l__datatool_hour_int=\count364
-\l__datatool_minute_int=\count365
-\l__datatool_second_int=\count366
-\l__datatool_tzhour_int=\count367
-\l__datatool_tzminute_int=\count368
-\l__datatool_julian_int=\count369
-\l__datatool_local_julian_int=\count370
-\l__datatool_prefix_int=\count371
-\l__datatool_suffix_int=\count372
-\@dtl@foreach@level=\count373
-\dtl@codeA=\count374
-\dtl@codeB=\count375
+\@dtl@datatype=\count345
+\l__datatool_tmpa_int=\count346
+\l__datatool_tmpb_int=\count347
+\l__datatool_tmpc_int=\count348
+\l__datatool_tmpd_int=\count349
+\l__datatool_count_int=\count350
+\l__datatool_tmp_datatype_int=\count351
+\l__datatool_tmpa_dim=\dimen189
+\l__datatool_tmpb_dim=\dimen190
+\c_datatool_unknown_int=\count352
+\l__datatool_year_int=\count353
+\l__datatool_month_int=\count354
+\l__datatool_day_int=\count355
+\l__datatool_hour_int=\count356
+\l__datatool_minute_int=\count357
+\l__datatool_second_int=\count358
+\l__datatool_tzhour_int=\count359
+\l__datatool_tzminute_int=\count360
+\l__datatool_julian_int=\count361
+\l__datatool_local_julian_int=\count362
+\l__datatool_prefix_int=\count363
+\l__datatool_suffix_int=\count364
+\@dtl@foreach@level=\count365
+\dtl@codeA=\count366
+\dtl@codeB=\count367
 )
-\gls@level=\count376
-\@gls@tmpb=\toks36
+\gls@level=\count368
+\@gls@tmpb=\toks37
 \gls@tmplen=\skip80
-\l__glossaries_tmpa_dim=\dimen195
-\l__glossaries_tmpb_dim=\dimen196
-\glskeylisttok=\toks37
-\glslabeltok=\toks38
-\glsshorttok=\toks39
-\glslongtok=\toks40
+\l__glossaries_tmpa_dim=\dimen191
+\l__glossaries_tmpb_dim=\dimen192
+\glskeylisttok=\toks38
+\glslabeltok=\toks39
+\glsshorttok=\toks40
+\glslongtok=\toks41
  (c:/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
 Package: glossary-hypernav 2025/05/14 v4.7 (NLCT)
 ) (c:/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
@@ -482,18 +462,18 @@ Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 \LTright=\skip83
 \LTpre=\skip84
 \LTpost=\skip85
-\LTchunksize=\count377
-\LTcapwidth=\dimen197
-\LT@head=\box70
-\LT@firsthead=\box71
-\LT@foot=\box72
-\LT@lastfoot=\box73
-\LT@gbox=\box74
-\LT@cols=\count378
-\LT@rows=\count379
-\c@LT@tables=\count380
-\c@LT@chunks=\count381
-\LT@p@ftn=\toks41
+\LTchunksize=\count369
+\LTcapwidth=\dimen193
+\LT@head=\box68
+\LT@firsthead=\box69
+\LT@foot=\box70
+\LT@lastfoot=\box71
+\LT@gbox=\box72
+\LT@cols=\count370
+\LT@rows=\count371
+\c@LT@tables=\count372
+\c@LT@chunks=\count373
+\LT@p@ftn=\toks42
 )
 \glsdescwidth=\skip86
 \glspagelistwidth=\skip87
@@ -501,68 +481,98 @@ Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 Package: glossary-super 2025/05/14 v4.7 (NLCT)
  (c:/texlive/2025/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2024/07/20 v4.2c the supertabular environment
-\c@tracingst=\count382
-\ST@wd=\dimen198
+\c@tracingst=\count374
+\ST@wd=\dimen194
 \ST@rightskip=\skip88
 \ST@leftskip=\skip89
 \ST@parfillskip=\skip90
-\ST@pageleft=\dimen199
-\ST@headht=\dimen256
-\ST@tailht=\dimen257
-\ST@pagesofar=\dimen258
-\ST@pboxht=\dimen259
-\ST@rowht=\dimen260
-\ST@prevht=\dimen261
-\ST@toadd=\dimen262
-\ST@dimen=\dimen263
-\ST@pbox=\box75
+\ST@pageleft=\dimen195
+\ST@headht=\dimen196
+\ST@tailht=\dimen197
+\ST@pagesofar=\dimen198
+\ST@pboxht=\dimen199
+\ST@rowht=\dimen256
+\ST@prevht=\dimen257
+\ST@toadd=\dimen258
+\ST@dimen=\dimen259
+\ST@pbox=\box73
 )) (c:/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 Package: glossary-tree 2025/05/14 v4.7 (NLCT)
-\l__glossaries_tree_max_known_level_int=\count383
-\l__glossaries_tree_offset_dim=\dimen264
-\l__glossaries_tree_namewidth_dim=\dimen265
-\l__glossaries_tree_symbolwidth_dim=\dimen266
-\l__glossaries_tree_prenamesym_width_dim=\dimen267
-\l__glossaries_tree_presubnamesym_width_dim=\dimen268
-\l__glossaries_tree_namewidth_padding_dim=\dimen269
-\l__glossaries_tree_symbolwidth_padding_dim=\dimen270
-\l__glossaries_tree_namesymbolwidth_dim=\dimen271
-\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen272
-\l__glossaries_tree_level_int=\count384
+\l__glossaries_tree_max_known_level_int=\count375
+\l__glossaries_tree_offset_dim=\dimen260
+\l__glossaries_tree_namewidth_dim=\dimen261
+\l__glossaries_tree_symbolwidth_dim=\dimen262
+\l__glossaries_tree_prenamesym_width_dim=\dimen263
+\l__glossaries_tree_presubnamesym_width_dim=\dimen264
+\l__glossaries_tree_namewidth_padding_dim=\dimen265
+\l__glossaries_tree_symbolwidth_padding_dim=\dimen266
+\l__glossaries_tree_namesymbolwidth_dim=\dimen267
+\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen268
+\l__glossaries_tree_level_int=\count376
 \glstreeindent=\skip91
 )) (c:/texlive/2025/texmf-dist/tex/latex/tools/afterpage.sty
 Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
-\AP@output=\toks42
-\AP@partial=\box76
-\AP@footins=\box77
-) (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
+\AP@output=\toks43
+\AP@partial=\box74
+\AP@footins=\box75
+) (c:/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count377
+\lst@gtempboxa=\box76
+\lst@token=\toks44
+\lst@length=\count378
+\lst@currlwidth=\dimen269
+\lst@column=\count379
+\lst@pos=\count380
+\lst@lostspace=\dimen270
+\lst@width=\dimen271
+\lst@newlines=\count381
+\lst@lineno=\count382
+\lst@maxwidth=\dimen272
+ (c:/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+) (c:/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count383
+\lst@skipnumbers=\count384
+\lst@framebox=\box77
+) (c:/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+ (c:/texlive/2025/texmf-dist/tex/latex/listingsutf8/listingsutf8.sty
+Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 84.
+   defining Unicode char U+2581 (decimal 9601)
+   defining Unicode char U+2705 (decimal 9989)
+   defining Unicode char U+26A0 (decimal 9888)
+   defining Unicode char U+274C (decimal 10060)
+   defining Unicode char U+1F9E0 (decimal 129504)
+   defining Unicode char U+FE0F (decimal 65039)
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 136.
  (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count385
 ) (./main.aux (./titlepage.aux) (./stmt.aux) (./erklaerung.aux) (./abstract.aux) (./abstract_DE.aux) (./acknowledgement.aux) (./AIUsage.aux) (./acronyms.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -605,19 +615,19 @@ LaTeX Font Info:    ... okay on input line 84.
 \scratchbox=\box78
 \nofMPsegments=\count387
 \nofMParguments=\count388
-\everyMPshowfont=\toks43
+\everyMPshowfont=\toks45
 \MPscratchCnt=\count389
 \MPscratchDim=\dimen274
 \MPnumerator=\count390
 \makeMPintoPDFobject=\count391
-\everyMPtoPDFconversion=\toks44
+\everyMPtoPDFconversion=\toks46
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 84.
+Package hyperref Info: Link coloring OFF on input line 136.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -631,15 +641,15 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count392
  (c:/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 84.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 136.
+\c@lstlisting=\count392
 \openout2 = `titlepage.aux'.
 
  (./titlepage.tex
-<images/uniklulogo.png, id=244, 757.83125pt x 234.8775pt>
+<images/uniklulogo.png, id=224, 757.83125pt x 234.8775pt>
 File: images/uniklulogo.png Graphic file (type png)
 <use images/uniklulogo.png>
 Package pdftex.def Info: images/uniklulogo.png  used on input line 26.
@@ -699,12 +709,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--19
 \openout2 = `abstract.aux'.
 
  (./abstract.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 6--93
+Underfull \hbox (badness 10000) in paragraph at lines 6--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--93
+Underfull \hbox (badness 10000) in paragraph at lines 6--148
 
  []
 
@@ -768,8 +778,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--8
 pdfTeX warning (ext4): destination with the same identifier (name{page.vii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.97 \include{acronyms}
-                        [7
+l.152 \include{acronyms}
+                         [7
 
 ] (./main.toc
 
@@ -825,91 +835,158 @@ Chapter 2.
 [5]
 
 [6]
-<images/SequentalArtUnderstandingComicPage5.png, id=460, 575.90157pt x 794.2172pt>
+
+[7]
+<images/SequentalArtUnderstandingComicPage5.png, id=497, 575.90157pt x 794.2172pt>
 File: images/SequentalArtUnderstandingComicPage5.png Graphic file (type png)
 <use images/SequentalArtUnderstandingComicPage5.png>
-Package pdftex.def Info: images/SequentalArtUnderstandingComicPage5.png  used on input line 50.
+Package pdftex.def Info: images/SequentalArtUnderstandingComicPage5.png  used on input line 48.
 (pdftex.def)             Requested size: 259.1533pt x 357.39444pt.
 
 
-[7]
-
 [8 <./images/SequentalArtUnderstandingComicPage5.png>]
-<images/IconographyGigaTown.png, id=480, 525.6438pt x 244.7544pt>
+
+[9]
+<images/panelTransitions.png, id=519, 740.0147pt x 2003.98688pt>
+File: images/panelTransitions.png Graphic file (type png)
+<use images/panelTransitions.png>
+Package pdftex.def Info: images/panelTransitions.png  used on input line 89.
+(pdftex.def)             Requested size: 185.00322pt x 500.9955pt.
+
+
+[10]
+
+[11 <./images/panelTransitions.png>]
+<images/IconographyGigaTown.png, id=534, 525.6438pt x 244.7544pt>
 File: images/IconographyGigaTown.png Graphic file (type png)
 <use images/IconographyGigaTown.png>
-Package pdftex.def Info: images/IconographyGigaTown.png  used on input line 77.
+Package pdftex.def Info: images/IconographyGigaTown.png  used on input line 103.
 (pdftex.def)             Requested size: 236.53752pt x 110.13844pt.
 
 
-[9]
-
-[10 <./images/IconographyGigaTown.png>]
-Underfull \hbox (badness 2401) in paragraph at lines 158--158
+[12 <./images/IconographyGigaTown.png>]
+Underfull \hbox (badness 2401) in paragraph at lines 178--178
 []|\T1/cmr/m/n/12 Multimodal (text, im-age,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--158
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
 []|\T1/cmr/m/n/12 Occasional hal-lu-ci-na-tions;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--158
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
 []|\T1/cmr/m/n/12 Safety-focused; han-dles
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--158
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
 \T1/cmr/m/n/12 long con-texts; nat-u-ral
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--158
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
 []|\T1/cmr/m/n/12 Resource-heavy; lim-ited
  []
 
 
-Underfull \hbox (badness 3503) in paragraph at lines 158--158
+Underfull \hbox (badness 3503) in paragraph at lines 178--178
 []|\T1/cmr/m/n/12 Requires tech-ni-cal ex-per-
  []
 
 
-Underfull \hbox (badness 3701) in paragraph at lines 158--158
+Underfull \hbox (badness 3701) in paragraph at lines 178--178
 []|\T1/cmr/m/n/12 Efficient Mix-ture of Ex-
  []
 
 
-Underfull \hbox (badness 4595) in paragraph at lines 158--158
+Underfull \hbox (badness 4595) in paragraph at lines 178--178
 []|\T1/cmr/m/n/12 Up-to-date info re-trieval;
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 158--158
+Underfull \hbox (badness 4686) in paragraph at lines 178--178
 []|\T1/cmr/m/n/12 Limited mul-ti-modal sup-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--158
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
 []|\T1/cmr/m/n/12 Open-source; ef-fi-cient
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 158--158
+Underfull \hbox (badness 4686) in paragraph at lines 178--178
 []|\T1/cmr/m/n/12 Limited mul-ti-modal sup-
  []
 
 
 
-[11])
+[13]
+Underfull \hbox (badness 4454) in paragraph at lines 250--250
+\T1/cmr/m/n/12 de-tailed co-her-ent re-sults;
+ []
 
-[12]
-Chapter 3.
-(./chapter3.tex
 
-[13
+Underfull \hbox (badness 1028) in paragraph at lines 250--250
+[]|\T1/cmr/m/n/12 Closed-source; wa-ter-mark-
+ []
 
-]
+
+Underfull \hbox (badness 1062) in paragraph at lines 250--250
+[]|\T1/cmr/m/n/12 High-quality out-put; flex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+\T1/cmr/m/n/12 i-ble prompt-ing; large
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+\T1/cmr/m/n/12 in-con-sis-tent hand-s/-faces;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+[]|\T1/cmr/m/n/12 Multilingual; hy-brid
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+\T1/cmr/m/n/12 CLIP/-VAE ap-proach;
+ []
+
+
+Underfull \hbox (badness 4805) in paragraph at lines 250--250
+[]|\T1/cmr/m/n/12 Smaller com-mu-nity; less
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+[]|\T1/cmr/m/n/12 Photorealistic im-ages;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+[]|\T1/cmr/m/n/12 Good peo-ple ren-der-ing;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+[]|\T1/cmr/m/n/12 Limited doc-u-men-ta-tion;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+[]|\T1/cmr/m/n/12 Extremely high fi-delity;
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 250--250
+[]|\T1/cmr/m/n/12 Fast gen-er-a-tion; sup-ports
+ []
+
+
 
 [14]
 
@@ -927,41 +1004,29 @@ Chapter 3.
 
 [21]
 
-[22])
+[22]
 
-[23]
-Chapter 4.
-(./chapter4.tex)
+LaTeX Warning: Citation `stabilityai_sdxl_refiner_1' on page 23 undefined on input line 340.
 
-[24
 
-]
-Chapter 5.
-(./chapter5.tex
-<images/mvpTTRPGtoComic.png, id=621, 2065.7175pt x 3464.945pt>
-File: images/mvpTTRPGtoComic.png Graphic file (type png)
-<use images/mvpTTRPGtoComic.png>
-Package pdftex.def Info: images/mvpTTRPGtoComic.png  used on input line 9.
-(pdftex.def)             Requested size: 206.58385pt x 346.5148pt.
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 17.
 
+[23])
+
+[24]
+Chapter 3.
+(./chapter3.tex
 
 [25
 
 ]
 
-[26 <./images/mvpTTRPGtoComic.png>]
+[26]
 
 [27]
 
 [28]
 
 [29]
-File: images/mvpTTRPGtoComic.png Graphic file (type png)
-<use images/mvpTTRPGtoComic.png>
-Package pdftex.def Info: images/mvpTTRPGtoComic.png  used on input line 94.
-(pdftex.def)             Requested size: 206.58385pt x 346.5148pt.
-
 
 [30]
 
@@ -969,113 +1034,268 @@ Package pdftex.def Info: images/mvpTTRPGtoComic.png  used on input line 94.
 
 [32]
 
-[33]
+[33])
 
-[34])
+[34]
+Chapter 4.
+(./chapter4.tex
 
-[35]
-Chapter 6.
-(./chapter6.tex
+[35
 
-[36
+]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 17.
 
-])
+
+[36]
 
 [37]
-Chapter 7.
-(./workplace.tex
 
-[38
+[38]
 
-])
+[39]
+<images/mvpTTRPGtoComic.png, id=814, 2065.7175pt x 3464.945pt>
+File: images/mvpTTRPGtoComic.png Graphic file (type png)
+<use images/mvpTTRPGtoComic.png>
+Package pdftex.def Info: images/mvpTTRPGtoComic.png  used on input line 94.
+(pdftex.def)             Requested size: 206.58385pt x 346.5148pt.
 
-[39] (./main.bbl
 
-[40
+[40 <./images/mvpTTRPGtoComic.png>]
 
-]
-
-[41])
+[41]
 
 [42]
-Appendix A.
-(./appendix_a.tex
 
-[43
+[43]
+
+[44])
+
+[45]
+Chapter 5.
+(./chapter5.tex
+
+[46
 
 ]
 
-[44]
-
-[45]
-
-[46]
-
 [47]
-Overfull \hbox (546.99617pt too wide) in paragraph at lines 213--214
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
 
 [48]
 
 [49]
 
 [50]
+<images/entry_duration_histograms_raw_vs_merged.pdf, id=941, 1149.34962pt x 428.64453pt>
+File: images/entry_duration_histograms_raw_vs_merged.pdf Graphic file (type pdf)
+<use images/entry_duration_histograms_raw_vs_merged.pdf>
+Package pdftex.def Info: images/entry_duration_histograms_raw_vs_merged.pdf  used on input line 96.
+(pdftex.def)             Requested size: 426.79134pt x 159.16502pt.
+<images/wordcount_histograms_raw_vs_merged.pdf, id=942, 1149.34962pt x 428.64453pt>
+File: images/wordcount_histograms_raw_vs_merged.pdf Graphic file (type pdf)
+<use images/wordcount_histograms_raw_vs_merged.pdf>
+Package pdftex.def Info: images/wordcount_histograms_raw_vs_merged.pdf  used on input line 103.
+(pdftex.def)             Requested size: 426.79134pt x 159.16502pt.
+<images/normalized_artifact_frequency_sessions_colors.pdf, id=943, 715.15306pt x 498.32297pt>
+File: images/normalized_artifact_frequency_sessions_colors.pdf Graphic file (type pdf)
+<use images/normalized_artifact_frequency_sessions_colors.pdf>
+Package pdftex.def Info: images/normalized_artifact_frequency_sessions_colors.pdf  used on input line 110.
+(pdftex.def)             Requested size: 384.10959pt x 267.65327pt.
+<images/raw_entries_vs_total_artifacts.pdf, id=944, 859.67426pt x 498.32297pt>
+File: images/raw_entries_vs_total_artifacts.pdf Graphic file (type pdf)
+<use images/raw_entries_vs_total_artifacts.pdf>
+Package pdftex.def Info: images/raw_entries_vs_total_artifacts.pdf  used on input line 117.
+(pdftex.def)             Requested size: 384.10959pt x 222.65407pt.
+<images/raw_vs_merged_entry_counts.pdf, id=945, 859.67426pt x 498.32297pt>
+File: images/raw_vs_merged_entry_counts.pdf Graphic file (type pdf)
+<use images/raw_vs_merged_entry_counts.pdf>
+Package pdftex.def Info: images/raw_vs_merged_entry_counts.pdf  used on input line 124.
+(pdftex.def)             Requested size: 384.10959pt x 222.65407pt.
+<images/entry_counts_across_sessions_merge_strategies.pdf, id=946, 859.67426pt x 426.05298pt>
+File: images/entry_counts_across_sessions_merge_strategies.pdf Graphic file (type pdf)
+<use images/entry_counts_across_sessions_merge_strategies.pdf>
+Package pdftex.def Info: images/entry_counts_across_sessions_merge_strategies.pdf  used on input line 131.
+(pdftex.def)             Requested size: 384.10959pt x 190.36334pt.
+<images/normalized_entries_per_minute_merge_strategies.pdf, id=947, 859.69307pt x 426.05298pt>
+File: images/normalized_entries_per_minute_merge_strategies.pdf Graphic file (type pdf)
+<use images/normalized_entries_per_minute_merge_strategies.pdf>
+Package pdftex.def Info: images/normalized_entries_per_minute_merge_strategies.pdf  used on input line 138.
+(pdftex.def)             Requested size: 384.10959pt x 190.35684pt.
+<images/entry_duration_loose_merge.pdf, id=948, 1149.36836pt x 428.64453pt>
+File: images/entry_duration_loose_merge.pdf Graphic file (type pdf)
+<use images/entry_duration_loose_merge.pdf>
+Package pdftex.def Info: images/entry_duration_loose_merge.pdf  used on input line 145.
+(pdftex.def)             Requested size: 426.79134pt x 159.16502pt.
+<images/word_count_loose_merge.pdf, id=949, 1149.36836pt x 428.64453pt>
+File: images/word_count_loose_merge.pdf Graphic file (type pdf)
+<use images/word_count_loose_merge.pdf>
+Package pdftex.def Info: images/word_count_loose_merge.pdf  used on input line 152.
+(pdftex.def)             Requested size: 426.79134pt x 159.16502pt.
 
-[51]
 
-[52]
+[51 <./images/entry_duration_histograms_raw_vs_merged.pdf> <./images/wordcount_histograms_raw_vs_merged.pdf>]
 
-[53]
+[52 <./images/normalized_artifact_frequency_sessions_colors.pdf> <./images/raw_entries_vs_total_artifacts.pdf>]
 
-[54]
+[53 <./images/raw_vs_merged_entry_counts.pdf> <./images/entry_counts_across_sessions_merge_strategies.pdf>]
 
-[55]
+[54 <./images/normalized_entries_per_minute_merge_strategies.pdf> <./images/entry_duration_loose_merge.pdf>]
 
-[56]
+[55 <./images/word_count_loose_merge.pdf>]
+<images/fig_wordcount_raw.pdf, id=1353, 624.42035pt x 341.78316pt>
+File: images/fig_wordcount_raw.pdf Graphic file (type pdf)
+<use images/fig_wordcount_raw.pdf>
+Package pdftex.def Info: images/fig_wordcount_raw.pdf  used on input line 165.
+(pdftex.def)             Requested size: 192.0548pt x 105.12247pt.
+<images/fig_wordcount_merged.pdf, id=1354, 609.0818pt x 341.78316pt>
+File: images/fig_wordcount_merged.pdf Graphic file (type pdf)
+<use images/fig_wordcount_merged.pdf>
+Package pdftex.def Info: images/fig_wordcount_merged.pdf  used on input line 169.
+(pdftex.def)             Requested size: 192.0548pt x 107.76656pt.
+<images/fig_duration_hist_raw.pdf, id=1355, 624.42035pt x 341.78316pt>
+File: images/fig_duration_hist_raw.pdf Graphic file (type pdf)
+<use images/fig_duration_hist_raw.pdf>
+Package pdftex.def Info: images/fig_duration_hist_raw.pdf  used on input line 177.
+(pdftex.def)             Requested size: 192.0548pt x 105.12247pt.
+<images/fig_duration_hist_merged.pdf, id=1356, 616.75107pt x 341.78316pt>
+File: images/fig_duration_hist_merged.pdf Graphic file (type pdf)
+<use images/fig_duration_hist_merged.pdf>
+Package pdftex.def Info: images/fig_duration_hist_merged.pdf  used on input line 181.
+(pdftex.def)             Requested size: 192.0548pt x 106.43147pt.
+<images/fig_duration_scatter_raw.pdf, id=1357, 609.0818pt x 341.78316pt>
+File: images/fig_duration_scatter_raw.pdf Graphic file (type pdf)
+<use images/fig_duration_scatter_raw.pdf>
+Package pdftex.def Info: images/fig_duration_scatter_raw.pdf  used on input line 189.
+(pdftex.def)             Requested size: 192.0548pt x 107.76656pt.
+<images/fig_duration_scatter_merged.pdf, id=1358, 616.75107pt x 341.78316pt>
+File: images/fig_duration_scatter_merged.pdf Graphic file (type pdf)
+<use images/fig_duration_scatter_merged.pdf>
+Package pdftex.def Info: images/fig_duration_scatter_merged.pdf  used on input line 193.
+(pdftex.def)             Requested size: 192.0548pt x 106.43147pt.
+<images/fig_duration_bins05_merged.pdf, id=1359, 609.0818pt x 341.78316pt>
+File: images/fig_duration_bins05_merged.pdf Graphic file (type pdf)
+<use images/fig_duration_bins05_merged.pdf>
+Package pdftex.def Info: images/fig_duration_bins05_merged.pdf  used on input line 240.
+(pdftex.def)             Requested size: 426.79134pt x 239.4969pt.
+File: images/mvpTTRPGtoComic.png Graphic file (type png)
+<use images/mvpTTRPGtoComic.png>
+Package pdftex.def Info: images/mvpTTRPGtoComic.png  used on input line 252.
+(pdftex.def)             Requested size: 206.58385pt x 346.5148pt.
 
-[57]
-Overfull \hbox (37.03683pt too wide) in paragraph at lines 565--566
-[][][][][][][][][][] 
+
+[56
+
+
+]
+
+[57 <./images/fig_wordcount_raw.pdf> <./images/fig_wordcount_merged.pdf> <./images/fig_duration_hist_raw.pdf> <./images/fig_duration_hist_merged.pdf> <./images/fig_duration_scatter_raw.pdf> <./images/fig_duration_scatter_merged.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[58 <./images/fig_duration_bins05_merged.pdf>]
+
+[59]
+
+[60]
+
+[61])
+
+[62]
+Chapter 6.
+(./chapter6.tex
+
+[63
+
+])
+
+[64] (./main.bbl
+
+[65
+
+]
+
+[66]
+Underfull \hbox (badness 1028) in paragraph at lines 189--192
+[]\T1/cmr/m/n/12 Meta.  Prompt-ing, Un-known.  Avail-able at: []$\T1/cmtt/m/n/12 https : / / www . llama . com /
  []
 
 
-Overfull \hbox (102.76637pt too wide) in paragraph at lines 565--566
-[][][][][][][] 
+Underfull \hbox (badness 5741) in paragraph at lines 203--206
+[]\T1/cmr/m/n/12 OpenAI.  Best prac-tices for prompt en-gi-neer-ing with the ope-nai
  []
 
 
-Overfull \hbox (96.23358pt too wide) in paragraph at lines 565--566
-[][][][][]  
+Underfull \hbox (badness 6316) in paragraph at lines 203--206
+\T1/cmr/m/n/12 api, 2025.  Avail-able at: []$\T1/cmtt/m/n/12 https : / / help . openai . com / en / articles /
+ []
+
+
+Overfull \hbox (3.1339pt too wide) in paragraph at lines 203--206
+\T1/cmtt/m/n/12 6654000-[]best-[]practices-[]for-[]prompt-[]engineering-[]with-[]the-[]openai-[]api$[]
  []
 
 
 
-[58])
+[67])
 
-[59] (./main.aux (./titlepage.aux) (./stmt.aux) (./erklaerung.aux) (./abstract.aux) (./abstract_DE.aux) (./acknowledgement.aux) (./AIUsage.aux) (./acronyms.aux))
+[68]
+Appendix A.
+(./appendix_a.tex (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+
+[69
+
+]
+
+[70]
+
+[71]
+
+[72]
+
+[73]
+
+[74]
+
+[75]
+
+[76]
+
+[77]
+
+[78]
+
+[79]
+
+[80])
+
+[81] (./main.aux (./titlepage.aux) (./stmt.aux) (./erklaerung.aux) (./abstract.aux) (./abstract_DE.aux) (./acknowledgement.aux) (./AIUsage.aux) (./acronyms.aux))
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 65A2F26E8F6CB359E2241FB84927902B;10244.
+(rerunfilecheck)             Checksum: 6FF16D1693F50CE6868EC3FC334EDF16;9146.
  ) 
 Here is how much of TeX's memory you used:
- 27997 strings out of 467888
- 547332 string characters out of 5438240
- 1410010 words of memory out of 5000000
- 55313 multiletter control sequences out of 15000+600000
- 649763 words of font info for 94 fonts, out of 8000000 for 9000
+ 28226 strings out of 467888
+ 556328 string characters out of 5438240
+ 1441759 words of memory out of 5000000
+ 55482 multiletter control sequences out of 15000+600000
+ 649720 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,2577b,2730s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,100p,2553b,2821s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (73 pages, 12699138 bytes).
+Output written on main.pdf (95 pages, 16694753 bytes).
 PDF statistics:
- 1722 PDF objects out of 1728 (max. 8388607)
- 1583 compressed objects within 16 object streams
- 866 named destinations out of 1000 (max. 500000)
- 501 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2575 PDF objects out of 2984 (max. 8388607)
+ 1825 compressed objects within 19 object streams
+ 922 named destinations out of 1000 (max. 500000)
+ 546 words of extra memory for PDF output out of 10000 (max. 10000000)
 

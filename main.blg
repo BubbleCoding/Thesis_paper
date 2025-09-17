@@ -11,44 +11,46 @@ A level-1 auxiliary file: AIUsage.aux
 A level-1 auxiliary file: acronyms.aux
 The style file: abbrv.bst
 Database file #1: bibfile.bib
-You've used 36 entries,
+Warning--I didn't find a database entry for "stabilityai_sdxl_refiner_1"
+You've used 52 entries,
             2118 wiz_defined-function locations,
-            698 strings with 10659 characters,
-and the built_in function-call counts, 12221 in all, are:
-= -- 1097
-> -- 796
+            776 strings with 13164 characters,
+and the built_in function-call counts, 16025 in all, are:
+= -- 1449
+> -- 965
 < -- 6
-+ -- 324
-- -- 282
-* -- 810
-:= -- 2101
-add.period$ -- 105
-call.type$ -- 36
-change.case$ -- 233
++ -- 396
+- -- 336
+* -- 979
+:= -- 2757
+add.period$ -- 154
+call.type$ -- 52
+change.case$ -- 303
 chr.to.int$ -- 0
-cite$ -- 36
-duplicate$ -- 447
-empty$ -- 849
-format.name$ -- 282
-if$ -- 2500
+cite$ -- 52
+duplicate$ -- 586
+empty$ -- 1201
+format.name$ -- 336
+if$ -- 3305
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 41
-newline$ -- 178
-num.names$ -- 72
-pop$ -- 331
+int.to.str$ -- 52
+missing$ -- 51
+newline$ -- 259
+num.names$ -- 104
+pop$ -- 460
 preamble$ -- 1
-purify$ -- 209
+purify$ -- 267
 quote$ -- 0
-skip$ -- 334
+skip$ -- 444
 stack$ -- 0
-substring$ -- 392
-swap$ -- 102
+substring$ -- 499
+swap$ -- 118
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 120
+type$ -- 176
 warning$ -- 0
-while$ -- 92
-width$ -- 38
-write$ -- 365
+while$ -- 126
+width$ -- 54
+write$ -- 531
+(There was 1 warning)

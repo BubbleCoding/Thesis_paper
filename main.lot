@@ -1,11 +1,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Comparison table of 10 LLM's by ChatGPT-4-turbo}}{11}{table.caption.12}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Comparison table of 10 LLM's by ChatGPT-4-turbo}}{14}{table.caption.14}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Comparison table of 10 image generation models by ChatGPT-4-turbo}}{15}{table.caption.15}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Design-Science Research Guidelines (Copied from \cite {hevner2004design} page 83)}}{16}{table.caption.13}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Design-Science Research Guidelines (Copied from \cite {hevner2004design} page 83)}}{27}{table.caption.45}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Comparison of monster names and whisper transcribed versions}}{32}{table.caption.43}%
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Occurrences of mechanics-related terms in the \texttt {text} field of the comic book script dataset. Only terms with at least one match are shown.}}{56}{table.caption.98}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Comparison of monster names and whisper transcribed versions}}{60}{table.caption.101}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
