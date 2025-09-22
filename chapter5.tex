@@ -75,6 +75,7 @@ In addition to participant feedback, I conducted a self-observation of the gener
 
 \section{Data analysis}
 The creation of a comic book from audio with AI involves many moving parts, each of which can be analysed since all intermediate data is saved during processing. We can examine the audio, the transcript, the generated comic book script, the generated prompts, the generated images, the generated text, and finally the comic book as a whole. By analysing each stage, we can identify where the system struggles and where it performs well, which not only informs future improvements but also helps answer the research question. This section begins with an analysis of the transcription stage.
+The analysis in this chapter is done by looking at the data in a holistic manner: scrolling through everything; reading everything; and making notes on everything, using word searches, counting occurrences of specific words, and looking at distributions of various metrics. Finally ChatGPT-5.0 is consulted to look at the data and give insights that might be valuable, and to make graphs. Everything done with ChatGPT-5.0 is double checked with standard statistic software.
 
 \subsection*{Transcript}
 The transcription produced by the system went through three processing steps. First, Whisper converted the speech to text. Then, punctuation restoration was performed by FPML, and finally, diarization was carried out by pyannote. Only the final result of this pipeline was saved and analysed in this section. The output of the transcription was a JSON object with four fields: \textit{start}, \textit{end}, \textit{speaker}, and \textit{text}. \textit{Start} marks the time in the audio recording when a speaker begins speaking, and \textit{end} marks when it finishes. \textit{Speaker} identifies the person speaking, and \textit{text} contains the spoken words.
@@ -156,91 +157,98 @@ There are, of course, other ways to interpret the data (e.g., examining speaker 
 
 \clearpage
 
-
-\begin{figure}[p] % 'p' puts it on a float-only page
-  \centering
-
-  % --- Word Count ---
-  \begin{minipage}{0.45\linewidth}
-    \includegraphics[width=\linewidth]{fig_wordcount_raw.pdf}
-    \caption*{(a) Word count (raw)}
-  \end{minipage}\hfill
-  \begin{minipage}{0.45\linewidth}
-    \includegraphics[width=\linewidth]{fig_wordcount_merged.pdf}
-    \caption*{(b) Word count (merged)}
-  \end{minipage}
-
-  \vspace{1em}
-
-  % --- Histogram of Durations ---
-  \begin{minipage}{0.45\linewidth}
-    \includegraphics[width=\linewidth]{fig_duration_hist_raw.pdf}
-    \caption*{(c) Durations (raw)}
-  \end{minipage}\hfill
-  \begin{minipage}{0.45\linewidth}
-    \includegraphics[width=\linewidth]{fig_duration_hist_merged.pdf}
-    \caption*{(d) Durations (merged)}
-  \end{minipage}
-
-  \vspace{1em}
-
-  % --- Scatter of Durations ---
-  \begin{minipage}{0.45\linewidth}
-    \includegraphics[width=\linewidth]{fig_duration_scatter_raw.pdf}
-    \caption*{(e) Scatter (raw)}
-  \end{minipage}\hfill
-  \begin{minipage}{0.45\linewidth}
-    \includegraphics[width=\linewidth]{fig_duration_scatter_merged.pdf}
-    \caption*{(f) Scatter (merged)}
-  \end{minipage}
-
-  \caption{Comparison of raw and merged transcript statistics. Raw data shows extreme fragmentation, while merged data yields fewer, longer, and more coherent entries. All 6 graphs have been made with ChatGPT-5}
-  \label{fig:raw-vs-merged}
-\end{figure}
-
 \subsection*{Script generation}
-The second step in the pipeline.
+The second step in the pipeline is the creation of the comic book script. This step outputs a JSON file with 8 different keys: \texttt{Setting}, \texttt{Characters}, \texttt{Objects}, \texttt{Actions}, \texttt{Mood}, \texttt{Camera\_view}, \texttt{Lighting}, and \texttt{Text}. These 8 keys are created by Llama~3.1-8B by looking at the output of the transcription in the way described in Chapter~\ref{chap:artifact}. The goal is to create enough relevant data which Llama can afterwards use to generate a prompt for the image generation model.  
 
+When analysing this data across all four sessions there are a couple of aspects where things are going wrong, but also some things that went well. First, the data structure is always the same, and that is very good as it is the only way for it to be useful in the next step of the pipeline. This consistency is a result of an output check after Llama produces the JSON. However, the \texttt{text} field is not always filled, which is a problem for the comic book as it will result in an empty speech bubble. Having a filled \texttt{text} key is something that should be added to the check function. Next, the character names are very inconsistent and have strange structures: \textit{Go.nor.r.hea} vs. \textit{Gonorrhea} vs. \textit{Gonorrohea} (players tend to give their characters unusual names). But also names like \textit{D.M.}, \textit{Gonorrhea's defeated body}, and \textit{Gonorrhea (in dragon form)} occur occasionally. If you want to create consistency within a product this needs to be cleaned up. It is most likely a result of the transcription process or Llama being confused by strange words that do not link properly to normal language usage.  
 
-\begin{itemize}
-  \item \textbf{Dice / Rolls:} roll, rolled, rolling, dice, die, d20, d12, d10, d8, d6, d4, nat 20, nat 1, natural 20, natural 1
-  \item \textbf{Checks \& Skills:} check, skill, saving throw, save
-  \begin{itemize}
-    \item acrobatics, animal handling, arcana, athletics, deception, history, insight, intimidation, investigation, medicine, nature, perception, performance, persuasion, religion, sleight of hand, stealth, survival
-  \end{itemize}
-  \item \textbf{Combat / Rules:} initiative, AC, armor class, hit points, HP, damage, dmg, critical, crit, advantage, disadvantage, rule, rules
-\end{itemize}
+There is also quite a bit of repetition within the settings, camera, and mood sections. As shown in Figure~\ref{fig:camera-distribution} we can see that most camera views generated by the system are \textit{Medium shot}. As shown in Figure~\ref{fig:mood-distribution} we can see that most moods are \textit{Tense/Uneasy}, with only a handful of other moods appearing consistently. The ``Other'' category is actually a diverse collection of moods that did not fit into the chosen bins. However, this aligns with the sessions the players played: they were run in a very tense and fast-paced style where the Dungeon Master pushed the players into quick and dramatic encounters. The same holds true if we look at the grouped settings in Figure~\ref{fig:setting-distribution}, where we can clearly see that they are in line with what the sessions were about. The ``Other'' category here primarily consists of mistakes where the system inserted locations that were never part of the adventure, such as \textit{hotel lobby}, \textit{tropical beach}, or \textit{railway corridor}. While not all entries in this category are errors, many are.  
+
+The \texttt{objects} key is rather inconsistent. Sometimes it gives nice meaningful input like \textit{Chalice of Eternal Life} or \textit{Guard key}. However, it also includes things that are not objects at all: people, descriptions of people, or animals. Even when it does describe the same thing across panels, it does so inconsistently, for example, first it is \textit{cat in the distance}, then \textit{mysterious cat}, and then \textit{a small, unimpressed cat}. There is no clear link between these descriptions other than that they all refer to a cat.  
+
+Another aspect that should not be part of the data at this point is gameplay leakage: words like \textit{AC}, \textit{damage}, \textit{roll}, or \textit{check} in the context of rules discussions. A script was run to count the number of such terms, using the set of keywords \footnote{The following mechanics-related keywords were used to detect gameplay leakage:  roll, rolled, rolling, dice, die, d20, d12, d10, d8, d6, d4, nat 20, nat 1, natural 20, natural 1, check, skill, saving throw, save, acrobatics, animal handling, arcana, athletics, deception, history, insight, intimidation, investigation, medicine, nature, perception, performance, persuasion, religion, sleight of hand, stealth, survival, initiative, AC (armor class), hit points (HP), damage (dmg), critical (crit), advantage, disadvantage, rule, rules.}. As shown in Table~\ref{tab:leakage-summary} and Table~\ref{tab:leakage-all-sessions}, the percentage of entries with gameplay leakage is small but non-negligible as if any of these appear in the comic book it will break immersion. The system should be improved to avoid this kind of leakage, either by filtering out such entries or by instructing Llama to ignore them.
 
 \begin{table}[h]
 \centering
-\begin{tabular}{l r}
+\begin{tabular}{l r r r}
 \hline
-\textbf{Term} & \textbf{Occurrences in text entries} \\
+\textbf{Dataset} & \textbf{Total Text Entries} & \textbf{With Leakage} & \textbf{\% With Leakage} \\
 \hline
-damage & 5 \\
-check & 4 \\
-roll & 3 \\
-medicine & 2 \\
-survival & 1 \\
-initiative & 1 \\
-stealth & 1 \\
-investigation & 1 \\
-AC & 1 \\
-hit points & 1 \\
+Session 1 & 292 & 12 & 4.1\% \\
+Session 2 & 165 & 10 & 6.1\% \\
+Session 3 & 311 & 11 & 3.5\% \\
+Session 4 & 456 & 20 & 4.4\% \\
 \hline
 \end{tabular}
-\caption{Occurrences of mechanics-related terms in the \texttt{text} field of the comic book script dataset. Only terms with at least one match are shown.}
-\label{tab:mechanics-leakage-text}
+\caption{Summary of gameplay mechanics leakage across all four datasets.}
+\label{tab:leakage-summary}
 \end{table}
 
 
+\begin{table}[h]
+\centering
+\begin{tabular}{l r r r r r}
+\hline
+\textbf{Term} & \textbf{Session 1} & \textbf{Session 2} & \textbf{Session 3} & \textbf{Session 4} & \textbf{Total} \\
+\hline
+AC & 0 & 0 & 0 & 1 & 1 \\
+Advantage & 0 & 2 & 2 & 0 & 4 \\
+Animal handling & 1 & 0 & 0 & 0 & 1 \\
+Check & 3 & 0 & 0 & 4 & 7 \\
+Critical & 1 & 0 & 1 & 0 & 2 \\
+Dice mentions & 0 & 0 & 0 & 0 & 0 \\
+Damage & 0 & 6 & 3 & 5 & 14 \\
+Deception & 1 & 0 & 0 & 0 & 1 \\
+Disadvantage & 0 & 1 & 0 & 0 & 1 \\
+Hit points & 0 & 0 & 0 & 1 & 1 \\
+Initiative & 0 & 0 & 0 & 1 & 1 \\
+Investigation & 1 & 0 & 0 & 1 & 2 \\
+Medicine & 0 & 0 & 0 & 2 & 2 \\
+Nature & 0 & 1 & 0 & 0 & 1 \\
+Performance & 2 & 0 & 0 & 0 & 2 \\
+Persuasion & 2 & 0 & 0 & 0 & 2 \\
+Roll & 1 & 0 & 2 & 3 & 6 \\
+Sleight of hand & 0 & 0 & 1 & 0 & 1 \\
+Stealth & 1 & 0 & 1 & 1 & 3 \\
+Survival & 0 & 0 & 0 & 1 & 1 \\
+\hline
+Total & 13 & 10 & 10 & 24 & 57 \\
+\hline
+\end{tabular}
+\caption{Occurrences of mechanics-related terms in the \texttt{text} field across all four datasets, with totals per row and column.}
+\label{tab:leakage-all-sessions}
+\end{table}
 
-\begin{figure}[t]
+\begin{figure}[p] % force onto its own page
   \centering
-  \includegraphics[width=\linewidth]{fig_duration_bins05_merged.pdf}
-  \caption{Word count distribution of raw transcript entries. Most entries contain only 1-3 words, indicating heavy fragmentation.}
-  \label{fig:wordcount-raw}
+  
+  \includegraphics[width=0.6\linewidth]{images/bar_camera_distribution.pdf}
+  \caption{Camera view distribution across Sessions 1-4 (grouped into Close-up, Medium shot, Wide/Long shot, Over-the-shoulder, Other).}
+  \label{fig:camera-distribution}
+
+  \vspace{1.5em}
+
+  \includegraphics[width=0.6\linewidth]{images/bar_mood_distribution.pdf}
+  \caption{Mood distribution across Sessions 1-4 (grouped into Tense/Uneasy, Suspenseful, Desperation/Urgency, Determined/Positive, Sad/Melancholy, Angry/Hostile, Confused/Contemplative, Other).}
+  \label{fig:mood-distribution}
+
+  \vspace{1.5em}
+
+  \includegraphics[width=0.6\linewidth]{images/bar_setting_distribution.pdf}
+  \caption{Setting distribution across Sessions 1-4 (grouped into Tavern/Inn, Cell/Dungeon, Ship/Sea, Urban/Street, Forest/Outdoors, Temple/Religious, Castle/Stronghold, Cave/Underground, Other).}
+  \label{fig:setting-distribution}
+
 \end{figure}
+
+\subsection*{Prompt generation}
+The third step the pipeline is prompt generation. In this step, the structured script data (setting, characters, objects, action, mood, camera view, lighting, and text) is converted into a descriptive natural-language prompt suitable for the image generation model (SDXL 1.0), or at least that is the goal. The purpose of this process is to bridge the gap between structured data and natural language generation.To let the LLM be a creative member of the process and take its place as the creator of the comic book. This step of generating the prompt is both the most creative and also most error-prone step. The JSON keys provide structured data, while the prompt reformulates them into language that SDXL can interpret.
+
+When analysing the generated prompts across all four session they seem quite well. The prompts are very descriptive, they consistently include character names, lighting, shadow, objects, scene setting, location, mood, specific things to showcase, emotions, mood, and more. Each prompt is also very consistent in terms of what they generate and how they generate it the same keys are present each time in the same order. On their own the prompts create a rather vivid description of the situation. However there are also some very obvious artifacts such as the prompt including: "Here is the generated SDXL prompt:" and "/n/n" at the start of the prompt. But also other task descriptive text that should not be part of the prompt. Furthermore many of the prompts are longer then 75 tokens, which is too long for SDXL to work with and thus will cut off part of the end of the prompt. There is no concrete data on this, as there is no tokenizer available for SDXL, but as the images were generated the model said that the prompts were too long and that happened a lot, however no counter was in place to keep track of the data. The errors made during the transcription are also obviously present in the prompts as  the same errors reappear in the prompts(Extra dots, weird names, etc.). Besides the quality and errors of each prompt individually there are also issues in-between the prompts and some overarching issues.
+
+When looking at individual prompts they seam relatively usable as there are many consistencies, such as location, characters and objects. However when attempting to understand the story from prompt to prompt it becomes clear that there is no obvious throughline of the story and that almost all prompts have Non-Sequitur transitions\cite{mccloud1993understanding}. There is no flow, no continuity, no linking of events. Each prompt is a moment in time, without context to the previous or next prompt.
+
+Each prompt makes use of a lot of references to items, objects, location and characters. This is a very good things, however this data is lost in the image generation as there is no way for SDXL to understand what those things are, there is no database for SDXL to pull from to understand who Arthur is, or what the Chalice of Eternal Life looks like. The model just has to guess based on its training data. This results in a lot of strange images where characters look nothing like they should, or objects are not what they should be.
+
 
 \section{Expert review}
 
@@ -253,8 +261,6 @@ The minimal viable product (MVP) is a version of a new product that includes onl
     \caption[The minimal viable product]{The minimal viable product}
     \label{fig:MVP}
 \end{figure}
-
-
 
 \subsection{The minimal viable product}
 

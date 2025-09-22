@@ -16,8 +16,9 @@
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Normalized entries per minute across sessions for different merging strategies. Entries are adjusted by total session duration to allow fair comparison.}}{54}{figure.caption.93}%
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Entry duration distributions across all four sessions after time-based merging. Left: loose 2-second merge, Right: loose 5-second merge.}}{54}{figure.caption.94}%
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Word count distributions across all four sessions after time-based merging. Left: loose 2-second merge, Right: loose 5-second merge.}}{55}{figure.caption.95}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Comparison of raw and merged transcript statistics. Raw data shows extreme fragmentation, while merged data yields fewer, longer, and more coherent entries. All 6 graphs have been made with ChatGPT-5}}{57}{figure.caption.96}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Word count distribution of raw transcript entries. Most entries contain only 1-3 words, indicating heavy fragmentation.}}{58}{figure.caption.99}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces The minimal viable product}}{59}{figure.caption.100}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Camera view distribution across Sessions 1-4 (grouped into Close-up, Medium shot, Wide/Long shot, Over-the-shoulder, Other).}}{58}{figure.caption.99}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Mood distribution across Sessions 1-4 (grouped into Tense/Uneasy, Suspenseful, Desperation/Urgency, Determined/Positive, Sad/Melancholy, Angry/Hostile, Confused/Contemplative, Other).}}{58}{figure.caption.99}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Setting distribution across Sessions 1-4 (grouped into Tavern/Inn, Cell/Dungeon, Ship/Sea, Urban/Street, Forest/Outdoors, Temple/Religious, Castle/Stronghold, Cave/Underground, Other).}}{58}{figure.caption.99}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces The minimal viable product}}{60}{figure.caption.101}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
