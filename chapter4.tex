@@ -11,7 +11,7 @@ Running many different AI models requires a lot of resources, especially when it
 
 Nvidia RTX 3080 ti GPU with 12GB of VRAM, Intel i7-9700K CPU with 16 cores and 64GB of RAM. This is my personal machine and was just enough to handle the models used in this project. Running the models with any other programs running would cause the system to run out of memory and and stop working.
 
-\subsubsection{MVP pipeline}
+\section{MVP Artifact}
 The MVP pipeline has 4 steps of processing to go from audio recording to comic book. First Whisper Turbo transcribes the audio recording to raw text. Then Llama 3.1 converts the text to a comic book script. The script is then processed by Stable Diffusion XL to generate the comic book panels. Finally, the panels are assembled into a comic book format using a custom python script. The pipeline is shown in figure \ref{fig:MVPpipeline}. The audio recording is a single track recording of a tabletop role-playing game session. The prompt used for Llama can be seen in listing \ref{lst:MPVLlamaprompt}. This prompt generates a description of the panel art and a line of dialogue or narration for each panel. The output is a JSON array of objects, where each object contains the panel art description and the text. The panel art description is then given to Stable Diffusion XL to generate the image with no other instructions. The text is used as a caption for the image. The images are then assembled into a comic book format using a custom python script which generates a PDF file with the images and captions.
 
 \begin{lstlisting}[style=jsonstyle, caption={Prompt for Comic Book Script Generation}, label={lst:MPVLlamaprompt}]
@@ -161,12 +161,3 @@ Besides the prompt I have also used the following negative prompt: "deformed, bl
 To generate the images for the comic book the prompt from the previous step is fed into Stable Diffusion XL. Besides this there are only two other things that are given to the model. The negative prompt that was created is given and a LoRA is passed on to create a consistent art style. A LoRA a low-rank adaption of the stable diffusion which modifies the model in a lightweight way so that you do not have to retrain the whole model. It is similar to The LoRA used for this project is the Fantasy Art XL LoRA model from civit.ai. This LoRA is trained to generate comic book from the years 70s and 80s. With this the comic book has a coherent art style without having to spend many prompt tokens on the art style. 
 \subsubsection*{Comic book maker}
 Converting all the images to a comic book structure was done with the pillow python image library. This is a library which can edit images from python code. There are 3 steps to take to create a whole comic book. First the text needs to add the text to the image. This was done by adding a white box at the bottom of the image and placing the text inside the white box. I specifically omitted the usage of speech bubbles here because of two things. It would require an extra AI model which uses computer vision to search for faces so we can get an idee of where the speech bubble needs to point towards, which is extra complexity which is outside of the scope of this thesis. In addition to that I assume that this would create a high chance that the speech bubble would overlap with important parts of the image as it would just be placed at random. Normally speech bubbles are part of the artistic vision of the entire panel. The second step is the combining of the images now with text into one page which was also done with the pillow library. For clarity a black border was placed between the images. Lastly all the images had to be combined into one PDF document which was also done with the pillow library. These 3 steps result in the final resulting comic book.
-
-\subsection{Whisper}
-
-\subsection{Llama}
-
-\subsection{Image generating models: Stable Diffusion}
-The chosen image generation model is Stable Diffusion version stabilityai/stable-diffusion-xl-base-1.0 \cite{StableDiffusionGit}
-
-

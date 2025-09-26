@@ -22,7 +22,7 @@
 \usepackage{siunitx}
 \usepackage[acronym]{glossaries}
 \usepackage{afterpage}
-
+\newcommand{\questionref}[1]{\hyperref[#1]{\ref*{#1}}}
 % -------------------------------
 % Listings (single, UTF-8 safe)
 % -------------------------------
@@ -193,8 +193,11 @@
 
 \appendix
 \addcontentsline{toc}{chapter}{APPENDICES}
-\chapter{NetLogo Code}
-\label{sec:appendix-netlogo}
+\chapter{Artifact Code}
+\label{sec:Artifact Code}
 \input{appendix_a}
+\chapter{Questionnaire}
+\label{sec:Questionnaire}
+\input{appendix_b}
 
 \end{document}

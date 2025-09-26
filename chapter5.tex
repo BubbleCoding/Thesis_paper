@@ -1,84 +1,135 @@
+\label{sec:Evaluation}
+This Chapter evaluates the output of the artifact and the results of the user case study......
 
 \section{User Case Study}
-To evaluate the artefact, participants have been asked to fill in a questionnaire. The questionnaire is used to evaluate the artefact on the design requirements and to gather feedback on the artefact. The questionnaire is divided into 6 sections: Background, Representation of the Session, Narrative and Coherence, Visuals and Multimodality, AI Retelling as a Design Challenge, Improvement and Future Use.
+The user case study involved 4 Dungeons and Dragons 5th edition sessions which were recorded and then ran through the artifact to generate a comic book. The players have then received the comic book and were asked to fill in a questionnaire. Each session was the same story, ran in the same location and using the same audio equipment. The first three session were run by the same Dungeon master and the fourth session was ran by another. For detailed explanations of the methodology see Section~\ref{sec:DataCollection}. In this section the results of the case study are discussed and the questionnaire is presented in full. For all the results of the questionnaire see Appendix~\ref{app:questionnaire-results}. First the questionnaire with as presented to the participants is shown, then the results are discussed.
 
-\section*{Introduction to the Questionnaire}
+The questionnaire was send to all 10 participants of which 5 have filled it in. This response rate limits the results in ways, however we can still distil some interesting concept and ideas from the results. Many of the questions have been posed in a very specific way so that with even a little bit of feedback you can draw certain conclusion. One benefit of having a smaller response rate is that the need to codifying the results is diminished. Because of this the results have not been codified, but have been analysed one question at a time and conclusion have been draw from them.
 
+\subsection*{The Questionnaire}
+This section shows the full questionnaire as presented to the participants. The questionnaire was anonymous, but participants received my email address and phone number if they wanted to contact me for follow-up questions or anything else. The questionnaire is used to evaluate the artefact on the design requirements and to gather feedback on the artefact. 
+The questionnaire is divided into 4 sections: Background; Exposition, Roleplay and Rule interaction; Ethical Considerations; Your Experience of the Comic. The \textit{background} section is used as a control round to see if they actually did read the comic book and if they did participate, furthermore it is asked if they are familiar with comic books. This is done with the idea that there experience of comics might impact someone's ideas of the results. The second section asks questions about \textit{the three primary forms of player interaction} as discussed in section~\ref{sec:2.6}. The third section \textit{Ethical Considerations} is mainly a person point of interest as I am curious to know what people think of creating comic books with AI, and through that in the larger context of generative AI in general. However it is also something that is a key part of the creation of this tool as having an ethically sound project is important. The last section \textit{Your Experience of the Comic} focuses on the participant and what their ideas about the results are. It looks at the coherence between the comic book and the original session. Giving the participant a lot of freedom to answer broader questions in whatever way they want. This section is placed at the end, because this way the participant has already been thinking about the results for some time and can now distil their thoughts into text. 
+
+All the questions have been made without the usage of example questions or a framework. As this is a very specific topic to ask questions about and because I have academic experience with creating questionnaires it should provide valuable information. In total there are 19 questions with 2 sub questions: 4 are Yes/No questions; 8 are Likert scale questions; 7 are open ended questions; and 1 is a box select question. Furthermore each section is accompanied by a short explanatory introduction so that the participant has some context as to why they are answering these questions. Even though more questions could have been asked, keeping the total number low is an effective way to maintain participant engagement and improve the overall quality of responses \cite{sharma2022short}. If the final section had been the 40th or 50th question, participants would likely have experienced questionnaire fatigue, leading to less thoughtful and less useful answers. The goal was to establish a baseline of interest and contemplation early on, and then position the most important questions toward the end of the survey, when respondents were still attentive and a bit more invested in the topic.
+
+
+\subsubsection*{Questionnaire Dungeons and Dragons to comic book}
 The purpose of this questionnaire is to gather feedback on the comic book generated from your Dungeons and Dragons session. The primary goal of this research is to explore the design requirements for a system that retells tabletop role-playing games, rather than to create a perfect retelling tool. To this end, a prototype comic book generator has been developed using multiple artificial intelligence models.
 
 Because the comic was generated by several AI models, some parts may appear confusing, unexpected, or even inappropriate. Please be aware that your personal character, other characters, dialogue, and artwork may differ from your expectations, and in some cases may include content not suitable for all audiences.
 
-Please read the following questions carefully and provide your responses in the space provided. For multiple-choice questions, select the option that best represents your opinion. For open-ended questions, feel free to elaborate as much as you like. We kindly ask you to answer all questions honestly and to the best of your ability.
+Please read the following questions carefully and provide your responses in the space provided. For multiple-choice questions, select the option that best represents your opinion. For open-ended questions, feel free to elaborate as much as you like. We kindly ask you to answer all questions honestly and to the best of your ability. All responses will remain confidential, anonymized, and used solely for the re- search purposes of this master’s thesis. If you would like to know more about how the collected data (including questionnaire responses and audio recordings from the sessions) will be used, please feel free to contact me at: rovos@edu.aau.at
 
-All responses will remain confidential, anonymized, and used solely for the research purposes of this master's thesis. If you would like to know more about how the collected data (including questionnaire responses and audio recordings from the sessions) will be used, please feel free to contact me at: rovos@edu.aau.at
+Thank you so much for taking the time to participate in my thesis research! Your input means a lot to me, and I truly couldn’t complete my studies without your help. Thanks a lot again!
 
-Thank you so much for taking the time to participate in my thesis research! Your input means a lot to me, and I truly couldn't complete my studies without your help.
-
-\section*{Questionnaire}
-
-\subsection*{Introduction}
+\subsubsection*{Introduction Questions}
+This short section asks a few background questions about your participation in the project and your familiarity with comics. It helps us better understand your perspective when answering the rest of the questionnaire.
 \begin{enumerate}
     \item Did you participate in one of the Dungeons \& Dragons sessions recorded for this project? \hfill Yes / No
     \item Did you read the comic book before filling out this questionnaire? \hfill Yes / No
     \item How familiar are you with comic books as a storytelling format? \hfill Likert scale (Not at all -- Very familiar)
 \end{enumerate}
 
-\subsection*{The Three Forms of Play}
-In tabletop role-playing games, three primary activities typically occur:
+\subsubsection*{Exposition, Roleplay and Rule interaction}
+In tabletop role-playing games, three main activities usually happen:
 \begin{itemize}
-    \item \textbf{Exposition}: the Game Master describes the situation and world.
+    \item \textbf{Exposition}: the Game Master sets the scene and describes the world.
     \item \textbf{Roleplay}: players act and speak in character, interacting with each other and NPCs.
-    \item \textbf{Rule interaction}: players engage with mechanics such as dice rolls, checks, or adding numbers.
+    \item \textbf{Rule interaction}: players roll dice, make checks, and use mechanics to resolve actions.
 \end{itemize}
+This section asks about how these different aspects of play were represented in the comic.
 
 \begin{enumerate}
     \setcounter{enumi}{3}
-    \item To what extent do you feel that the Game Master’s exposition is present in the comic book? \hfill Likert scale
-    \item To what extent do you feel that your in-character roleplay actions are conveyed in the comic book? \hfill Likert scale
-    \item To what extent do you feel that your actions as a player (choices, decisions, initiatives) are conveyed in the comic book? \hfill Likert scale
-    \item Did you notice any text or visuals in the comic that explicitly referenced game rules (e.g., dice rolls, checks, modifiers)? \hfill Yes / No
-    \begin{itemize}
-        \item If yes: About how many times did you notice this? \hfill Number box
-    \end{itemize}
+    \item To what extent do you feel that the Game Master’s exposition is present in the comic book? \hfill Likert scale (Completely -- Not at all)
+    \item To what extent do you feel that your in-character roleplay actions are conveyed in the comic book? \hfill Likert scale (Completely -- Not at all)
+    \item To what extent do you feel that your actions as a player (choices, decisions, initiatives) are conveyed in the comic book? \hfill Likert scale (Completely -- Not at all)
+    \item Did you notice any text or visuals in the comic that explicitly referenced game rules (e.g., dice rolls, checks, modifiers)? \hfill Box select 0/1-5/5-10/10-15/15+
     \item Would you like rule interactions to be part of the comic book? \hfill Yes / No
     \item Of the three activities (exposition, roleplay, rule interaction), which do you feel was represented best in the comic? Why? \hfill Open-ended
 \end{enumerate}
 
-\subsection*{Ethical Considerations}
+\subsubsection*{Ethical Considerations}
+This section asks about your comfort with how the comic represents your play, and your thoughts on the ethical use of AI in retelling personal game sessions. Your answers will help us understand not only how well the system works, but also how it should be used responsibly.
 \begin{enumerate}
     \setcounter{enumi}{9}
-    \item To what extent do you feel that the story told in the comic book still belongs to you and your group, even though it was generated by AI? \hfill Likert scale
-    \item Did the comic include anything you felt was inappropriate, offensive, or misaligned with the spirit of your group’s play? \hfill Yes / No
+    \item To what extent do you feel that the story told in the comic book still belongs to you and your group, even though it was generated by AI? \hfill Likert scale (Completely -- Not at all)
+    \item Did the comic include anything you felt was inappropriate, offensive, or mis- aligned with the spirit of your group's play? \hfill Yes / No
     \begin{itemize}
         \item If yes, please describe what stood out and why. \hfill Open-ended
     \end{itemize}
-    \item Do you believe it is ethically acceptable to use AI systems to retell personal play sessions (such as D\&D) in the form of a comic book? \hfill Likert scale
+    \item Do you believe it is ethically acceptable to use AI systems to retell personal play sessions (such as Dungeons and Dragons) in the form of a comic book? \hfill Yes / No
+    \item Why do or do you not think it is ethically acceptable? \hfill Open-ended
 \end{enumerate}
 
-\subsection*{Other Reflections}
+\subsubsection*{Your Experience of the Comic}
+In this final section, we’d like to hear your overall impressions of the comic. These questions focus on how well the story worked as a whole, whether it captured the feeling of the session, and what value it provided to you and your group. Your feedback will also guide improvements for future versions of the system.
 \begin{enumerate}
-    \setcounter{enumi}{12}
-    \item Did the comic capture the \textit{feeling} or \textit{atmosphere} of the session for you? Why or why not? \hfill Open-ended
+    \setcounter{enumi}{13}
+    \item Did the comic capture the feeling or atmosphere of the session for you? Why or why not? \hfill Open-ended
     \item Was there anything important from the session that you feel was missing or underrepresented in the comic? Please explain. \hfill Open-ended
-    \item How easy was it to follow the story in the comic compared to how you experienced the original session? \hfill Likert scale
-    \item To what extent did the comic capture important aspects of the session (characters, key events, mood)? \hfill Likert scale
-    \item How well did the text and images in the comic work together to retell the session? \hfill Likert scale
-    \item Did the comic feel like a valuable retelling of the session for you and your group? Why or why not? \hfill Open-ended
+    \item How easy was it to follow the story in the comic compared to how you experienced the original session? \hfill Likert scale (Very Easy -- Very Hard)
+    \item To what extent did the comic capture important aspects of the session (characters, key events, mood)? \hfill Likert scale (Very Well -- not at all)
+    \item How well did the text and images in the comic work together to retell the session? \hfill Likert scale (Very Well -- not at all)
+    \item Did the comic feel like a valuable retelling of the session for you and your group? Why or why not? \hfill Open-ended 
     \item If you could improve one aspect of the comic generator, what would it be and why? \hfill Open-ended
 \end{enumerate}
 
-
 \subsection{Results}
+This section discusses the responses to the questionnaire. Each of the four sections is considered as a whole, with particular attention paid to results that reveal interesting patterns or insights.
 
-\section{Self observation}
-In addition to participant feedback, I conducted a self-observation of the generated comic book. This allowed me to systematically evaluate the output according to predefined criteria, ensuring consistency and highlighting aspects that participants may not explicitly mention.
+\subsubsection*{Background} %1-3
+The first section serves primarily as a check and does not offer substantial analytical insights. However, one interesting detail is that a participant reported not having read the comic book, yet proceeded to answer subsequent questions in ways that suggest they had. It is likely that this was an input error and that the participant intended to select “yes.”
 
-\section{Data analysis}
-The creation of a comic book from audio with AI involves many moving parts, each of which can be analysed since all intermediate data is saved during processing. We can examine the audio, the transcript, the generated comic book script, the generated prompts, the generated images, the generated text, and finally the comic book as a whole. By analysing each stage, we can identify where the system struggles and where it performs well, which not only informs future improvements but also helps answer the research question. This section begins with an analysis of the transcription stage.
-The analysis in this chapter is done by looking at the data in a holistic manner: scrolling through everything; reading everything; and making notes on everything, using word searches, counting occurrences of specific words, and looking at distributions of various metrics. Finally ChatGPT-5.0 is consulted to look at the data and give insights that might be valuable, and to make graphs. Everything done with ChatGPT-5.0 is double checked with standard statistic software.
+\subsubsection*{Exposition, Roleplay and Rule interaction} %4-9
+The results in this section are somewhat limited in scientific strength due to the small sample size and the distribution of responses. Nonetheless, several patterns can be identified. 
+
+Questions \questionref{question 4}, \questionref{question 5}, and \questionref{question 6} cluster around the middle of the Likert scale, with means of 2.8, 2.6, and 2.8, respectively. Notably, no participants selected the extreme categories (“completely” or “not at all”). This signals that there is potential for the system as the participants participants consistently observed some degree of exposition and roleplay. However it also shows that there is still a lot of space to grow for the system to become something that is truly good. Most important take away from these questions is that the participants do see exposition and role play within the system and that it can thus be extracted from a audio recording. 
+
+The question regarding references to game rules shows that most participants (4 out of 5) noticed between one and five occurrences. While this does not provide an exact count, it indicates that rule-related content was present enough for respondents to register consciously. Question \questionref{question 8} further shows us that most participants would prefer such rule references to be excluded from the comic. Notably one person did say they want rules to be part of the comic book. This suggests that the inclusion of rule mechanics in narrative retellings may be a matter of personal preference.
+
+Finally question \questionref{question 9} was a open question where we can draw the most important points from. In retrospect, the question itself could have been phrased more effectively. Nevertheless, two key take aways can be drawn. Firstly a lot of the text in the comic book is very descriptive which is something one participant said, which from the context feels like something the participant found odd. Secondly the roleplay was rarely coherent. These two points are most likely very intertwined as they both are a result of the text.
+
+Combined these questions show us that that roleplay and exposition is present in the correct comic book and thus that creating a proper retelling of a TTRPG session with AI is possible. There is however a lot of room for improvement in how the exposition and roleplay panels are handled. 
+
+\subsubsection*{Ethical Considerations} % 10-13
+The responses in this section provide insight into how participants perceive authorship, authenticity, and the ethical implications of using AI in this context. 
+
+Question \questionref{question 10} indicates that participants generally still regard the story depicted in the comic as their own. The mean response of 2.2 on the Likert scale (1 Completely - 5 Not at all) suggests that players recognize their actions and decisions reflected in the panels, indicating that the comic preserves a sense of personal authorship and agency.
+
+Responses to questions \questionref{question 11} and \questionref{question 11 sub} further reveal that participants valued the inclusion of potentially inappropriate, offensive, or misaligned elements from the original play session. Rather than viewing these elements negatively, they appreciated their presence as part of the authentic narrative. This suggests that the generated comic does not simply generalize or sanitize events but captures specific aspects of the play session, thereby creating a faithful retelling.
+
+Finally, questions \questionref{question 12} and \questionref{question 13} directly asked participants about the ethical acceptability of using AI in this type of system. As expected, responses varied considerably.However there is one clear throughline: most of the participants said it is ethically acceptable to use AI for this specific use case, even do they normally find the usage of AI for the creation of art unethical. But within this context, where the goal is to retell your own story without any other goals, such as selling the AI generated, they find it acceptable. This is an interesting line we found where the benefits outweigh the ethical aspects. 
+
+This suggests that player perception of authorship and ethical boundaries is closely tied to the notion of personal narrative ownership, an insight that is central to understanding the role of AI in retelling TTRPG experiences
+
+\subsubsection*{Your Experience of the Comic}
+This section explores how participants experienced the comic in relation to their original play session, with the aim of identifying design requirements for a retelling system.
+
+Question \questionref{question 14} suggests that the panels captured the overall feeling and atmosphere of the session reasonably well. Participants reported that the panels reflected the essence of the session, although variability in art style, character depictions, and location artwork reduced the perceived quality of the retelling.
+
+Question \questionref{question 20}, the final question, asked participants broadly about improvements they would like to see in the system. Three main points emerged from their responses.
+
+First, several participants noted that some events in the comic are out of chronological order compared to the session. Late-session events occasionally appear early, and some sequences are interleaved or mixed. Participants also described the overall structure as chaotic. This can also be seen in the results of Question \questionref{question 16}, where most people said it was either hard or very hard to follow the story. There are few relations between panels and between text and image. This is primarily attributed to the fact that the character art is inconsistent, as every time the character is represented they look different. The same can be said for the consistency of locations and the art style in general. Together these observations suggest errors in how narrative segments were assembled and ordered. This seems to indicate that most likely the adaptive sliding context system made errors or that the order of transcription was mixed.
+
+Second, one participant mentioned in Question \questionref{question 20} that they would like to see a clear distinction between in-game and out-of-game dialogue. Currently, these two types of dialogue often mix, and as seen in the results of Question \questionref{question 18}, this blending reduces the perceived quality of the retelling. This feedback points to two requirements: out-of-game dialogue should be included, as players see value in it, but it needs to be clearly separated and identifiable. This is further supported by a response to Question \questionref{question 15}, where one participant said they would find it interesting to see important real-life moments included in the comic. For example when players discuss their next moves or collaborate on plans.
+
+Third, one participant reported in Question \questionref{question 20} that some dialogue was attributed to the wrong character. Lines spoken by character X were sometimes assigned to character Y. This suggests that errors occurred in the transcription stage or during the mapping of dialogue to characters in the final comic.
+
+To wrap up all the questions, Question \questionref{question 19} is among the most important questions, as it directly addresses the perceived value of the retelling. In general, participants did not consider the current version of the comic to be a valuable retelling of their session. However, they did see significant potential for a system like this to become a meaningful and accurate retelling tool in the future.
+
+\subsection*{Conclusion}
+Across all four sections of the questionnaire, several clear design requirements for an AI-driven retelling system emerge. The system must ensure that events are presented in the correct chronological order to preserve narrative coherence and improve readability. Visual consistency across panels, including character design, location depiction, and overall art style is crucial for recognisability and immersion. Dialogue must be correctly attributed to the speaking character, and the system should include a mechanism to distinguish between in-game and out-of-game speech while still incorporating both where appropriate. Rule references and other meta-level elements should either be excluded or presented in a way that suits individual preferences. Finally, the system should aim to maintain the emotional tone and atmosphere of the original session while providing a clear and structured narrative flow. Together, these requirements form a concrete roadmap for improving the quality, usability, clarity, and perceived value of future iterations of the retelling pipeline.
+
+Taken together, the questionnaire results demonstrate that the current prototype already succeeds in capturing certain aspects of a play session, such as atmosphere and moments of exposition or roleplay. At the same time, participants highlighted important shortcomings in structure, consistency, and dialogue handling that limit the comic's effectiveness as a retelling. The responses also show that players generally recognise the story as their own and consider the use of AI acceptable in this specific context, provided that the goal is to retell their own experience rather than to produce commercial artwork. These findings suggest that while the present system cannot yet deliver a fully convincing retelling, it points toward a clear direction for development. The potential recognised by participants indicates that, with refinement along the identified design requirements, AI-assisted comics could become a meaningful and ethically acceptable form of retelling TTRPG sessions.
+
+\section{Self observation and Data analysis}
+The creation of a comic book from audio with AI involves many moving parts, each of which can be analysed since all intermediate data is saved during processing. We can examine the audio, the transcript, the generated comic book script, the generated prompts, the generated images, the generated text, and finally the comic book as a whole. By analysing each stage, we can identify where the system struggles and where it performs well, which not only informs future improvements but also helps answer the research question. This section begins with an analysis of the transcription stage. The last step however, combining the comic book panels into a comic book will not be discussed as that is a straightforward layout step that does not involve any AI and cannot fail. The comic as a whole however will be discussed, but during the image generation step.
+
+The analysis in this chapter is done by looking at the data in a holistic manner: scrolling through everything; reading everything; and making notes on everything, using word searches, counting occurrences of specific words, and looking at distributions of various metrics. Finally ChatGPT-5.0 is consulted to look at the data and give insights that might be valuable, and to make graphs. Everything done with ChatGPT-5.0 is double checked with standard statistic software (Python and Excel).
 
 \subsection*{Transcript}
-The transcription produced by the system went through three processing steps. First, Whisper converted the speech to text. Then, punctuation restoration was performed by FPML, and finally, diarization was carried out by pyannote. Only the final result of this pipeline was saved and analysed in this section. The output of the transcription was a JSON object with four fields: \textit{start}, \textit{end}, \textit{speaker}, and \textit{text}. \textit{Start} marks the time in the audio recording when a speaker begins speaking, and \textit{end} marks when it finishes. \textit{Speaker} identifies the person speaking, and \textit{text} contains the spoken words.
+The transcription produced by the system went through three processing steps. First, Whisper converted the speech to text. Then, punctuation restoration was performed by FPML \cite{guhrEtAl}, and finally, diarization was carried out by pyannote \cite{Bredin23,Plaquet23}. Only the final result of this pipeline was saved and analysed in this section. The output of the transcription was a JSON object with four fields: \textit{start}, \textit{end}, \textit{speaker}, and \textit{text}. \textit{Start} marks the time in the audio recording when a speaker begins speaking, and \textit{end} marks when it finishes. \textit{Speaker} identifies the person speaking, and \textit{text} contains the spoken words.
 
 When analysing this data, one issue becomes apparent immediately: the entries are unusually short for full sentences, and the same speaker frequently appears in consecutive entries that should have been merged into a single entry. To illustrate this problem, three plots were generated from the raw dataset. As shown in Figure~\ref{fig:entry_duration_raw_merged}, the majority of entries are shorter than 2 seconds. Figure~\ref{fig:wordcount_raw_merged} shows that most entries contain only one to three words. In addition to short sentences, the text contains artifacts such as excess periods at the end of an entry and stray periods inserted within words. As shown in Figure~\ref{fig:normalized_artifacts}, this is quite common, but it also varies substantially between sessions. To strengthen this observation, Figure~\ref{fig:raw_vs_artifacts} shows no correlation between the number of entries and the number of artifacts. These observations indicate clear diarization errors: the system failed to capture complete sentences as coherent entries. However, since many consecutive entries are assigned to the same speaker, merging them produces a much more accurate representation of the dialogue.
 
@@ -241,13 +292,65 @@ Total & 13 & 10 & 10 & 24 & 57 \\
 \end{figure}
 
 \subsection*{Prompt generation}
-The third step the pipeline is prompt generation. In this step, the structured script data (setting, characters, objects, action, mood, camera view, lighting, and text) is converted into a descriptive natural-language prompt suitable for the image generation model (SDXL 1.0), or at least that is the goal. The purpose of this process is to bridge the gap between structured data and natural language generation.To let the LLM be a creative member of the process and take its place as the creator of the comic book. This step of generating the prompt is both the most creative and also most error-prone step. The JSON keys provide structured data, while the prompt reformulates them into language that SDXL can interpret.
+The third step in the pipeline is prompt generation. In this step, the structured script data (setting, characters, objects, action, mood, camera view, lighting, and text) is converted into a descriptive natural-language prompt suitable for the image generation model (SDXL 1.0), or at least that is the goal. The purpose of this process is to bridge the gap between structured data and natural language generation, to let the LLM be a creative member of the process and take its place as the creator of the comic book. This step of generating the prompt is both the most creative and also the most error-prone step. The JSON keys provide structured anchors, while the prompt reformulates them into language that SDXL can interpret.
 
-When analysing the generated prompts across all four session they seem quite well. The prompts are very descriptive, they consistently include character names, lighting, shadow, objects, scene setting, location, mood, specific things to showcase, emotions, mood, and more. Each prompt is also very consistent in terms of what they generate and how they generate it the same keys are present each time in the same order. On their own the prompts create a rather vivid description of the situation. However there are also some very obvious artifacts such as the prompt including: "Here is the generated SDXL prompt:" and "/n/n" at the start of the prompt. But also other task descriptive text that should not be part of the prompt. Furthermore many of the prompts are longer then 75 tokens, which is too long for SDXL to work with and thus will cut off part of the end of the prompt. There is no concrete data on this, as there is no tokenizer available for SDXL, but as the images were generated the model said that the prompts were too long and that happened a lot, however no counter was in place to keep track of the data. The errors made during the transcription are also obviously present in the prompts as  the same errors reappear in the prompts(Extra dots, weird names, etc.). Besides the quality and errors of each prompt individually there are also issues in-between the prompts and some overarching issues.
+When analysing the generated prompts across all four sessions, they initially seem quite strong. The prompts are very descriptive, they consistently include character names, lighting, shadows, objects, scene setting, location, mood, specific things to showcase, emotions, and more. Each prompt is also very consistent in terms of what it produces and how it is structured: the same keys appear each time and in roughly the same order. On their own the prompts create vivid descriptions of the situation. However, there are also some very obvious artifacts, such as the inclusion of "Here is the generated SDXL prompt:" or "/n/n" at the start of prompts, along with other task-descriptive text that should never be part of the final input. Many prompts are also longer than the supposed 75-token limit, which causes issues for SDXL as it cuts off the end of the prompt. There is no concrete data on this, as no tokenizer for SDXL is openly available, but the model frequently returned errors stating that prompts were too long. These cut-offs happened often, although no counter was in place to track how many times. Errors made during transcription are also carried forward into the prompts, as the same artifacts reappear in the generated text (extra dots, inconsistent names, and so on). Besides the quality and errors of each individual prompt, there are also issues across prompts and some overarching structural problems.
 
-When looking at individual prompts they seam relatively usable as there are many consistencies, such as location, characters and objects. However when attempting to understand the story from prompt to prompt it becomes clear that there is no obvious throughline of the story and that almost all prompts have Non-Sequitur transitions\cite{mccloud1993understanding}. There is no flow, no continuity, no linking of events. Each prompt is a moment in time, without context to the previous or next prompt.
+When looking at individual prompts they seem relatively usable because of the consistencies: locations, characters, and objects are almost always included. However, when attempting to understand the story from prompt to prompt it quickly becomes clear that there is no real throughline. Almost all prompts suffer from non-sequitur transitions \cite{mccloud1993understanding}. There is no flow, no continuity, no linking of events. Each prompt functions as an isolated moment in time, without context to what came before or after.
 
-Each prompt makes use of a lot of references to items, objects, location and characters. This is a very good things, however this data is lost in the image generation as there is no way for SDXL to understand what those things are, there is no database for SDXL to pull from to understand who Arthur is, or what the Chalice of Eternal Life looks like. The model just has to guess based on its training data. This results in a lot of strange images where characters look nothing like they should, or objects are not what they should be.
+Another recurring issue is that while each prompt references a lot of items, objects, locations, and characters, this information is lost in the image generation step. SDXL has no way of knowing who Arthur is, what the Chalice of Eternal Life looks like, or how Dar.yl is supposed to appear. The model simply has to guess based on its training data. This leads to strange or inconsistent images, where characters change appearance between panels or important objects are rendered incorrectly or not at all (See next section for details). In other words, the prompts are rich in detail, but this detail cannot be grounded in any shared visual database, which creates a significant gap between text and image in the pipeline.
+
+Overall, prompt generation illustrates an issue between fidelity and creativity. On the one hand, the prompts succeed in faithfully translating structured data into richly descriptive text. On the other hand, they also reveal the instability of relying on an LLM to act as a creator. Artifacts, hallucinations, and missing continuity highlight how difficult this step is, and how much of the story is reshaped by the model itself. In this sense, prompt generation is both the strongest and weakest part of the pipeline: it produces the most vivid material, but it also introduces the greatest risk of distortion in the retelling.
+
+\subsection*{Image generation}
+The final step of generating the images for the comic book is ultimately the key part and goal of the entire pipeline. Because of this, it depends on all previous steps, and any problems in those steps fully echo into the generated image. This stage showcases both the limits of the system and the potential and possibilities it offers. This section analyses the issues of individual images, but also of the comic book as a whole and how the images are impacted by earlier steps.\footnote{See all comic books: https://github.com/BubbleCoding/CandlekeepComicbooks}.
+
+On the level of single panels, the images often suffer from common generative artefacts such as fused objects, incorrect anatomy, or floating elements (see Figure~\ref{fig:example_panels_grid_f}). In addition, comic-specific conventions such as Manpu or speech bubbles are almost entirely absent, appearing only rarely and seemingly by accident (see Figure~\ref{fig:example_panels_grid_i}). When combining text and image, it is often difficult to find a meaningful link between the two. For example, in Figure~\ref{fig:example_panels_grid_c}, the caption refers to Tevin trying to grab a cat, but the corresponding image depicts only cats. This misalignment can be traced back to errors in script generation and transcription. In many cases, the text is not dialogue at all, but rather descriptive or explanatory narration, which reads as strange in a comic book context. One area in which the system consistently succeeded, however, was in producing exposition panels (Figure~\ref{fig:example_panels_grid_a}), which provide atmospheric establishing shots.
+
+You might assume that some of these images are a result of the model hallucinating content, but this is not the case. If we look at the prompt for Figure~\ref{fig:example_panels_grid_j}: \textit{"Inside a swirling portal of rainbow colors, Syphilis and Gonorrhea walk hand-in-hand through shimmering, kaleidoscopic lights as they step into the unknown. Blinking colors dance around them from an aerial view."} we can see that the image corresponds closely to the prompt. Furthermore, when examining the other keys generated during script creation, this alignment is confirmed. Analysis of additional examples shows the same pattern: the image generation step is generally doing what it is supposed to do, namely generating an image faithful to the prompt. The problem is that the prompt is not always correct or useful, and that SDXL has no way of knowing what a specific character or object should look like. Addressing this issue requires improvements to the prompt generation step, and potentially the use of an image generation model that can incorporate more structured information about characters and objects.
+
+Many of the creatures that appear in the story are also wrongly represented in the generated comic book. For example, the two-headed ogre (Figure~\ref{fig:example_panels_grid_o}), the owlbear (Figure~\ref{fig:example_panels_grid_n}), and the vampire (Figure~\ref{fig:example_panels_grid_k}) are all depicted inaccurately. The model does not possess knowledge of these fantasy creatures beyond general cultural approximations, and therefore produces images that are best understood as guesses rather than faithful representations. This highlights a key limitation of prompt-based generation: without explicit visual grounding or additional training data, the system cannot reliably render domain-specific entities that fall outside of its training set.
+
+When looking at the generated images as a comic book, a number of broader aspects stand out. First, the art style of the images is both consistent and inconsistent. Because a LoRA was used to encourage a uniform style, there is indeed some degree of visual coherence. However, the themes across images vary wildly: shifting from greyscale portraits of serious-looking characters, to grim pirate taverns, to rainbow-coloured psychedelic scenes, to futuristic soldiers, and even to World War II imagery and superheroes. These thematic inconsistencies disrupt the reading experience and highlight the limits of relying on prompt-based generation for sequential art. Secondly, there is no visual consistency between panels: characters are almost always portrayed differently, locations change drastically even in back-to-back panels, and similar continuity issues arise. This again results from the absence of a through line in the prompts, as well as the lack of shared context between individual image generations. Lastly, one strength that is present in the comic book is the overarching through line of the entire story. Although the comic book fails as a readable artefact, it does still represent the story the players experienced. The key events are there, the characters are there, and the main plot points are there. It is simply not a good retelling of the story. This tension between representation and retelling highlights the broader challenge: while the pipeline succeeds in capturing the story's structure, it struggles to convey it coherently in the medium of comics.
+
+In summary, the image generation stage demonstrates both the strengths and weaknesses of the overall pipeline. On the one hand, the model reliably follows the prompts it is given and produces visually striking exposition panels. On the other hand, errors from earlier steps are magnified here, leading to misaligned text–image pairs, missing comic-specific conventions, inaccurate depictions of domain-specific creatures, and thematic inconsistency across the comic book. These findings suggest that the primary challenges do not lie in the generative model itself, but in the quality and specificity of the information it receives. Improving prompt generation, integrating stronger grounding for characters and creatures, and introducing comic-aware conventions are therefore essential directions for enhancing the fidelity and coherence of future retellings.
+
+\begin{figure}[ht]
+\centering
+\setlength{\tabcolsep}{2pt} % spacing between images
+\renewcommand{\arraystretch}{0} % no extra vertical space
+\begin{tabular}{ccccc}
+\subfloat[]{\includegraphics[width=0.19\textwidth]{images/panels_with_text/panel1.png} \label{fig:example_panels_grid_a}} &
+\subfloat[]{\includegraphics[width=0.19\textwidth]{images/panels_with_text/panel2.png} \label{fig:example_panels_grid_b}} &
+\subfloat[]{\includegraphics[width=0.19\textwidth]{images/panels_with_text/panel3.png} \label{fig:example_panels_grid_c}} &
+\subfloat[]{\includegraphics[width=0.19\textwidth]{images/panels_with_text/panel4.png} \label{fig:example_panels_grid_d}} &
+\subfloat[]{\includegraphics[width=0.19\textwidth]{images/panels_with_text/panel5.png} \label{fig:example_panels_grid_e}} \\
+
+\subfloat[]{\includegraphics[width=0.19\textwidth]{images/panels_with_text/panel6.png} \label{fig:example_panels_grid_f}} &
+\subfloat[]{\includegraphics[width=0.19\textwidth]{images/panels_with_text/panel7.png} \label{fig:example_panels_grid_g}} &
+\subfloat[]{\includegraphics[width=0.19\textwidth]{images/panels_with_text/panel8.png} \label{fig:example_panels_grid_h}} &
+\subfloat[]{\includegraphics[width=0.19\textwidth]{images/panels_with_text/panel9.png} \label{fig:example_panels_grid_i}} &
+\subfloat[]{\includegraphics[width=0.19\textwidth]{images/panels_with_text/panel10.png} \label{fig:example_panels_grid_j}} \\
+
+\subfloat[]{\includegraphics[width=0.19\textwidth]{images/panels_with_text/panel11.png} \label{fig:example_panels_grid_k}} &
+\subfloat[]{\includegraphics[width=0.19\textwidth]{images/panels_with_text/panel12.png} \label{fig:example_panels_grid_l}} &
+\subfloat[]{\includegraphics[width=0.19\textwidth]{images/panels_with_text/panel13.png} \label{fig:example_panels_grid_m}} &
+\subfloat[]{\includegraphics[width=0.19\textwidth]{images/panels_with_text/panel14.png} \label{fig:example_panels_grid_n}} &
+\subfloat[]{\includegraphics[width=0.19\textwidth]{images/panels_with_text/panel15.png} \label{fig:example_panels_grid_o}} \\
+\end{tabular}
+\caption{A subset of 15 images of the 4 different comic books.}
+\label{fig:example_panels_grid}
+\end{figure}
+
+\subsection*{Conclusion}
+Across all stages of the pipeline, the analysis reveals several concrete design requirements for improving the system. At the transcription level, diarization must be refined to avoid over-segmentation and ensure sentence-level coherence, and merging strategies should be integrated directly into the pipeline rather than applied as a post-processing step. Script generation requires stricter output validation: all fields, especially \texttt{text}, should be populated, character names must be normalised, and inconsistent or irrelevant data (such as gameplay terms or hallucinated locations) should be filtered. Prompt generation needs mechanisms for maintaining narrative continuity between panels, reducing artifacts, and creating consistency with characters and objects in their appearance. Finally, the image generation stage highlights the need for stronger stylistic consistency, clearer differentiation of characters and locations, support for comic-specific conventions such as manpu, and improved visual quality for fantasy-specific settings. Together, these requirements provide a clear roadmap for enhancing the pipeline's ability to produce coherent, faithful, and readable retellings.
+
+The self-observation and data analysis demonstrate that while each stage of the pipeline functions as intended in isolation, small errors and inconsistencies accumulate as the data moves downstream. The result is a system that captures much of the structure, content, and atmosphere of a TTRPG session but struggles to communicate that experience coherently in comic book form. The findings suggest that the greatest opportunities for improvement lie not in radically changing the pipeline's structure but in strengthening the links between its stages, enforcing consistency, and grounding generative steps in structured context. Despite its current limitations, the pipeline shows clear potential as a tool for transforming recorded play sessions into a new expressive medium. With targeted refinements guided by the identified design requirements, such a system could evolve from an experimental prototype into a powerful method for retelling TTRPG experiences.
+
+
+\section*{Conclusion} %ChatGPT REWRITE
+The analyses presented in this chapter show that the current prototype succeeds in capturing important aspects of tabletop role-playing game sessions while also revealing significant limitations in how those sessions are retold as comics. The self-observation of the pipeline highlights how small errors at each stage, from fragmented transcription and inconsistent script data to prompt discontinuity and ungrounded image generation, accumulate and undermine the coherence of the final output. The questionnaire responses reflect and reinforce these findings from the user perspective: participants recognised the atmosphere and key events of their sessions and felt a sense of authorship in the resulting comic, yet they also reported issues with chronology, visual and narrative consistency, dialogue attribution, and overall readability. Both forms of analysis point to clear design requirements for future development, including improved transcription merging, stricter data validation, mechanisms for narrative continuity, grounded visual references for characters and objects, and greater stylistic consistency across panels. Most importantly, they show that the core concept — retelling TTRPG sessions as comics through AI — is both technically feasible and meaningful to players. Addressing the identified shortcomings will be essential for transforming the system from a promising prototype into a robust tool capable of producing coherent, engaging, and ethically acceptable retellings.
+
 
 
 \section{Expert review}
@@ -292,6 +395,8 @@ Ankheg     & Hank Man   \\
 \label{tab:monster_names}
 \end{table}
 
+
+%This is old, might be deleted
 \section{Generating the comic book script}
 The iterative design process of generating the comic book script after the MVP version was a crucial step to improve the quality of the comic book panels. From having a one-shot approach where we gave the entire transcript to the LLama 3.1 model, we moved to an adaptive panel generator which has a structured approach to data and keeps track of the context. In this section all the iterative steps are described and what did and did not work in chronological order.
 
@@ -326,18 +431,3 @@ Ask the LLM to decide if a line of text is player or character speech. Into givi
 \subsubsection{Context aware LLM based chunking}
 
 \subsubsection{Adaptive panel generating}
-
-\section{Experimental setup}
-To test the system on tool functionality, but primarily to test for the design requirements of a retelling system 3 different TTRPG sessions have been recorded and converted to a comic book. These comic books where then handed to the players and feedback was acquired using the INSERTHERE questionnaire. The comic books have also been cross-referenced with each other and with the original recording to see if there are differences in the generated comic book, but which are the same in the sessions.
-\subsubsection{Experimental sessions}
-One Dungeons and Dragon 5th edition dungeon master hosted 3 sessions with 2 or 3 players. Each session was the same scenario and lasted 1 to 2 hours. This setup was chosen as this makes the experiment as consistent as possible, but with important possible deviations.
-
-Dungeons and Dragons 5th Edition was chosen as the TTRPG of choise, because there is easy access to many people with a lot of playing experience of this game. It is one of, if the the largest, TTRPG game that is currently being played. It is important to have a game which people know how to play, because I want to minimise the rule based conversations in the recording as much as possible. Rule conversations are an extra dimension of complexity for the system and this should be avoided as much as possible.
-
-\subsubsection{}
-
-
-\subsubsection{Participent feedback}
-Participent have been asked feedback based on a customized version of the INSERTHERE questionaire. 
-
-\subsection{Analyzing the generated comic books}
