@@ -1,24 +1,61 @@
-\section{Summary}
+This final chapter brings the thesis to a close by tying together its main contributions and situating them within a broader context. It provides a summary of the work, discusses its potential, explores directions for future research, reflects on its broader societal impact, and ends with a personal reflection on the project as a whole. In doing so, it not only reviews what has been achieved, but also looks ahead to the possibilities and challenges that remain.
 
-\section{Potential}
+\section{Summary}
+This master has been a journey into the world of locally inferred artificial intelligence powered retelling tools through the lens of tabletop roleplaying games. It has three primary contributions: first, it created a system which can convert an audio recording of a TTRPG session into a multimodal retelling in the form of a comic book. Using only the audio recording as input, the system transcribes the audio into text, converts the text into a script, converts the script into image generation prompts, generates images based on the prompts, and finally compiles everything into a comic book format; second, it explored the concept of retelling through the lens of TTRPGs and how computational processes can translate play into sequential art; and third, it demonstrated a methodological approach to evaluating AI systems through artefact creation, bridging game studies and AI design research.
+
+The results of this thesis showcase the potential which AI has in terms of automated retelling with multimodal formats. The current system also highlights many limitations and shortcomings, which however can be addressed in future work. All in all, these contributions demonstrate that multimodal retelling with locally inferred AI is not only feasible but represents a promising new approach to bridging play, narrative, and technology.
 
 \section{Further Work}
+This thesis project has created a solid foundation of multimodal retelling, however it created more questions than answers. Because of this there are plenty possibilities for future work as discussed in this section.
 
-\subsection{Idea 1}
-The through line of the story is not taken into account.
+\subsection*{Story line and story coherence}
+One of the major issues the current system has is the inconsistent and incoherent story line it portrays. Currently each panel is generated independently from the others, resulting in each panel having Non-Sequitur transitions, as they have no connection to the greater story or the next panel. In future works this would be a core aspect which has to be addressed to make a better retelling tool, as the story line is what makes the retelling good. There are many potential ways of tackling this problem, and all have their merit. First one potential solution might be creating a better understanding of what scenes are in the transcription. Having an understanding of where a scene ends and starts and where it takes place would allow the other steps of the pipeline to be more context aware.
 
-\subsection{Idea 2}
-Multi step image generation + LoRRas
-- Object permanency
-- Reference images
-- Inpainting
+\subsection*{Image generation}
+One of the core aspects of a comic book are the images the reader is looking at while reading, and while the current artefact creates images which can be linked to the story to some extent, the quality, consistency and value of the images is limited. For future works there are several potential improvements which could be made.
 
-\subsection{Idea 3}
-Better models / Custom models
-VLM
+First multi-stage image generation could be looked at to have more control of the outcome of the images. This could entail using numerous LoRA (Low-Rank Adaptation) techniques to guide the image generation process. This could allow for very specific control over the image, using the current comic book script as a base to guide the image generation process. With this approach a system could be created where settings like camera angle, lighting, character poses and expressions could be specified with a LoRA resulting in a more coherent and consistent image generation process.
 
-\subsection{Idea 4}
-Split audio track
+Secondly, reference images could be used to have more control over characters, locations, objects and other consistent elements in the story. This would anchor certain aspects of the story to specific visual elements, aiding in the consistency of the story.
 
-\subsection{Idea 5}
-Scene detection
+Thirdly, future work could look into panel composition, thinking about things like foreground and background elements, camera angles, lighting and colour schemes. And other aspects such as Manpu, speech bubbles, panel shapes and sizes. All these aspects could be controlled to create a more coherent and visually appealing comic book.
+
+Lastly, the stylistic consistency of the generated images could be improved. Although this was attempted in the current version of the artefact, it was not very successful. Looking into how to force the output to always have the same art style could improve the overall quality of the comic book.
+
+\subsection*{Audio}
+The current system takes a single audio track with multiple people talking through each other and attempts to transcribe it, while keeping track of who is speaking. Future work could look into using multiple microphones to record each person separately, or using better speaker diarization techniques to improve the transcription quality. Using multiple microphones would increase the consistency of the transcription quality, however it would also increase the complexity of the recording setup, which could be a barrier to the average user. Using better speaker diarization techniques could improve the transcription quality without increasing the complexity of the recording setup, however it would also increase the complexity of the system as a whole. Furthermore, something which was not talked about at all during this thesis, but could be part of future works is the idea that players might use different voices during play and that might result in the diarization model confusing the voices and to whom the voice should be attributed. I propose that future work looks into how to create better audio transcriptions via a single audio track. Even though using multiple microphones will resolve most of the issues, I think that using multiple microphones will be too much of a barrier for the average user. The accessibility and usability of the system should at all times stay at the forefront of the design choices.
+
+\subsection*{True one-shot technique}
+One possible alteration of the system would be to instead of increasing the complexity reduce the complexity down to the bare minimum. As there are new AI models being released every day, there are also new powerful and better models for retelling. One of the newest types of models that are gaining velocity are the visual language models, such as ChatGPT5 and Qwen2.5-VL\cite{qwen2.5-VL}. These models can both work with text and images, have a huge context window that they can work with and are in general a lot more powerful than the models used in this thesis. Using these types of models could be an interesting avenue to explore retelling. They can have an understanding of the link between panels, and the link between the panel art and panel text, potentially allowing for more coherent retellings. I propose that for future works the applicability of visual language models is explored for retelling in multimodal formats with the goal to reduce the number of different models being used. It is to be noted that these newer and stronger models would most likely require stronger hardware, meaning that it can no longer be locally inferred on consumer hardware and thus the input data will be on the internet.
+
+\subsection*{Game VS Game play}
+One of the aspects of TTRPGs is that the players are not always talking about the game from a character point of view. Many times they also talk to each other about rules, game mechanics, or are just bantering. These moments should be filtered out and classified as such. This way these moments can be either thrown out or used in the retelling as a meta layer in the comic book. During the user case we found that players might actually enjoy seeing some of the banter in the comic book, as it was part of the experience the players had. I propose that future works look into classifying gameplay VS game talk and how to best use both in the retelling.
+
+\subsection*{Fantasy language}
+Most AI models are trained on real world data, which uses real world languages. However in fantasy settings, and other genre settings, there are many different languages, words, objects, creatures, etc. which do not exist in the real world. This can cause the model to not understand what certain things are and thus misinterpret them. This is doubly important for the transcription model, because if that model has never heard the name of a certain creature then it also cannot transcribe it correctly. I propose for future works to look into the applicability of fine-tuning models to better understand the fantasy settings, or to find and test models that can already do this. Not just for transcription, but also LLMs and image generation models.
+
+\subsection*{Transcending audio}
+Currently the system has one form of input, audio. However it might be interesting to look into adding different forms of input, such as video, images, text or even just a prompt. Giving the users ways to inform the system about the story and its context. For example a Game Master could feed their notes into the system to give it more context about the story, or players could feed in images of their characters to have more consistent character designs. I propose that future works look into how to best transcend the audio input and add more forms of input to the system.
+
+\subsection*{User control}
+Currently the system creates a comic book and that is that. The user does not have any control over the outcome at all. It might be interesting to look into different ways that the user could have control over the outcome. One such way could be by modifying specific images or panels in the comic book. Allowing the user to change the image prompt or text in a panel after creation so that the user can fine-tune the comic book to better match their vision. Another way could be that the user and the system work together to first create one page of the comic book which is to their liking and then the system creates the entire comic book. I propose for future works to look into how to best give the user more control over the outcome of the retelling.
+
+\section{Broader impact}
+This thesis project does not only showcase potential impact on the retelling of TTRPG sessions, or game sessions in general. It also showcases that there might be potential for storytelling as a whole. It points towards a possible new form of cultural expression, where writing, intent, ideas and creativity come together to create new multimodal creation methods. With this we can place AI-driven story generation as a continuation of the long lasting human tradition to share stories.
+
+Beyond games, such a system might be a way to archive stories and to preserve memories. People could record their lives and have it retold in a comic book format, or other formats. This could be a way to preserve memories and stories for future generations in a new form which combines what we do now with photos, videos, text and speech, but in a potentially more vivid and engaging way. Furthermore, with the usage of AI the barrier of entry for many people is lowered, as they do not need to have a lot of skills to create such content. On the other hand this might potentially reduce the authenticity of the content, as it is created by AI and not by humans. This could be a potential issue for people who value the human aspect in storytelling.
+
+In the realm of education, creating multimodal content might serve as valuable, as it could be a way to create engaging and interactive content for students. What if video recordings of teachers could be turned into comic books or other multimodal formats to help students learn better? It would both save the students time and give the teacher a new way to share their knowledge.
+
+However, this system also flags a number of significant risks. On the personal level, there is potential harmful and unethical use of this technology by recording yourself each day and using it to learn more about yourself and your habits. This could be used to become a better person, however there are also many dangerous aspects to this. What if the output of the system is wrong? What if AI gives you live advice which is not good for you and the people around you? What if this data falls into the wrong hands? On the broader societal level, there are ethical questions about authorship, ownership, copyright and consent. Who owns the content that is being used for the generation? Who owns the created content? Are we allowed to use recordings of people without their consent? These ethical issues should be addressed before such a system is released to the public.
+
+\section{Personal Reflection}
+This thesis was quite the journey. I started with almost zero knowledge of artificial intelligence, comic books, and retelling, and ended up creating an entire locally inferred multimodal artificial intelligence pipeline which uses multiple different models in different ways. Many times I felt like Pippi Longstocking, who said: “I have never tried that before, so I think I should definitely be able to do that.” That spirit of curiosity and experimentation drove the project forward and kept it fun, challenging, and ultimately a joyful addition to my academic work. Furthermore, the combination of cutting-edge technology, comics, TTRPGs, and game studies was the best thing ever.
+
+I am happy to have learned that my fantasy of using AI as a new form of storytelling is possible, and that this way of storytelling could become something greater in the future. I was, however, very surprised by how complex such a system would have to be to properly work, but also delightfully surprised by how well a minimal solution works.
+
+One of the things that surprised me most is just how inconsistent AI can be. When trying to engineer a prompt for an LLM like Llama 3.1, the results can go all over the place. If not properly restrained it will simply do whatever the random seed dictates. For example, at one point I fed a transcript into Llama with a super simple prompt and it produced a perfect comic book script. That never happened again with that same prompt.
+
+With my thesis and studies coming to an end, and my career as an academic starting, I look forward to what the world of technology and games has to bring me. As Douglas Adams once wrote: “I may not have gone where I intended to go, but I think I have ended up where I needed to be.”
+
+And as the Hitchhiker's Guide wisely reminds us: “Don’t Panic.”

@@ -1,10 +1,11 @@
 \label{sec:Evaluation}
-This Chapter evaluates the output of the artifact and the results of the user case study......
+This chapter evaluates the prototype from both a user and a designer perspective. First, a user case study was conducted in which four Dungeons \& Dragons sessions were recorded, turned into comics, and then evaluated by the players through a questionnaire. Their responses give qualitative insight into the feasibility of AI retelling, the current quality of the system, and the ethics of AI retelling. Second, a self-observation and data analysis examined each stage of the pipeline, from transcription to image generation, to see where errors appear and how they shape the final output. Taken together, these two perspectives provide a comprehensive view: the user study shows how the results are received in practice, while the self-analysis reveals the technical causes behind those impressions. The main goal is to draw out design requirements, with a secondary aim of assessing current performance, both of which guide how the system can be developed into a more coherent, meaningful, and ethically sound tool for retelling tabletop sessions.
 
 \section{User Case Study}
-The user case study involved 4 Dungeons and Dragons 5th edition sessions which were recorded and then ran through the artifact to generate a comic book. The players have then received the comic book and were asked to fill in a questionnaire. Each session was the same story, ran in the same location and using the same audio equipment. The first three session were run by the same Dungeon master and the fourth session was ran by another. For detailed explanations of the methodology see Section~\ref{sec:DataCollection}. In this section the results of the case study are discussed and the questionnaire is presented in full. For all the results of the questionnaire see Appendix~\ref{app:questionnaire-results}. First the questionnaire with as presented to the participants is shown, then the results are discussed.
 
-The questionnaire was send to all 10 participants of which 5 have filled it in. This response rate limits the results in ways, however we can still distil some interesting concept and ideas from the results. Many of the questions have been posed in a very specific way so that with even a little bit of feedback you can draw certain conclusion. One benefit of having a smaller response rate is that the need to codifying the results is diminished. Because of this the results have not been codified, but have been analysed one question at a time and conclusion have been draw from them.
+The user case study involved four Dungeons \& Dragons 5th edition sessions which were recorded and then processed through the artifact to generate a comic book. The players then received the resulting comic book and were asked to complete a questionnaire. Each session followed the same story, was run in the same location, and used the same audio equipment. The first three sessions were run by the same Dungeon Master, while the fourth session was led by another. For detailed explanations of the methodology see Section~\ref{sec:DataCollection}. In this section, the results of the case study are discussed and the questionnaire is presented in full. For all the detailed results of the questionnaire see Appendix~\ref{app:questionnaire-results}. First the questionnaire as presented to the participants is shown, then the results are discussed.  
+
+The questionnaire was sent to all ten participants, of whom five completed it. While this response rate may appear modest, the five responses provided a great deal of qualitative richness. Because many of the questions were framed in a way that encouraged reflection and open-ended feedback, even a small set of responses was sufficient to surface meaningful insights into authorship, coherence, and ethics. One advantage of this smaller dataset is that it allowed for detailed, question-by-question analysis rather than broad codification, giving space for the individual voices of participants to come through. The results should therefore be read not as a statistical generalisation but as an exploratory dataset that highlights key challenges, user perspectives, and design opportunities for future iterations of the system.
 
 \subsection*{The Questionnaire}
 This section shows the full questionnaire as presented to the participants. The questionnaire was anonymous, but participants received my email address and phone number if they wanted to contact me for follow-up questions or anything else. The questionnaire is used to evaluate the artefact on the design requirements and to gather feedback on the artefact. 
@@ -78,13 +79,13 @@ In this final section, we’d like to hear your overall impressions of the comic
 \subsection{Results}
 This section discusses the responses to the questionnaire. Each of the four sections is considered as a whole, with particular attention paid to results that reveal interesting patterns or insights.
 
-\subsubsection*{Background} %1-3
+\subsubsection*{Background}
 The first section serves primarily as a check and does not offer substantial analytical insights. However, one interesting detail is that a participant reported not having read the comic book, yet proceeded to answer subsequent questions in ways that suggest they had. It is likely that this was an input error and that the participant intended to select “yes.”
 
-\subsubsection*{Exposition, Roleplay and Rule interaction} %4-9
+\subsubsection*{Exposition, Roleplay and Rule interaction}
 The results in this section are somewhat limited in scientific strength due to the small sample size and the distribution of responses. Nonetheless, several patterns can be identified. 
 
-Questions \questionref{question 4}, \questionref{question 5}, and \questionref{question 6} cluster around the middle of the Likert scale, with means of 2.8, 2.6, and 2.8, respectively. Notably, no participants selected the extreme categories (“completely” or “not at all”). This signals that there is potential for the system as the participants participants consistently observed some degree of exposition and roleplay. However it also shows that there is still a lot of space to grow for the system to become something that is truly good. Most important take away from these questions is that the participants do see exposition and role play within the system and that it can thus be extracted from a audio recording. 
+Questions \questionref{question 4}, \questionref{question 5}, and \questionref{question 6} cluster around the middle of the Likert scale, with means of 2.8, 2.6, and 2.8, respectively. Notably, no participants selected the extreme categories (“completely” or “not at all”). This signals that there is potential for the system as the participants consistently observed some degree of exposition and roleplay. However it also shows that there is still a lot of space to grow for the system to become something that is truly good. The most important take away from these questions is that the participants do see exposition and role play within the system and that it can thus be extracted from a audio recording. This matters directly to the research question, as it shows the system can extract core play activities from audio, but not yet to the level of a convincing retelling.
 
 The question regarding references to game rules shows that most participants (4 out of 5) noticed between one and five occurrences. While this does not provide an exact count, it indicates that rule-related content was present enough for respondents to register consciously. Question \questionref{question 8} further shows us that most participants would prefer such rule references to be excluded from the comic. Notably one person did say they want rules to be part of the comic book. This suggests that the inclusion of rule mechanics in narrative retellings may be a matter of personal preference.
 
@@ -92,14 +93,14 @@ Finally question \questionref{question 9} was a open question where we can draw 
 
 Combined these questions show us that that roleplay and exposition is present in the correct comic book and thus that creating a proper retelling of a TTRPG session with AI is possible. There is however a lot of room for improvement in how the exposition and roleplay panels are handled. 
 
-\subsubsection*{Ethical Considerations} % 10-13
+\subsubsection*{Ethical Considerations}
 The responses in this section provide insight into how participants perceive authorship, authenticity, and the ethical implications of using AI in this context. 
 
 Question \questionref{question 10} indicates that participants generally still regard the story depicted in the comic as their own. The mean response of 2.2 on the Likert scale (1 Completely - 5 Not at all) suggests that players recognize their actions and decisions reflected in the panels, indicating that the comic preserves a sense of personal authorship and agency.
 
 Responses to questions \questionref{question 11} and \questionref{question 11 sub} further reveal that participants valued the inclusion of potentially inappropriate, offensive, or misaligned elements from the original play session. Rather than viewing these elements negatively, they appreciated their presence as part of the authentic narrative. This suggests that the generated comic does not simply generalize or sanitize events but captures specific aspects of the play session, thereby creating a faithful retelling.
 
-Finally, questions \questionref{question 12} and \questionref{question 13} directly asked participants about the ethical acceptability of using AI in this type of system. As expected, responses varied considerably.However there is one clear throughline: most of the participants said it is ethically acceptable to use AI for this specific use case, even do they normally find the usage of AI for the creation of art unethical. But within this context, where the goal is to retell your own story without any other goals, such as selling the AI generated, they find it acceptable. This is an interesting line we found where the benefits outweigh the ethical aspects. 
+Finally, questions \questionref{question 12} and \questionref{question 13} directly asked participants about the ethical acceptability of using AI in this type of system. As expected, responses varied considerably.However there is one clear throughline: most of the participants said it is ethically acceptable to use AI for this specific use case, even do they normally find the usage of AI for the creation of art unethical. But within this context, where the goal is to retell your own story without any other goals, such as selling the AI generated, they find it acceptable. This is an interesting line we found where the benefits outweigh the ethical aspects. This suggests that the feasibility of AI retelling is not only technical but also socially/ethically viable, aligning with the research questions concern for meaningful retelling.
 
 This suggests that player perception of authorship and ethical boundaries is closely tied to the notion of personal narrative ownership, an insight that is central to understanding the role of AI in retelling TTRPG experiences
 
@@ -118,7 +119,7 @@ Third, one participant reported in Question \questionref{question 20} that some 
 
 To wrap up all the questions, Question \questionref{question 19} is among the most important questions, as it directly addresses the perceived value of the retelling. In general, participants did not consider the current version of the comic to be a valuable retelling of their session. However, they did see significant potential for a system like this to become a meaningful and accurate retelling tool in the future.
 
-\subsection*{Conclusion}
+\subsection*{Conclusion MIGHT STILL CHANGE}
 Across all four sections of the questionnaire, several clear design requirements for an AI-driven retelling system emerge. The system must ensure that events are presented in the correct chronological order to preserve narrative coherence and improve readability. Visual consistency across panels, including character design, location depiction, and overall art style is crucial for recognisability and immersion. Dialogue must be correctly attributed to the speaking character, and the system should include a mechanism to distinguish between in-game and out-of-game speech while still incorporating both where appropriate. Rule references and other meta-level elements should either be excluded or presented in a way that suits individual preferences. Finally, the system should aim to maintain the emotional tone and atmosphere of the original session while providing a clear and structured narrative flow. Together, these requirements form a concrete roadmap for improving the quality, usability, clarity, and perceived value of future iterations of the retelling pipeline.
 
 Taken together, the questionnaire results demonstrate that the current prototype already succeeds in capturing certain aspects of a play session, such as atmosphere and moments of exposition or roleplay. At the same time, participants highlighted important shortcomings in structure, consistency, and dialogue handling that limit the comic's effectiveness as a retelling. The responses also show that players generally recognise the story as their own and consider the use of AI acceptable in this specific context, provided that the goal is to retell their own experience rather than to produce commercial artwork. These findings suggest that while the present system cannot yet deliver a fully convincing retelling, it points toward a clear direction for development. The potential recognised by participants indicates that, with refinement along the identified design requirements, AI-assisted comics could become a meaningful and ethically acceptable form of retelling TTRPG sessions.
@@ -343,91 +344,7 @@ In summary, the image generation stage demonstrates both the strengths and weakn
 \end{figure}
 
 \subsection*{Conclusion}
-Across all stages of the pipeline, the analysis reveals several concrete design requirements for improving the system. At the transcription level, diarization must be refined to avoid over-segmentation and ensure sentence-level coherence, and merging strategies should be integrated directly into the pipeline rather than applied as a post-processing step. Script generation requires stricter output validation: all fields, especially \texttt{text}, should be populated, character names must be normalised, and inconsistent or irrelevant data (such as gameplay terms or hallucinated locations) should be filtered. Prompt generation needs mechanisms for maintaining narrative continuity between panels, reducing artifacts, and creating consistency with characters and objects in their appearance. Finally, the image generation stage highlights the need for stronger stylistic consistency, clearer differentiation of characters and locations, support for comic-specific conventions such as manpu, and improved visual quality for fantasy-specific settings. Together, these requirements provide a clear roadmap for enhancing the pipeline's ability to produce coherent, faithful, and readable retellings.
+Across all stages of the pipeline, the analysis reveals several concrete design requirements for improving the system. At the transcription level, diarization must be refined to avoid over-segmentation and ensure sentence-level coherence. Script generation requires stricter output validation: all fields, especially \texttt{text}, should be populated, character names must be normalised, and inconsistent or irrelevant data should be filtered. Prompt generation needs mechanisms for maintaining narrative continuity between panels, reducing artifacts, and creating consistency with characters and objects in their appearance. Finally, the image generation stage highlights the need for stronger stylistic consistency, clearer differentiation of characters and locations, support for comic-specific conventions such as manpu, and improved visual quality for fantasy-specific settings. Together, these requirements provide a clear roadmap for enhancing the pipeline's ability to produce coherent, faithful, and readable retellings. Despite its current limitations, the pipeline shows clear potential as a tool for transforming recorded play sessions into a new expressive medium. With targeted refinements guided by the identified design requirements, such a system could evolve from an experimental prototype into a powerful method for retelling TTRPG experiences.
 
-The self-observation and data analysis demonstrate that while each stage of the pipeline functions as intended in isolation, small errors and inconsistencies accumulate as the data moves downstream. The result is a system that captures much of the structure, content, and atmosphere of a TTRPG session but struggles to communicate that experience coherently in comic book form. The findings suggest that the greatest opportunities for improvement lie not in radically changing the pipeline's structure but in strengthening the links between its stages, enforcing consistency, and grounding generative steps in structured context. Despite its current limitations, the pipeline shows clear potential as a tool for transforming recorded play sessions into a new expressive medium. With targeted refinements guided by the identified design requirements, such a system could evolve from an experimental prototype into a powerful method for retelling TTRPG experiences.
-
-
-\section*{Conclusion} %ChatGPT REWRITE
-The analyses presented in this chapter show that the current prototype succeeds in capturing important aspects of tabletop role-playing game sessions while also revealing significant limitations in how those sessions are retold as comics. The self-observation of the pipeline highlights how small errors at each stage, from fragmented transcription and inconsistent script data to prompt discontinuity and ungrounded image generation, accumulate and undermine the coherence of the final output. The questionnaire responses reflect and reinforce these findings from the user perspective: participants recognised the atmosphere and key events of their sessions and felt a sense of authorship in the resulting comic, yet they also reported issues with chronology, visual and narrative consistency, dialogue attribution, and overall readability. Both forms of analysis point to clear design requirements for future development, including improved transcription merging, stricter data validation, mechanisms for narrative continuity, grounded visual references for characters and objects, and greater stylistic consistency across panels. Most importantly, they show that the core concept — retelling TTRPG sessions as comics through AI — is both technically feasible and meaningful to players. Addressing the identified shortcomings will be essential for transforming the system from a promising prototype into a robust tool capable of producing coherent, engaging, and ethically acceptable retellings.
-
-
-
-\section{Expert review}
-
-\section{The minimal viable product}
-The minimal viable product (MVP) is a version of a new product that includes only the essential features necessary to meet the needs for initial testing. The goal of an MVP is to validate the product idea with minimal resources and gather feedback for future development. In figure \ref{fig:MVP} you can see the result of the MVP and in figure \ref{fig:MVPpipeline} you can see the pipeline that is used for the MVP.
-
-\begin{figure}[!htp]
-    \centering
-    \includegraphics[scale=0.1]{images/mvpTTRPGtoComic.png}
-    \caption[The minimal viable product]{The minimal viable product}
-    \label{fig:MVP}
-\end{figure}
-
-\subsection{The minimal viable product}
-
-\section{Small experiments}
-
-\subsection{The language of TTRPGs}
-Models like Whisper are trained on a wide variety of audio data, however this is primarily normal language usage. Because of this I anticipate that there will be a large issue with transcribing many fantasy words and terms, thus a small experiment has been done to identify if this is truly a problem. For this experiment 10 fantasy creature names have been recorded and whisper transcribed these 10 names. Only 1 out of the 10 names were transcribed correctly and 2 out of 10 where almost correct \ref{tab:monster_names}. This is inaccuracy is a big issue when transcribing any fantasy game session as it will interfere with many important key moments and key names during a session/campaign. When the group meets a monster called a "Slaad" and Whisper transcribes this as "Nod" it will quite confusing to understand what is going on in the story.
-
-To generate a accurate transcription of the names a custom model needs to be trained on specific fantasy words and terms, however this is way outside of the scope of this thesis. In addition it is also very difficult as Fantasy names are fantasy names for a reason and people can just come up with new names all the time. Integrating thousands of names however could still be valuable as it will most likely catch most cases.
-\begin{table}[h!]
-\centering
-\begin{tabular}{|l|l|}
-\hline
-\textbf{Correct Name} & \textbf{Transcribed name} \\
-\hline
-Owlbear    & Halber     \\
-Goblin     & Goblin     \\
-Rakshasa   & Raksasa    \\
-Dracolich  & Draco Lich \\
-Quasit     & Kwasi      \\
-Slaad      & Nod        \\
-Drow       & Drought    \\
-Illithid   & Illidan    \\
-Cambion    & Kempion    \\
-Ankheg     & Hank Man   \\
-\hline
-\end{tabular}
-\caption{Comparison of monster names and whisper transcribed versions}
-\label{tab:monster_names}
-\end{table}
-
-
-%This is old, might be deleted
-\section{Generating the comic book script}
-The iterative design process of generating the comic book script after the MVP version was a crucial step to improve the quality of the comic book panels. From having a one-shot approach where we gave the entire transcript to the LLama 3.1 model, we moved to an adaptive panel generator which has a structured approach to data and keeps track of the context. In this section all the iterative steps are described and what did and did not work in chronological order.
-
-\subsubsection{MVP}
-For the MVP of the artefact the entire transcript of the tabletop role-playing game session was given to Llama 3.1 and see what it would generate. The LLM was asked: "You are given a Dungeons and Dragons session transcript. Convert it into a comic book script." This resulted in two results: The LLM crashed as the token limit was exceeded or it gave things that had nothing to do to with the input and hallucinated everything. A quick fix to this was to cut the transcript into smaller chunks of text which resulted in an interesting result as it actually gave a comic book script. It was given 2 scenes of text which where hand cut out of the transcript. However as the LLM was not instructed to give a structured output it was useless as every time the program was run it would give a different output. The last step was to create a structured prompt for the LLM which is the prompt in \ref{lst:MPVLlamaprompt}. This resulted in a consistent JSON format output which could then be used to generate images.
-
-\subsubsection{Cleaning up the transcript}
-When you feed an audio recording to Whisper it transcribes the audio as one long sentence. There is no punctation or any idea of sentences structure. This way it is impossible to keep track of who said what and when. To fix this the transcript needs to be cleaned up. The first step is to use a Punctuation and Capitalization Restoration model \cite{guhrEtAl} to add punctuation and capitalization to the text. This will make the text more readable and easier to understand for an LLM. The second step is to use Speaker Diarization to identify the different speakers in the text. The tool used to do this was pyannote 3.1 \cite{Bredin23,Plaquet23}, an open source python library which is super easy to use and broadly used by people (15 million download per month). Lastly combine the cleaned up whisper transcription with the speaker diarization to create a structured JSON file. This new transcript file \ref{lst:sessionTrarnscriptJSON} is what created the foundation for the entire comic book generator.
-
-\begin{lstlisting}[style=jsonstyle, caption={Session transcript JSON}, label={lst:sessionTrarnscriptJSON}]
-{
-    "panel_index": 0,
-    "speaker": "SPEAKER_02",
-    "text": "Our story actually starts with the three of you...",
-    "start": 0.0,
-    "end": 2.96
-},
-...
-\end{lstlisting}
-
-\subsubsection{Scene detection}
-
-\subsubsection{Line based chunking}
-Every line or every X lines
-
-\subsubsection{LLM based chunking}
-Scene cutting
-
-\subsubsection{LLM based filtering}
-Ask the LLM to decide if a line of text is player or character speech. Into giving it a chunk instead.
-
-\subsubsection{Context aware LLM based chunking}
-
-\subsubsection{Adaptive panel generating}
+\section*{Chapter Conclusion}
+The analyses presented in this chapter show that the current prototype succeeds in capturing important aspects of retelling tabletop role playing game sessions while also revealing significant limitations in how those sessions are retold as comics. The self-observation of the pipeline highlights how small errors at each stage, from broken transcription and inconsistent script data generation to messy prompts and lack of image generation control, accumulate and combine into a inconsistent and chaotic comic book. The questionnaire responses reflect and reinforce these findings from the user perspective: participants recognised the atmosphere and key events of their sessions and felt a sense of authorship in the resulting comic, yet they also reported issues with chronology, visual and narrative consistency, dialogue attribution, and overall readability. Both forms of analysis point to clear design requirements for future development, including improved transcription merging, stricter data validation, mechanisms for narrative continuity, relatable visual references for characters and objects, and greater stylistic consistency across panels. Most importantly the results show that the core concept of retelling TTRPG sessions as comics through AI is both technically feasible and meaningful to players. Addressing the identified shortcomings will be essential for transforming the system from a prototype into a robust tool capable of producing coherent, engaging, and ethically acceptable retellings.
