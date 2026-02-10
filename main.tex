@@ -23,6 +23,9 @@
 \usepackage[acronym]{glossaries}
 \usepackage{afterpage}
 \newcommand{\questionref}[1]{\hyperref[#1]{\ref*{#1}}}
+\hypersetup{
+    hidelinks
+}
 % -------------------------------
 % Listings (single, UTF-8 safe)
 % -------------------------------
@@ -185,9 +188,9 @@
 
 \newpage
 
-\bibliographystyle{abbrv}
+\bibliographystyle{IEEEtran}
 \addcontentsline{toc}{chapter}{Bibliography}
-\bibliography{bibfile}
+\bibliography{bibfile_fixed(1)}
 
 \newpage
 

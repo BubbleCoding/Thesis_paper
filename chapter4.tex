@@ -1,25 +1,25 @@
 \label{sec:Implementation}
-This chapter documents the technical realisation of the artefact central to this research. It traces the process from exploratory prototyping to the final, fully functional system and shows how iterative design and engineering choices shaped the artefact's ability to retell tabletop role-playing sessions as comics. First, the development environment of the final artefact is described as a baseline. Second, the minimal viable product (MVP) is presented, followed by lessons learned. Finally, the final artefact is discussed in detail.
+This chapter documents the technical realisation of the artifact central to this research. It traces the process from exploratory prototyping to the final, fully functional system and shows how iterative design and engineering choices shaped the artifact's ability to retell tabletop role-playing sessions as comics. First, the development environment of the final artifact is described as a baseline. Second, the minimal viable product (MVP) is presented, followed by lessons learned. Finally, the final artifact is discussed in detail.
 
-To create the artefact for this thesis, an iterative design process was followed alongside an agile development strategy. To increase the chance of success and improve usability, each part of the system was developed and tested separately. This enabled rapid changes and targeted improvements after each test cycle.
+To create the artifact for this thesis, an iterative design process was followed alongside an agile development strategy. To increase the chance of success and improve usability, each part of the system was developed and tested separately. This enabled rapid changes and targeted improvements after each test cycle.
 
-Development began with a bare-bones pipeline consisting of three stages applied to the input audio. First, the recorded audio was converted to text with a speech-to-text model. Second, the text was converted to a comic-book script with an LLM. Third, the script was transformed into a comic using an image generation model. This approach yielded the minimal viable product that laid the foundation for the final artefact. The first iteration took a one-shot approach in which each stage simply passed its output to the next, without cleaning, validation, or structural considerations between models.
+Development began with a bare-bones pipeline consisting of three stages applied to the input audio. First, the recorded audio was converted to text with a speech-to-text model. Second, the text was converted to a comic-book script with an LLM. Third, the script was transformed into a comic using an image generation model. This approach yielded the minimal viable product that laid the foundation for the final artifact. The first iteration took a one-shot approach in which each stage simply passed its output to the next, without cleaning, validation, or structural considerations between models.
 
 Testing the MVP surfaced multiple issues that informed the final pipeline. The final pipeline first converts audio to text, then cleans the text via punctuation restoration and diarisation, reconstructing who spoke when. This enriched transcript is provided to an LLM to generate a JSON-based comic script. Each panel has its own structured output, and an adaptive sliding context method lets the model draw on as much of the original transcript as needed. The resulting JSON is then converted by an LLM into prompts for an image generation model. Prompts are rendered with a LoRA-enabled image generator, and the resulting images are assembled into a comic layout.
 
 \section{Development Environment}
-Before describing the artefact itself, this section outlines the software and hardware environment used to develop and run the system. Because the artefact relies on several locally hosted AI models, establishing a consistent and capable environment was a crucial prerequisite for successful implementation.
+Before describing the artifact itself, this section outlines the software and hardware environment used to develop and run the system. Because the artifact relies on several locally hosted AI models, establishing a consistent and capable environment was a crucial prerequisite for successful implementation.
 
-Building and running complex AI pipelines locally requires a wide range of libraries and dependencies, many of which are more stable and better supported on Linux. For this reason, the development environment was set up using WSL2 (Windows Subsystem for Linux) to create a full Ubuntu 24.04.2 LTS environment on a Windows host system. This enabled the use of essential machine learning tools and frameworks while still maintaining compatibility with existing Windows-based workflows. Python (version 3.12.3) served as the primary programming language for all components of the artefact. All libraries that were used can be seen in \ref{tab:core-libraries}.
+Building and running complex AI pipelines locally requires a wide range of libraries and dependencies, many of which are more stable and better supported on Linux. For this reason, the development environment was set up using WSL2 (Windows Subsystem for Linux) to create a full Ubuntu 24.04.2 LTS environment on a Windows host system. This enabled the use of essential machine learning tools and frameworks while still maintaining compatibility with existing Windows-based workflows. Python (version 3.12.3) served as the primary programming language for all components of the artifact. All libraries that were used can be seen in \ref{tab:core-libraries}.
 
 Running large language models and image generation models locally is computationally demanding, both in terms of memory and processing power. All experiments and development work were performed on a machine equipped with an Nvidia RTX 3080 Ti GPU with 12~GB of VRAM, an Intel i7-9700K CPU with 16 cores, and 64~GB of RAM. These specifications were sufficient for running the models used in this project, though they represent the upper range of consumer-grade hardware. Running the full pipeline reliably requires significant GPU memory and processing capacity. These performance requirements shaped several implementation decisions, particularly around model selection and pipeline optimisation.
 
 \subsubsection*{Core Software Libraries}
-The artefact relies on a Python-based ecosystem composed of several key open-source libraries:
+The artifact relies on a Python-based ecosystem composed of several key open-source libraries:
 
 \begin{table}[H]
 \centering
-\caption{Core software libraries used in the artefact}
+\caption{Core software libraries used in the artifact}
 \label{tab:core-libraries}
 \begin{tabular}{|p{3cm}|p{10cm}|}
 \hline
@@ -46,7 +46,7 @@ The artefact relies on a Python-based ecosystem composed of several key open-sou
 
 
 \section{MVP Development}
-Before creating the final artefact, the MVP was developed as an exploratory prototype. Its purpose was twofold: first, to test whether the concept of converting a tabletop role-playing session into a comic book was feasible at all, and second, to gain practical experience with the challenges of building a multi-model AI pipeline. At this stage, the goal was not quality but functionality: to build an end-to-end system that could transform a small piece of raw audio into a comic book page without human intervention. This prototype then served as the basis for identifying requirements and limitations that shaped the final artefact.
+Before creating the final artifact, the MVP was developed as an exploratory prototype. Its purpose was twofold: first, to test whether the concept of converting a tabletop role-playing session into a comic book was feasible at all, and second, to gain practical experience with the challenges of building a multi-model AI pipeline. At this stage, the goal was not quality but functionality: to build an end-to-end system that could transform a small piece of raw audio into a comic book page without human intervention. This prototype then served as the basis for identifying requirements and limitations that shaped the final artifact.
 
 \subsection*{The MVP Pipeline}
 The MVP pipeline has 4 steps of processing to go from audio recording to comic book. First, Whisper Turbo transcribes the audio recording to raw text. Then Llama 3.1 converts the text to a comic book script. The script is then processed by Stable Diffusion XL to generate the comic book panels. Finally, the panels are assembled into a comic book format using a custom Python script using the PIL library. The pipeline is shown in figure \ref{fig:MVPpipeline}. The audio recording is a single-track recording of a tabletop role-playing game session of which only the first couple of minutes have been used as that was enough to create one page (6 images). The prompt used for Llama can be seen in listing \ref{lst:MPVLlamaprompt}. This prompt generates a description of the panel art and a line of dialogue or narration for each panel. The output is a JSON array of objects, where each object contains the panel art description and the text. The panel art description is then given to Stable Diffusion XL to generate the image with no other instructions. The text is used as a caption for the image. The images are then assembled into a comic book format using a custom Python script which generates a PDF file with the images and captions.
@@ -54,7 +54,7 @@ The MVP pipeline has 4 steps of processing to go from audio recording to comic b
 The prototype was deliberately simple. No intermediate validation, error handling, or data cleaning was performed. Outputs from one stage were passed unchanged to the next. This design allowed rapid iteration and made it easier to observe where the system would fail.
 
 \subsection*{Results and observations}
-The MVP successfully generated one page of a comic book from the audio input. Although the output was functional as a comic book, the quality was low. The generated images had no consistency and had a lot of AI artefacts, the text had no link to the image, the text itself was all over the place, and more. Still, the fact that a complete pipeline could run end-to-end with no human intervention demonstrated the core feasibility of the concept. This knowledge, and the discovery of many lessons, directly informed the requirements and design improvements discussed in the next section and ultimately shaped the final artefact.
+The MVP successfully generated one page of a comic book from the audio input. Although the output was functional as a comic book, the quality was low. The generated images had no consistency and had a lot of AI artifacts, the text had no link to the image, the text itself was all over the place, and more. Still, the fact that a complete pipeline could run end-to-end with no human intervention demonstrated the core feasibility of the concept. This knowledge, and the discovery of many lessons, directly informed the requirements and design improvements discussed in the next section and ultimately shaped the final artifact.
 
 \begin{lstlisting}[style=jsonstyle, caption={Prompt for Comic Book Script Generation}, label={lst:MPVLlamaprompt}]
 You are given a segment of a Dungeons & Dragons session transcript:
@@ -99,14 +99,14 @@ Output only a valid JSON array. Example format:
 	\label{fig:MVPpipeline}
 \end{figure}
 
-\section{From MVP to Final Artefact}
-This section discusses how the MVP informed the development of the final artefact. First, it identifies key limitations revealed during initial testing. Next, it outlines design improvements aimed at addressing these shortcomings. These insights are then translated into a set of formal system requirements that guided the development of the final pipeline. Evaluating the MVP's shortcomings is essential not only for improving the prototype but also for understanding the broader challenges of transforming raw TTRPG audio into a structured retelling.
+\section{From MVP to Final Artifact}
+This section discusses how the MVP informed the development of the final artifact. First, it identifies key limitations revealed during initial testing. Next, it outlines design improvements aimed at addressing these shortcomings. These insights are then translated into a set of formal system requirements that guided the development of the final pipeline. Evaluating the MVP's shortcomings is essential not only for improving the prototype but also for understanding the broader challenges of transforming raw TTRPG audio into a structured retelling.
 
 \subsection{Limitations of the MVP}
 The MVP was a success in terms of validating the product idea and gathering valuable knowledge about the product requirements and limitations. In this section, lessons learned are described in detail and it is discussed how these lessons will be implemented in the next iteration of the product.
 
 \subsubsection{Art}
-The first thing one might see when looking at the MVP output is the art. The art quality is low, it is not very detailed, the characters are not very expressive and the art style is very inconsistent. There are also a lot of generative AI artefacts, like weird faces and inconsistent human anatomy. Furthermore, all these panels are situated in the same tavern, but there is no consistent setting. All these panels also describe 4 different characters but there is no consistent character design between panels.
+The first thing one might see when looking at the MVP output is the art. The art quality is low, it is not very detailed, the characters are not very expressive and the art style is very inconsistent. There are also a lot of generative AI artifacts, like weird faces and inconsistent human anatomy. Furthermore, all these panels are situated in the same tavern, but there is no consistent setting. All these panels also describe 4 different characters but there is no consistent character design between panels.
 
 \subsubsection{Text}
 The text has one obvious flaw of clipping outside of the image which is something that needs to be fixed. Other than that, when reading the text it is noticeable that it is not really character dialogue, but things the players are saying. Some of the text is player-to-player dialogue and not in-character dialogue which is something that needs to be filtered out. The text also does not make any sense in terms of story structure. These are just lines of text.
@@ -117,7 +117,7 @@ Looking at the entire transcription of the tabletop role-playing game session it
 Another noticeable limitation of the MVP is the visual composition of the panels. Most images were generated from similar camera angles, often defaulting to medium shots or frontal views, which reduced visual variety and narrative impact. Without deliberate framing, lighting choices, or camera perspective, the panels failed to convey mood, pacing, or dramatic tension. This limits the expressive potential of the comic and makes scenes visually repetitive. These issues highlight the need for more explicit compositional control in the image generation stage, including metadata for framing, perspective, and atmosphere.
 
 \subsubsection{Automation and Error Handling}
-The MVP was built as a straightforward one-shot pipeline, where each model's output was directly passed into the next without validation or fallback. This approach exposed significant fragility, resulting in the program sometimes crashing during processing. Additionally, there was no progress feedback, making debugging difficult. These limitations made the system unreliable for longer recordings and highlighted the need for validation checks and improved automation in the final artefact.
+The MVP was built as a straightforward one-shot pipeline, where each model's output was directly passed into the next without validation or fallback. This approach exposed significant fragility, resulting in the program sometimes crashing during processing. Additionally, there was no progress feedback, making debugging difficult. These limitations made the system unreliable for longer recordings and highlighted the need for validation checks and improved automation in the final artifact.
 
 \subsubsection{Conclusion}
 Taken together, these limitations show that producing a coherent retelling involves more than transcription and image generation. It requires structured data, validated intermediate steps, and explicit control over narrative and visual elements.
@@ -155,7 +155,7 @@ These proposed improvements reveal what the system must/could be capable of to g
 
 \subsection{System Requirements}
 \label{sec:SystemRequirements}
-Based on the lessons learned from the MVP and the desired features for the final artefact, a set of system requirements has been established. These requirements are divided into functional, non-functional and Constraints categories. The following requirements translate the lessons from the MVP and design explorations into actionable criteria for the final artefact.
+Based on the lessons learned from the MVP and the desired features for the final artifact, a set of system requirements has been established. These requirements are divided into functional, non-functional and Constraints categories. The following requirements translate the lessons from the MVP and design explorations into actionable criteria for the final artifact.
 
 \subsubsection{Functional Requirements}
 \begin{enumerate}
@@ -186,27 +186,27 @@ Based on the lessons learned from the MVP and the desired features for the final
   \item The system must be open-source and use freely available artificial intelligence models.
 \end{itemize}
 
-\section{The Final Artefact}
-Building on the requirements and design considerations discussed in Section~\ref{sec:SystemRequirements}, the final artefact was implemented as a fully automated Python-based system. It takes a single audio file as input and produces a complete comic book as output. Unlike the MVP, which prioritised proof-of-concept over robustness, the final artefact integrates structured data handling, validation checks, and more deliberate control over narrative and visual elements.
+\section{The Final Artifact}
+Building on the requirements and design considerations discussed in Section~\ref{sec:SystemRequirements}, the final artifact was implemented as a fully automated Python-based system. It takes a single audio file as input and produces a complete comic book as output. Unlike the MVP, which prioritised proof-of-concept over robustness, the final artifact integrates structured data handling, validation checks, and more deliberate control over narrative and visual elements.
 
 \subsection{The Final Pipeline}
-In this section, the final pipeline is discussed. The pipeline consists of 5 steps which are all discussed in the following subsections. An overview of the entire pipeline can be seen in figure \ref{fig:FinalPipeline}. Furthermore, in table \ref{tab:mvp-vs-final} the key differences between the MVP and the final artefact are shown. These two graphs serve as a good overview of the entire pipeline and the differences between the MVP and the final artefact.
+In this section, the final pipeline is discussed. The pipeline consists of 5 steps which are all discussed in the following subsections. An overview of the entire pipeline can be seen in figure \ref{fig:FinalPipeline}. Furthermore, in table \ref{tab:mvp-vs-final} the key differences between the MVP and the final artifact are shown. These two graphs serve as a good overview of the entire pipeline and the differences between the MVP and the final artifact.
 
 \begin{figure}[!htp]
 	\centering
 	\includegraphics[scale=0.5]{images/FinalPipeLine.png}
-	\caption[pipeline for the final artefact] {The final artefact pipeline}
+	\caption[pipeline for the final artifact] {The final artifact pipeline}
 	\label{fig:FinalPipeline}
 \end{figure}
 
 \begin{table}[H]
 \centering
 \small
-\caption{Key differences between the MVP and the final artefact}
+\caption{Key differences between the MVP and the final artifact}
 \label{tab:mvp-vs-final}
 \begin{tabular}{|p{3.2cm}|p{5.2cm}|p{5.2cm}|}
 \hline
-\textbf{Aspect} & \textbf{MVP} & \textbf{Final Artefact} \\
+\textbf{Aspect} & \textbf{MVP} & \textbf{Final Artifact} \\
 \hline
 \textbf{Pipeline design} & Simple one-shot process with raw outputs passed between stages and no validation. & Modular multi-stage pipeline with structured data exchange, validation, and error handling. \\
 \hline
@@ -276,7 +276,7 @@ Output JSON in this format:
 \subsubsection*{Prompt Generation}
 To create an image generation model prompt that is to be used in the next step, Llama 3.1 is used again. This time the AI is asked to convert each JSON output of the previous step into a prompt that can be fed into Stable Diffusion XL. This step is important as most image generative models work well with human language and not a JSON file. Furthermore, Stable Diffusion has one very large limitation as it can only work with 77 tokens. Of which 2 tokens are reserved as a start and end token. Thus only 75 tokens are available, and that is not a lot. It is unknown how many characters 75 tokens is and how the Stable Diffusion tokenizer works, words can be one token, but certain symbols are also one token. Because of this Llama 3.1 is asked to create a prompt out of the JSON data which is compatible with the 75 token limit. It is asked to create a visually descriptive SDXL prompt based on the JSON output of the previous step. Furthermore, it is given 4 requirements: It should create one natural-language description of the panel image. Use a maximum of 75 tokens. It should not add any other data to the output than the prompt. Lastly it is asked to keep the prompt short and concise so that it sticks within the token limit.
 
-Besides the prompt I have also used the following negative prompt: "deformed, blurry, extra limbs, poorly drawn hands, extra fingers, mutated, out of frame, ugly, tiling, low resolution, bad anatomy, watermark". This negative prompt is used for each image and has its own token limit. The primary reason for this is to increase the image quality without having to spend tokens in the main prompt, but also to prevent strange generative AI artefacts such as multiple limbs.
+Besides the prompt I have also used the following negative prompt: "deformed, blurry, extra limbs, poorly drawn hands, extra fingers, mutated, out of frame, ugly, tiling, low resolution, bad anatomy, watermark". This negative prompt is used for each image and has its own token limit. The primary reason for this is to increase the image quality without having to spend tokens in the main prompt, but also to prevent strange generative AI artifacts such as multiple limbs.
 
 \subsubsection*{Image Generation}
 To generate the images for the comic book the prompt from the previous step is fed into Stable Diffusion XL. Besides this, there are only two other things that are given to the model. The negative prompt that was created is given and a LoRA is passed on to create a consistent art style. A LoRA is a low-rank adaptation of Stable Diffusion which modifies the model in a lightweight way so that you do not have to retrain the whole model. It is similar to fine-tuning. The LoRA used for this project is the Fantasy Art XL LoRA model from Civitai. This LoRA is trained to generate comic book art from the 70s and 80s. With this, the comic book has a coherent art style without having to spend many prompt tokens on the art style. 
@@ -285,8 +285,8 @@ To generate the images for the comic book the prompt from the previous step is f
 Converting all the images to a comic book structure was done with the Pillow Python image library. This is a library which can edit images from Python code. There are 3 steps to take to create a whole comic book. First, the text needs to be added to the image. This was done by adding a white box at the bottom of the image and placing the text inside the white box. I specifically omitted the usage of speech bubbles here because of two things. It would require an extra AI model which uses computer vision to search for faces so we can get an idea of where the speech bubble needs to point towards, which is extra complexity which is outside the scope of this thesis. In addition to that, I assume that this would create a high chance that the speech bubble would overlap with important parts of the image as it would just be placed at random. Normally speech bubbles are part of the artistic vision of the entire panel. The second step is the combining of the images now with text into one page which was also done with the Pillow library. For clarity, a black border was placed between the images. Lastly, all the images had to be combined into one PDF document which was also done with the Pillow library. These 3 steps result in the final resulting comic book.
 
 \section{Chapter Conclusion}
-This chapter detailed the development of the artefact which laid the foundation of this thesis, from the creation of a minimal viable product to the implementation of the final system. The MVP demonstrated that generating comic books from tabletop role-playing audio was feasible, but also revealed key limitations around art quality, text structure, composition, and automation. These findings directly informed the system requirements and guided subsequent design improvements.
+This chapter detailed the development of the artifact which laid the foundation of this thesis, from the creation of a minimal viable product to the implementation of the final system. The MVP demonstrated that generating comic books from tabletop role-playing audio was feasible, but also revealed key limitations around art quality, text structure, composition, and automation. These findings directly informed the system requirements and guided subsequent design improvements.
 
-The final artefact addressed many of these challenges through a structured, multi-stage pipeline, improved data handling, and better control over both narrative and visual elements. It remains a work in progress, but it represents a significant step toward an automated system capable of producing meaningful retellings of TTRPG sessions.
+The final artifact addressed many of these challenges through a structured, multi-stage pipeline, improved data handling, and better control over both narrative and visual elements. It remains a work in progress, but it represents a significant step toward an automated system capable of producing meaningful retellings of TTRPG sessions.
 
-The following chapter evaluates this artefact through both a user-case study and a detailed analysis of its internal data processing, assessing how well it meets its design goals and where further refinement is needed.
+The following chapter evaluates this artifact through both a user-case study and a detailed analysis (self-observation) of its internal data processing, assessing how well it meets its design goals and where further refinement is needed.

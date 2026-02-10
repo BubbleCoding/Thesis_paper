@@ -5,20 +5,37 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Iconography}}{12}{figure.caption.13}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces pipeline for the minimal viable product}}{40}{figure.caption.74}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces pipeline for the minimal viable product}}{39}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces pipeline for the final artifact}}{46}{figure.caption.79}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Entry duration distributions across all four sessions, comparing raw transcripts (left) with merged speaker entries (right).}}{51}{figure.caption.87}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Word count distributions across all four sessions, comparing raw transcripts (left) with merged speaker entries (right).}}{51}{figure.caption.88}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Normalized artifact frequency in transcripts, showing artifacts per 100 words for each session.}}{52}{figure.caption.89}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Comparison between raw transcript entries and the number of detected artifacts per session.}}{52}{figure.caption.90}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Number of transcript entries per session before and after merging consecutive same-speaker segments.}}{53}{figure.caption.91}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Entry counts across sessions under different merging strategies. Bars show the number of transcript entries per session when using raw data, simple back-to-back merging, and looser merges with 2s and 5s thresholds.}}{53}{figure.caption.92}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Normalized entries per minute across sessions for different merging strategies. Entries are adjusted by total session duration to allow fair comparison.}}{54}{figure.caption.93}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Entry duration distributions across all four sessions after time-based merging. Left: loose 2-second merge, Right: loose 5-second merge.}}{54}{figure.caption.94}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Word count distributions across all four sessions after time-based merging. Left: loose 2-second merge, Right: loose 5-second merge.}}{55}{figure.caption.95}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Camera view distribution across Sessions 1-4 (grouped into Close-up, Medium shot, Wide/Long shot, Over-the-shoulder, Other).}}{58}{figure.caption.99}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Mood distribution across Sessions 1-4 (grouped into Tense/Uneasy, Suspenseful, Desperation/Urgency, Determined/Positive, Sad/Melancholy, Angry/Hostile, Confused/Contemplative, Other).}}{58}{figure.caption.99}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Setting distribution across Sessions 1-4 (grouped into Tavern/Inn, Cell/Dungeon, Ship/Sea, Urban/Street, Forest/Outdoors, Temple/Religious, Castle/Stronghold, Cave/Underground, Other).}}{58}{figure.caption.99}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces The minimal viable product}}{60}{figure.caption.101}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Entry duration distributions across all four sessions, comparing raw transcripts (left) with merged speaker entries (right).}}{61}{figure.caption.99}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Word count distributions across all four sessions, comparing raw transcripts (left) with merged speaker entries (right).}}{61}{figure.caption.100}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Normalized artifact frequency in transcripts, showing artifacts per 100 words for each session.}}{62}{figure.caption.101}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Comparison between raw transcript entries and the number of detected artifacts per session.}}{62}{figure.caption.102}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Number of transcript entries per session before and after merging consecutive same-speaker segments.}}{63}{figure.caption.103}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Entry counts across sessions under different merging strategies. Bars show the number of transcript entries per session when using raw data, simple back-to-back merging, and looser merges with 2s and 5s thresholds.}}{63}{figure.caption.104}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Normalized entries per minute across sessions for different merging strategies. Entries are adjusted by total session duration to allow fair comparison.}}{64}{figure.caption.105}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Entry duration distributions across all four sessions after time-based merging. Left: loose 2-second merge, Right: loose 5-second merge.}}{64}{figure.caption.106}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Word count distributions across all four sessions after time-based merging. Left: loose 2-second merge, Right: loose 5-second merge.}}{65}{figure.caption.107}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Camera view distribution across Sessions 1-4 (grouped into Close-up, Medium shot, Wide/Long shot, Over-the-shoulder, Other).}}{68}{figure.caption.111}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Mood distribution across Sessions 1-4 (grouped into Tense/Uneasy, Suspenseful, Desperation/Urgency, Determined/Positive, Sad/Melancholy, Angry/Hostile, Confused/Contemplative, Other).}}{68}{figure.caption.111}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Setting distribution across Sessions 1-4 (grouped into Tavern/Inn, Cell/Dungeon, Ship/Sea, Urban/Street, Forest/Outdoors, Temple/Religious, Castle/Stronghold, Cave/Underground, Other).}}{68}{figure.caption.111}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces A subset of 15 images of the 4 different comic books.}}{72}{figure.caption.114}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{72}{subfigure.13.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{72}{subfigure.13.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{72}{subfigure.13.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{72}{subfigure.13.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{72}{subfigure.13.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{72}{subfigure.13.6}%
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {}}}{72}{subfigure.13.7}%
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {}}}{72}{subfigure.13.8}%
+\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {}}}{72}{subfigure.13.9}%
+\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {}}}{72}{subfigure.13.10}%
+\contentsline {subfigure}{\numberline {(k)}{\ignorespaces {}}}{72}{subfigure.13.11}%
+\contentsline {subfigure}{\numberline {(l)}{\ignorespaces {}}}{72}{subfigure.13.12}%
+\contentsline {subfigure}{\numberline {(m)}{\ignorespaces {}}}{72}{subfigure.13.13}%
+\contentsline {subfigure}{\numberline {(n)}{\ignorespaces {}}}{72}{subfigure.13.14}%
+\contentsline {subfigure}{\numberline {(o)}{\ignorespaces {}}}{72}{subfigure.13.15}%
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

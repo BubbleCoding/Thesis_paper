@@ -16,62 +16,48 @@
 \contentsline {subsection}{\numberline {2.5.2}Large language model prompting}{19}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}Image generation model prompting}{22}{subsection.2.5.3}%
 \contentsline {section}{\numberline {2.6}Three primary forms of player interaction}{23}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Chapter Conclusion}{24}{section.2.7}%
 \contentsline {chapter}{\numberline {3}Research Methodology}{25}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Computing as a Discipline}{25}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Design Science Research as a Methodology}{27}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Data Collection Methods}{29}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Data Analysis Methods}{31}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Ethical Considerations}{32}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Limitations}{33}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Artefact Development}{35}{chapter.4}%
-\contentsline {section}{\numberline {4.1}System requirements}{35}{section.4.1}%
-\contentsline {subsubsection}{MVP pipeline}{36}{section*.66}%
-\contentsline {subsection}{\numberline {4.1.1}Lessons learned}{37}{subsection.4.1.1}%
-\contentsline {subsubsection}{Art}{37}{section*.67}%
-\contentsline {subsubsection}{Text}{37}{section*.68}%
-\contentsline {subsubsection}{Composition}{38}{section*.69}%
-\contentsline {subsection}{\numberline {4.1.2}Solutions}{38}{subsection.4.1.2}%
-\contentsline {subsubsection}{Art}{38}{section*.70}%
-\contentsline {subsubsection}{Character consistency}{38}{section*.71}%
-\contentsline {subsubsection}{Scene consistency}{39}{section*.72}%
-\contentsline {subsubsection}{Text}{39}{section*.73}%
-\contentsline {section}{\numberline {4.2}The Artefact}{41}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}The final pipeline}{41}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Whisper}{45}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Llama}{45}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Image generating models: Stable Diffusion}{45}{subsection.4.2.4}%
-\contentsline {chapter}{\numberline {5}Evaluation}{46}{chapter.5}%
-\contentsline {section}{\numberline {5.1}User Case Study}{46}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Results}{48}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}Self observation}{48}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Data analysis}{49}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Expert review}{60}{section.5.4}%
-\contentsline {section}{\numberline {5.5}The minimal viable product}{60}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}The minimal viable product}{61}{subsection.5.5.1}%
-\contentsline {section}{\numberline {5.6}Small experiments}{61}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}The language of TTRPGs}{61}{subsection.5.6.1}%
-\contentsline {section}{\numberline {5.7}Generating the comic book script}{61}{section.5.7}%
-\contentsline {subsubsection}{MVP}{62}{section*.103}%
-\contentsline {subsubsection}{Cleaning up the transcript}{62}{section*.104}%
-\contentsline {subsubsection}{Scene detection}{63}{section*.105}%
-\contentsline {subsubsection}{Line based chunking}{63}{section*.106}%
-\contentsline {subsubsection}{LLM based chunking}{63}{section*.107}%
-\contentsline {subsubsection}{LLM based filtering}{63}{section*.108}%
-\contentsline {subsubsection}{Context aware LLM based chunking}{63}{section*.109}%
-\contentsline {subsubsection}{Adaptive panel generating}{63}{section*.110}%
-\contentsline {section}{\numberline {5.8}Experimental setup}{63}{section.5.8}%
-\contentsline {subsubsection}{Experimental sessions}{63}{section*.111}%
-\contentsline {subsubsection}{}{64}{section*.112}%
-\contentsline {subsubsection}{Participent feedback}{64}{section*.113}%
-\contentsline {subsection}{\numberline {5.8.1}Analyzing the generated comic books}{64}{subsection.5.8.1}%
-\contentsline {chapter}{\numberline {6}Conclusion}{65}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Summary}{65}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Further Work}{65}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Idea 1}{65}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Idea 2}{65}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Idea 3}{65}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Idea 4}{65}{subsection.6.2.4}%
-\contentsline {subsection}{\numberline {6.2.5}Idea 5}{65}{subsection.6.2.5}%
-\contentsline {chapter}{Bibliography}{66}{subsection.6.2.5}%
-\contentsline {chapter}{APPENDICES}{70}{chapter*.114}%
-\contentsline {chapter}{\numberline {A}NetLogo Code}{70}{appendix.A}%
+\contentsline {section}{\numberline {3.4}Data Analysis Methods}{30}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Ethical Considerations}{31}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Limitations}{32}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Chapter Conclusion}{33}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Artefact Development}{34}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Development Environment}{35}{section.4.1}%
+\contentsline {section}{\numberline {4.2}MVP Development}{36}{section.4.2}%
+\contentsline {section}{\numberline {4.3}From MVP to Final Artifact}{38}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Limitations of the MVP}{38}{subsection.4.3.1}%
+\contentsline {subsubsection}{Art}{38}{section*.66}%
+\contentsline {subsubsection}{Text}{40}{section*.67}%
+\contentsline {subsubsection}{Composition}{40}{section*.68}%
+\contentsline {subsubsection}{Automation and Error Handling}{40}{section*.69}%
+\contentsline {subsubsection}{Conclusion}{41}{section*.70}%
+\contentsline {subsection}{\numberline {4.3.2}Design Improvements}{41}{subsection.4.3.2}%
+\contentsline {subsubsection}{Art}{41}{section*.71}%
+\contentsline {subsubsection}{Character consistency}{41}{section*.72}%
+\contentsline {subsubsection}{Scene consistency}{42}{section*.73}%
+\contentsline {subsubsection}{Text}{42}{section*.74}%
+\contentsline {subsubsection}{Conclusion}{43}{section*.75}%
+\contentsline {subsection}{\numberline {4.3.3}System Requirements}{43}{subsection.4.3.3}%
+\contentsline {subsubsection}{Functional Requirements}{43}{section*.76}%
+\contentsline {subsubsection}{Non-Functional Requirements}{44}{section*.77}%
+\contentsline {subsubsection}{Constraints}{44}{section*.78}%
+\contentsline {section}{\numberline {4.4}The Final Artifact}{45}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}The Final Pipeline}{45}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Chapter Conclusion}{50}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Evaluation}{51}{chapter.5}%
+\contentsline {section}{\numberline {5.1}User Case Study}{51}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Self observation and Data analysis}{59}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Chapter Conclusion}{73}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Conclusion}{74}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Summary}{74}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Further Work}{75}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Broader impact}{78}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Personal Reflection}{78}{section.6.4}%
+\contentsline {chapter}{Bibliography}{80}{section.6.4}%
+\contentsline {chapter}{APPENDICES}{85}{chapter*.124}%
+\contentsline {chapter}{\numberline {A}Artifact Code}{85}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Questionnaire}{98}{appendix.B}%
